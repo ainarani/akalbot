@@ -1,0 +1,125 @@
+{
+  "menu": [
+    {
+      "url": "/",
+      "name": "Dashboards",
+      "icon": "menu-icon tf-icons bx bx-home-circle",
+      "slug": "dashboard-analytics",
+      "badge": [
+        "danger",
+        "Hello!"
+      ]
+    },
+    {
+      "name": "Aktiviti 1: Memahami Gerakan AkalBOT",
+      "icon": "menu-icon tf-icons bx bx-layout",
+      "slug": "layouts",
+      "submenu": [
+        {
+          "url": "layouts/without-menu",
+          "name": "Sub menu",
+          "slug": "layouts-without-menu"
+        },
+        {
+          "url": "layouts/without-navbar",
+          "name": "Sub menu",
+          "slug": "layouts-without-navbar"
+        },
+        {
+          "url": "layouts/container",
+          "name": "Sub menu",
+          "slug": "layouts-container"
+        },
+        {
+          "url": "layouts/fluid",
+          "name": "Sub menu",
+          "slug": "layouts-fluid"
+        },
+        {
+          "url": "layouts/blank",
+          "name": "Sub menu",
+          "slug": "layouts-blank",
+          "target": "_blank"
+        }
+      ]
+    },
+    {
+      "name": "Aktiviti 2: Gerakan AkalBOT - Selipar",
+      "icon": "menu-icon tf-icons bx bx-copy",
+      "slug": "front-pages",
+      "submenu": [
+        {
+          "url": "layouts/blank",
+          "name": "Sub menu",
+          "slug": "layouts-blank",
+          "target": "_blank"
+        }
+      ]
+    },
+    {
+      "name": "Aktiviti 3: Reka Bentuk Gerakan AkalBOT",
+      "icon": "menu-icon tf-icons bx bx-cube-alt",
+      "slug": "laravel-example",
+      "submenu": [
+        {
+          "url": "layouts/blank",
+          "name": "Sub menu",
+          "slug": "layouts-blank",
+          "target": "_blank"
+        }
+      ]
+    },
+    {
+      "name": "Aktiviti 4: Gerakan AkalBOT To Win!",
+      "icon": "menu-icon tf-icons bx bx bx-dock-top",
+      "slug": "laravel-example",
+      "submenu": [
+        {
+          "url": "layouts/blank",
+          "name": "Sub menu",
+          "slug": "layouts-blank",
+          "target": "_blank"
+        }
+      ]
+    },
+    {
+      "name": "Aktiviti 5: Now You Know AkalBOT!",
+      "icon": "menu-icon tf-icons bx bx-collection",
+      "slug": "laravel-example",
+      "submenu": [
+        {
+          "url": "layouts/blank",
+          "name": "Sub menu",
+          "slug": "layouts-blank",
+          "target": "_blank"
+        }
+      ]
+    },
+    {
+      "menuHeader": "Account"
+    },
+    {
+      "name": "Profile",
+      "icon": "menu-icon tf-icons bx bx bx-dock-top",
+      "url": "pages/account-settings-account",
+      "slug": "pages-account-settings-account"
+    },
+    {
+      "menuHeader": "Documentation"
+    },
+    {
+      "url": "https://github.com/themeselection/sneat-bootstrap-html-laravel-admin-template-free/issues",
+      "icon": "menu-icon tf-icons bx bx-support",
+      "name": "About Us",
+      "slug": "support",
+      "target": "_blank"
+    },
+    {
+      "url": "https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/laravel-introduction.html",
+      "icon": "menu-icon tf-icons bx bx-file",
+      "name": "Documentation",
+      "slug": "documentation",
+      "target": "_blank"
+    }
+  ]
+}
