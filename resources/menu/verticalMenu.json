@@ -63,7 +63,25 @@
       "submenu": [
         {
           "url": "layouts/blank",
-          "name": "Sub menu",
+          "name": "3.1 Fasa Pembangunan Aturcara",
+          "slug": "layouts-blank",
+          "target": "_blank"
+        },
+        {
+          "url": "layouts/blank",
+          "name": "3.2  Analisis Masalah",
+          "slug": "layouts-blank",
+          "target": "_blank"
+        },
+        {
+          "url": "layouts/blank",
+          "name": "3.3  Reka Bentuk Akalbot Menggunakan Carta Alir",
+          "slug": "layouts-blank",
+          "target": "_blank"
+        },
+        {
+          "url": "layouts/blank",
+          "name": "3.4  Implementasi Algortima Kepada Aturcara",
           "slug": "layouts-blank",
           "target": "_blank"
         }
