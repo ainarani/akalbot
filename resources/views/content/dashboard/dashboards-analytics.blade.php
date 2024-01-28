@@ -1,3 +1,8 @@
+<!-- This is to enable/disable navbar -->
+@php
+$isNavbar = false;
+@endphp
+
 @extends('layouts/contentNavbarLayout')
 
 @section('title', 'Dashboard - Analytics')
@@ -21,7 +26,7 @@
         <div class="d-flex align-items-center row">
             <div class="col-sm-7">
                 <div class="card-body">
-                    <h1 class="card-title text-primary">Hello Welcome to AkalBOT!</h1>
+                    <h1 class="card-title text-primary">Hello, Welcome to AkalBOT!</h1>
                     <p class="mb-4">AkalBOT merupakan robot bertayar dua yang bersedia menerima arahan anda untuk bergerak. Otak yang mengawal pergerakan AkalBOT ialah Arduino Nano.</p>
                     <a href="javascript:;" class="btn btn-sm btn-outline-primary">Lanjut</a>
                 </div>
@@ -35,7 +40,7 @@
     </div>
 </div>
 
-  <div class="col-lg-4 col-md-4 order-1">
+  <!-- <div class="col-lg-4 col-md-4 order-1">
     <div class="row">
       <div class="col-lg-6 col-md-12 col-6 mb-4">
         <div class="card">
@@ -84,7 +89,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- Total Revenue -->
   <!-- <div class="col-12 col-lg-8 order-2 order-md-3 order-lg-2 mb-4">
     <div class="card">

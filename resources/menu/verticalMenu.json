@@ -13,33 +13,22 @@
     {
       "name": "Aktiviti 1: Memahami Gerakan AkalBOT",
       "icon": "menu-icon tf-icons bx bx-layout",
-      "slug": "layouts",
+      "slug": "aktiviti_1",
       "submenu": [
         {
-          "url": "layouts/without-menu",
-          "name": "Sub menu",
-          "slug": "layouts-without-menu"
+          "url": "aktiviti_1/kenalAkalBot",
+          "name": "1.1 Mengenali AkalBot",
+          "slug": "aktiviti_1-kenalAkalBot"
         },
         {
-          "url": "layouts/without-navbar",
-          "name": "Sub menu",
-          "slug": "layouts-without-navbar"
+          "url": "/aktiviti_1/caraAkalBotGerak",
+          "name": "1.2 Cara AkalBOT Bergerak",
+          "slug": "aktiviti_1-caraAkalBotGerak"
         },
         {
-          "url": "layouts/container",
-          "name": "Sub menu",
-          "slug": "layouts-container"
-        },
-        {
-          "url": "layouts/fluid",
-          "name": "Sub menu",
-          "slug": "layouts-fluid"
-        },
-        {
-          "url": "layouts/blank",
-          "name": "Sub menu",
-          "slug": "layouts-blank",
-          "target": "_blank"
+          "url": "/aktiviti_1/ujiMinda",
+          "name": "1.3 Uji Minda",
+          "slug": "aktiviti_1-uji-Minda"
         }
       ]
     },
