@@ -11,7 +11,7 @@
       ]
     },
     {
-      "name": "Aktiviti 1: Memahami Gerakan AkalBOT",
+      "name": "Aktiviti 1: Tahu tak bagaimana AkalBOT boleh bergerak?",
       "icon": "menu-icon tf-icons bx bx-layout",
       "slug": "aktiviti_1",
       "submenu": [
@@ -33,15 +33,29 @@
       ]
     },
     {
-      "name": "Aktiviti 2: Gerakan AkalBOT - Selipar",
+      "name": "Aktiviti 2: Jom gerakkan AkalBOT untuk menjatuhkan selipar",
       "icon": "menu-icon tf-icons bx bx-copy",
-      "slug": "front-pages",
+      "slug": "aktiviti_2",
       "submenu": [
         {
-          "url": "layouts/blank",
-          "name": "Sub menu",
-          "slug": "layouts-blank",
-          "target": "_blank"
+          "url": "aktiviti_2/permasalahan",
+          "name": "2.1 Permasalahan",
+          "slug": "aktiviti_2-permasalahan"
+        },
+        {
+          "url": "aktiviti_2/pengekodan",
+          "name": "2.2 Pengekodan",
+          "slug": "aktiviti_2-pengekodan"
+        },
+        {
+          "url": "aktiviti_2/pengujian",
+          "name": "2.3 Pengujian",
+          "slug": "aktiviti_2-pengujian"
+        },
+        {
+          "url": "aktiviti_2/ujiminda",
+          "name": "2.3 Uji Minda",
+          "slug": "aktiviti_2-ujiminda"
         }
       ]
     },
@@ -54,7 +68,6 @@
           "url": "Activity_3/FasaPembangunan",
           "name": "3.1 Fasa Pembangunan Aturcara",
           "slug": "Activity_3-FasaPembangunan"
-          
         },
         {
           "url": "Activity_3/AnalisisMasalah",
@@ -108,7 +121,6 @@
       "slug": "laravel-example",
       "submenu": [
         {
-       
           "url": "Lampiran/Lampiran",
           "name": "Lampiran A,B,C",
           "slug": "Lampiran-Lampiran"
