@@ -1,8 +1,5 @@
 <?php
 
-use App\Http\Controllers\aktiviti_1\caraAkalBotGerak;
-use App\Http\Controllers\aktiviti_1\kenalAkalBot;
-use App\Http\Controllers\aktiviti_1\ujiMinda;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\dashboard\Analytics;
 use App\Http\Controllers\layouts\WithoutMenu;
@@ -46,6 +43,18 @@ use App\Http\Controllers\form_elements\InputGroups;
 use App\Http\Controllers\form_layouts\VerticalForm;
 use App\Http\Controllers\form_layouts\HorizontalForm;
 use App\Http\Controllers\tables\Basic as TablesBasic;
+use App\Http\Controllers\Activity_3\FasaPembangunan;
+use App\Http\Controllers\Activity_3\AnalisisMasalah;
+use App\Http\Controllers\Activity_3\RekaBentuk;
+use App\Http\Controllers\Activity_3\ImplementasiAlgoritma;
+use App\Http\Controllers\Activity_4\PerjalananBerbeza;
+use App\Http\Controllers\Activity_4\PerjalananBerhalangan;
+use App\Http\Controllers\Activity_5\Aturcara;
+use App\Http\Controllers\Lampiran\Lampiran;
+use App\Http\Controllers\aktiviti_1\caraAkalBotGerak;
+use App\Http\Controllers\aktiviti_1\kenalAkalBot;
+use App\Http\Controllers\aktiviti_1\ujiMinda;
+
 
 // Main Page Route
 Route::get('/', [Analytics::class, 'index'])->name('dashboard-analytics');
@@ -110,3 +119,24 @@ Route::get('/form/layouts-horizontal', [HorizontalForm::class, 'index'])->name('
 
 // tables
 Route::get('/tables/basic', [TablesBasic::class, 'index'])->name('tables-basic');
+
+//activity3
+Route::get('/Activity_3/FasaPembangunan', [FasaPembangunan::class, 'index'])->name('Activity_3-FasaPembangunan');
+Route::get('/Activity_3/AnalisisMasalah', [AnalisisMasalah::class, 'index'])->name('Activity_3-AnalisisMasalah');
+Route::get('/Activity_3/RekaBentuk', [RekaBentuk::class, 'index'])->name('Activity_3-RekaBentuk');
+Route::get('/Activity_3/ImplementasiAlgoritma', [ImplementasiAlgoritma::class, 'index'])->name('Activity_3-ImplementasiAlgoritma');
+
+//activity4
+Route::get('/Activity_4/PerjalananBerbeza', [PerjalananBerbeza::class, 'index'])->name('Activity_4-PerjalananBerbeza');
+Route::get('/Activity_4/PerjalananBerhalangan', [PerjalananBerhalangan::class, 'index'])->name('Activity_4-PerjalananBerhalangan');
+
+//activity5
+Route::get('/Activity_5/Aturcara', [Aturcara::class, 'index'])->name('Activity_5-Aturcara');
+
+//lampiran
+Route::get('/Lampiran/Lampiran', [Lampiran::class, 'index'])->name('Lampiran-Lampiran');
+
+// Aktiviti 1
+Route::get('/aktiviti_1/kenalAkalBot', [kenalAkalBot::class, 'index'])->name('aktiviti_1-kenalAkalBot');
+Route::get('/aktiviti_1/caraAkalBotGerak', [caraAkalBotGerak::class, 'index'])->name('aktiviti_1-caraAkalBotGerak');
+Route::get('/aktiviti_1/ujiMinda', [ujiMinda::class, 'index'])->name('aktiviti_1-uji-minda');
