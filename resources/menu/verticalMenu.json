@@ -57,59 +57,72 @@
       ]
     },
     {
-      "name": "Aktiviti 3: Reka Bentuk Gerakan AkalBOT",
+      "name": "Aktiviti 3: Jom kenal pasti reka bentuk yang menggerakkan AkalBOT!",
       "icon": "menu-icon tf-icons bx bx-cube-alt",
       "slug": "laravel-example",
       "submenu": [
         {
-          "url": "layouts/blank",
+          "url": "Activity_3/FasaPembangunan",
           "name": "3.1 Fasa Pembangunan Aturcara",
-          "slug": "layouts-blank",
-          "target": "_blank"
+          "slug": "Activity_3-FasaPembangunan"
+          
         },
         {
-          "url": "layouts/blank",
+          "url": "Activity_3/AnalisisMasalah",
           "name": "3.2  Analisis Masalah",
-          "slug": "layouts-blank",
-          "target": "_blank"
+          "slug": "Activity_3-AnalisisMasalah"
         },
         {
-          "url": "layouts/blank",
-          "name": "3.3  Reka Bentuk Akalbot Menggunakan Carta Alir",
-          "slug": "layouts-blank",
-          "target": "_blank"
+          "url": "Activity_3/RekaBentuk",
+          "name": "3.3  Reka Bentuk AkalBot Menggunakan Carta Alir",
+          "slug": "Activity_3-RekaBentuk"
         },
         {
-          "url": "layouts/blank",
+          "url": "Activity_3/ImplementasiAlgoritma",
           "name": "3.4  Implementasi Algortima Kepada Aturcara",
-          "slug": "layouts-blank",
-          "target": "_blank"
+          "slug": "Activity_3-ImplementasiAlgoritma"
         }
       ]
     },
     {
-      "name": "Aktiviti 4: Gerakan AkalBOT To Win!",
+      "name": "Aktiviti 4: Jom gerakkan AkalBOT untuk menang!",
       "icon": "menu-icon tf-icons bx bx bx-dock-top",
       "slug": "laravel-example",
       "submenu": [
         {
-          "url": "layouts/blank",
-          "name": "Sub menu",
-          "slug": "layouts-blank",
-          "target": "_blank"
+          "url": "Activity_4/PerjalananBerbeza",
+          "name": "4.1  Terokai Perjalanan Berbeza",
+          "slug": "Activity_4-PerjalananBerbeza"
+        },
+        {
+          "url": "Activity_4/PerjalananBerhalangan",
+          "name": "4.2  Terokai Perjalanan Berhalangan",
+          "slug": "Activity_4-PerjalananBerhalangan"
         }
       ]
     },
     {
-      "name": "Aktiviti 5: Now You Know AkalBOT!",
+      "name": "Aktiviti 5: Anda dah tahu bagaimana AkalBOT boleh bergerak?",
       "icon": "menu-icon tf-icons bx bx-collection",
       "slug": "laravel-example",
       "submenu": [
         {
-          "url": "layouts/blank",
-          "name": "Sub menu",
-          "slug": "layouts-blank",
-          "target": "_blank"
+          "url": "Activity_5/Aturcara",
+          "name": "5.1  Aturcara",
+          "slug": "Activity_5-Aturcara"
+        }
+      ]
+    },
+    {
+      "name": "Lampiran",
+      "icon": "menu-icon tf-icons bx bx-collection",
+      "slug": "laravel-example",
+      "submenu": [
+        {
+       
+          "url": "Lampiran/Lampiran",
+          "name": "Lampiran A,B,C",
+          "slug": "Lampiran-Lampiran"
         }
       ]
     },
