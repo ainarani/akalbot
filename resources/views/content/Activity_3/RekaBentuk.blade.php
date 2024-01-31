@@ -1,13 +1,18 @@
-<!-- @extends('layouts/blankLayout') -->
+@php
+$isNavbar = false;
+@endphp
 
-@section('title', 'Blank layout - Layouts')
+@extends('layouts/contentNavbarLayout')
+
+@section('title', 'Without navbar - Layouts')
 
 @section('content')
-
+<div class="card mb-4">
 <h4 class="p-4 center-text bold-text">
 3.3  REKA BENTUK AKALBOT MENGGUNAKAN CARTA ALIR  </h4>
+</div>
 <div class="row mb-5">
-  <div class="col-md-6 col-lg-4 mb-3">
+  <div class="col-md-6 col-lg-12 mb-3">
     <div class="card h-100">
       <!-- <img class="card-img-top" src="{{asset('assets/img/elements/2.jpg')}}" alt="Card image cap" /> -->
       <div class="card-body">
