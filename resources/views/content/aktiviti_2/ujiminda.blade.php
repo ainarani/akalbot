@@ -13,7 +13,7 @@ $isNavbar = false;
         <div class="col-lg-12">
             <div class="card mb-4">
                 <div class="card-header">
-                    <h1 class="m-0">1.3 Uji Minda</h1>
+                    <h1 class="m-0">2.4 Uji Minda</h1>
                     <small class="text-muted">AkalBOT merupakan robot bertayar dua yang bersedia menerima arahan anda untuk bergerak. Otak yang mengawal pergerakan AkalBOT ialah Arduino Nano</small>
                 </div>
             </div>

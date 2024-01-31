@@ -54,7 +54,10 @@ use App\Http\Controllers\Lampiran\Lampiran;
 use App\Http\Controllers\aktiviti_1\caraAkalBotGerak;
 use App\Http\Controllers\aktiviti_1\kenalAkalBot;
 use App\Http\Controllers\aktiviti_1\ujiMinda;
-
+use App\Http\Controllers\aktiviti_2\Pengekodan;
+use App\Http\Controllers\aktiviti_2\Pengujian;
+use App\Http\Controllers\aktiviti_2\Permasalahan;
+use App\Http\Controllers\aktiviti_2\ujiMinda as Aktiviti_2UjiMinda;
 
 // Main Page Route
 Route::get('/', [Analytics::class, 'index'])->name('dashboard-analytics');
@@ -140,3 +143,9 @@ Route::get('/Lampiran/Lampiran', [Lampiran::class, 'index'])->name('Lampiran-Lam
 Route::get('/aktiviti_1/kenalAkalBot', [kenalAkalBot::class, 'index'])->name('aktiviti_1-kenalAkalBot');
 Route::get('/aktiviti_1/caraAkalBotGerak', [caraAkalBotGerak::class, 'index'])->name('aktiviti_1-caraAkalBotGerak');
 Route::get('/aktiviti_1/ujiMinda', [ujiMinda::class, 'index'])->name('aktiviti_1-uji-minda');
+
+//Aktiviti 2
+Route::get('/aktiviti_2/permasalahan', [Permasalahan::class, 'index'])->name('aktiviti_2-permasalahan');
+Route::get('/aktiviti_2/pengekodan', [Pengekodan::class, 'index'])->name('aktiviti_2-pengekodan');
+Route::get('/aktiviti_2/pengujian', [Pengujian::class, 'index'])->name('aktiviti_2-pengujian');
+Route::get('/aktiviti_2/ujiminda', [Aktiviti_2UjiMinda::class, 'index'])->name('aktiviti_2-ujiminda');
