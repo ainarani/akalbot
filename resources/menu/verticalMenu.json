@@ -123,7 +123,22 @@
       "submenu": [
         {
           "url": "Lampiran/Lampiran",
-          "name": "Lampiran A,B,C",
+          "name": "Lampiran A",
+          "slug": "Lampiran-Lampiran"
+        },
+        {
+          "url": "Lampiran/Lampiran",
+          "name": "Lampiran B",
+          "slug": "Lampiran-Lampiran"
+        },
+        {
+          "url": "Lampiran/Lampiran",
+          "name": "Lampiran C",
+          "slug": "Lampiran-Lampiran"
+        },
+        {
+          "url": "Lampiran/Lampiran",
+          "name": "Lampiran D",
           "slug": "Lampiran-Lampiran"
         }
       ]

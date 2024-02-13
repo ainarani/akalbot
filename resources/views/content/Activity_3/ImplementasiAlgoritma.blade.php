@@ -8,8 +8,8 @@ $isNavbar = false;
 
 @section('content')
 <div class="card mb-4">
-<h4 class="p-4 center-text bold-text">
-3.4 IMPLEMENTASI ALGORITMA KEPADA ATURCARA</h4>
+<h3 class="p-4 bold-text">
+3.4 Implementasi Algoritma Kepada Aturcara</h3>
 </div>
 <div class="row mb-5">
   <div class="col-md-6 col-lg-12 mb-3">
@@ -38,9 +38,25 @@ untuk fasa pengekodan dengan menggunakan bahasa pengaturcaraan yang sesuai. Dala
      
 
 <!-- Apply the custom class to the p element -->
-<p class="card-text bold-text">
-  Tugasan 13: <br>
+<p class="card-text">
+  <strong>Tugasan 13: </strong><br>
   Kenal pasti set arahan yang dilaksanakan lebih daripada sekali dalam Rajah 3.3. </p>
+  <style>
+    /* Apply basic styling */
+    #pengekodan_aturcara {
+        width: 100%; /* Use 100% width */
+        max-width: 550px; /* Set a maximum width */
+        height: 150px;
+    }
+
+    /* Add some spacing for clarity */
+    body {
+        margin: 20px;
+    }
+</style>
+
+
+<input type="text" id="pengekodan_aturcara" name="pengekodan_aturcara"> <br><br>
 
   <p class="card-text">
   Dalam Rajah 3.3, kod aturcara yang dibangunkan mengunakan set arahan yang sama secara 
@@ -48,11 +64,38 @@ berulang. Satu set arahan ini dipanggil fungsi. Ini memudahkan pengatur cara ker
 menguna semula set arahan tanpa perlu menulis satu set arahan yang baharu. 
         </p>
 
-        <p class="card-text bold-text">
-  Tugasan 14: <br>
+        <p class="card-text">
+  <strong>Tugasan 14: </strong><br>
   Jadual dibawah menunjukkan implementasi carta alir kepada aturcara untuk fungsi tertentu. 
-Lengkapkan Nama Fungsi dan Definisi Fungsi di dalam jadual. </p>
-<img src="{{asset('assets/img/activity_3/tugasan14.JPG')}}" alt="Tugasan 14">
+Lengkapkan <strong>Nama Fungsi</strong> dan <strong>Definisi Fungsi</strong> di dalam jadual. </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+<img src="{{asset('assets/img/activity_3/tugasan14.JPG')}}" class="img-fluid" alt="Responsive image">
+</body>
+</html>
+<p>
+  <br>
+  Sila nyatakan jawapan di ruang yang disediakan. <br>
+</p>
+<input type="text" id="tugasan14a" name="tugasan14_a" placeholder="(a)" style="width: 500px;"><br><br>
+<input type="text" id="tugasan14b" name="tugasan14_b" placeholder="(b)" style="width: 500px;"><br><br>
+<input type="text" id="tugasan14c" name="tugasan14_c" placeholder="(c)" style="width: 500px;"><br><br>
+<input type="text" id="tugasan14d" name="tugasan14_d" placeholder="(d)" style="width: 500px;"><br><br>
+<input type="text" id="tugasan14e" name="tugasan14_e" placeholder="(e)" style="width: 500px;"><br><br>
+<input type="text" id="tugasan14f" name="tugasan14_f" placeholder="(f)" style="width: 500px;"><br><br>
+<button type="submit" class="btn btn-primary">Submit</button>
 
 
         <!-- <a href="javascript:void(0)" class="btn btn-outline-primary">Go somewhere</a> -->

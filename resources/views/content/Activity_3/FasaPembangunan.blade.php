@@ -20,9 +20,10 @@ $isNavbar = false;
   }
 </style>
 <div class="card mb-4">
-<h4 class="p-4 center-text bold-text">
-3.1  FASA PEMBANGUNAN ATURCARA</h4>
+<h3 class="p-4 bold-text">
+3.1  Fasa Pembangunan Aturcara</h3>
 </div>
+
 <div class="row mb-5">
   <div class="col-md-6 col-lg-12 mb-3">
     <div class="card h-100">
@@ -33,8 +34,13 @@ $isNavbar = false;
         AkalBOT hanya bergerak mengikut arahan yang diberikan. Arahan ini dipanggil atur cara. AkalBOT 
 tidak boleh berfikir sendiri, kita yang mengatur pergerakan AkalBOT menggunakan atur cara. <br> <br>
 Ada dua perkara yang penting dalam pembangunan atur cara iaitu : <br>
-1) Algoritma ialah langkah demi langkah untuk selesaikan masalah. <br>
-2) Atur cara ialah arahan untuk implementasi algoritma.<br><br>
+<?php
+echo "<style>";
+echo ".numbered-list { padding-left: 20px; }";
+echo "</style>";
+
+echo "<div class='numbered-list'>1) <strong>Algoritma</strong> ialah langkah demi langkah untuk selesaikan masalah. </div>";
+echo "<div class='numbered-list'>2) <strong>Atur cara</strong> ialah arahan untuk implementasi algoritma.</div><br>";?>
 Algoritma dibangunkan dalam fasa reka bentuk atur cara dan di implementasi sebagai atur cara 
 menggunakan bahasa pengaturcaraan C++ dalam fasa pengekodan. Namun, reka bentuk 
 dibangunkan berdasarkan analisis yang dilakukan pada masalah iaitu pada fasa kedua dalam fasa 
@@ -44,13 +50,37 @@ pembangunan atur cara seperti pada Rajah 3.1.
      
 
 <!-- Apply the custom class to the p element -->
-<p class="card-text bold-text">
-  Tugasan 9: <br>
+<p class="card-text">
+<strong>Tugasan 9:</strong> <br>
   Lengkapkan fasa pembangunan atur cara pada Rajah 3.1. <br>
   
 </p>
-<img src="{{asset('assets/img/activity_3/tugasan9.JPG')}}" alt="Rajah 3.1: Fasa pembangunan atur cara">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<img src="{{asset('assets/img/activity_3/tugasan9.JPG')}}" class="img-fluid" alt="Responsive image">
 
+
+</body>
+</html>
+<p>
+  <br>
+  Sila nyatakan jawapan di ruang yang disediakan. <br>
+</p>
+<input type="text" id="tugasan9_3" name="tugasan9_3" placeholder="(3)" style="width: 500px;"><br><br>
+<input type="text" id="tugasan9_4" name="tugasan9_4" placeholder="(4)" style="width: 500px;"><br><br>
+
+<button type="submit" class="btn btn-primary">Submit</button>
 
 
         <!-- <a href="javascript:void(0)" class="btn btn-outline-primary">Go somewhere</a> -->
