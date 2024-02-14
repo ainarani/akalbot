@@ -28,7 +28,7 @@ $isNavbar = false;
                 <div class="card-body">
                     <h1 class="card-title text-primary">Hello, Welcome to AkalBOT!</h1>
                     <p class="mb-4">AkalBOT merupakan robot bertayar dua yang bersedia menerima arahan anda untuk bergerak. Otak yang mengawal pergerakan AkalBOT ialah Arduino Nano.</p>
-                    <a href="javascript:;" class="btn btn-sm btn-outline-primary">Lanjut</a>
+                    <a href="{{ url('/index') }}" target="_blank" class="btn btn-sm btn-outline-primary">Lanjut</a>
                 </div>
             </div>
             <div class="col-sm-5 text-center text-sm-right">
@@ -234,8 +234,9 @@ $isNavbar = false;
       <div class="card-body">
         <div class="d-flex justify-content-between align-items-center mb-3">
           <div class="d-flex flex-column align-items-center gap-1">
-            <h2 class="mb-2">8,258</h2>
-            <span>Total Orders</span>
+            <!-- <h2 class="mb-2">8,258</h2> -->
+            <h2 class="mb-2" id="visitorCount">8,258</h2>
+            <span>Total Visitors</span>
           </div>
           <div id="orderStatisticsChart"></div>
         </div>
@@ -461,4 +462,34 @@ $isNavbar = false;
   </div>
   <!--/ Transactions -->
 </div>
+
+<script>
+    // Function to increment visitor count and store in local storage
+    function incrementVisitorCount() {
+        if (localStorage.getItem('visitorCount')) {
+            var count = parseInt(localStorage.getItem('visitorCount'));
+            count++;
+            localStorage.setItem('visitorCount', count);
+        } else {
+            localStorage.setItem('visitorCount', 1);
+        }
+    }
+
+    // Function to retrieve and display visitor count from local storage
+    function displayVisitorCount() {
+        var count = localStorage.getItem('visitorCount');
+        if (count) {
+            document.getElementById('visitorCount').innerText = count;
+        } else {
+            document.getElementById('visitorCount').innerText = '0';
+        }
+    }
+
+    // Call the function to increment visitor count when the page loads
+    incrementVisitorCount();
+
+    // Call the function to display visitor count when the page loads
+    displayVisitorCount();
+</script>
+
 @endsection

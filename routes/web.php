@@ -142,10 +142,15 @@ Route::get('/Lampiran/Lampiran', [Lampiran::class, 'index'])->name('Lampiran-Lam
 // Aktiviti 1
 Route::get('/aktiviti_1/kenalAkalBot', [kenalAkalBot::class, 'index'])->name('aktiviti_1-kenalAkalBot');
 Route::get('/aktiviti_1/caraAkalBotGerak', [caraAkalBotGerak::class, 'index'])->name('aktiviti_1-caraAkalBotGerak');
-Route::get('/aktiviti_1/ujiMinda', [ujiMinda::class, 'index'])->name('aktiviti_1-uji-minda');
+Route::get('/aktiviti_1/ujiMinda', [ujiMinda::class, 'index'])->name('aktiviti_1-ujiminda');
 
 //Aktiviti 2
 Route::get('/aktiviti_2/permasalahan', [Permasalahan::class, 'index'])->name('aktiviti_2-permasalahan');
 Route::get('/aktiviti_2/pengekodan', [Pengekodan::class, 'index'])->name('aktiviti_2-pengekodan');
 Route::get('/aktiviti_2/pengujian', [Pengujian::class, 'index'])->name('aktiviti_2-pengujian');
 Route::get('/aktiviti_2/ujiminda', [Aktiviti_2UjiMinda::class, 'index'])->name('aktiviti_2-ujiminda');
+
+//Akalblok
+Route::get('/index', function () {
+    return response()->file(public_path('index.html'));
+});

@@ -1,5 +1,5 @@
 <!-- Footer-->
-<footer class="content-footer footer bg-footer-theme">
+<footer class="content-footer footer" style="background-color: #ece6ff;">
   <div class="{{ (!empty($containerNav) ? $containerNav : 'container-fluid') }} d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column align-items-center">
 
 <div class="row">

@@ -1,5 +1,6 @@
 @php
-$isNavbar = false;
+$container = 'container-xxl';
+$containerNav = 'container-xxl';
 @endphp
 
 @extends('layouts/contentNavbarLayout')
@@ -8,66 +9,82 @@ $isNavbar = false;
 
 @section('content')
 
+<style>
+  .bold-text {
+    font-weight: bold;
+  }
+</style>
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-lg-12">
             <div class="card mb-4">
                 <div class="card-header">
-                    <h1 class="m-0">2.4 Uji Minda</h1>
-                    <small class="text-muted">AkalBOT merupakan robot bertayar dua yang bersedia menerima arahan anda untuk bergerak. Otak yang mengawal pergerakan AkalBOT ialah Arduino Nano</small>
+                    <h1 class="m-0 bold-text">2.4 Uji Minda</h1>
+                    <!-- <small class="text-muted">AkalBOT merupakan robot bertayar dua yang bersedia menerima arahan anda untuk bergerak. Otak yang mengawal pergerakan AkalBOT ialah Arduino Nano</small> -->
                 </div>
             </div>
             <div class="card">
                 <div class="card-body">
-
+                    <form id="myForm">
                         <div class="form-group mb-4">
                             <label for="name">1. AkalBOT bergerak berdasarkan urutan arahan berkod iaitu atur cara yang telah dimuat naik dan diproses oleh otak AkalBOT. Adakah anda tahu atur cara yang telah diproses oleh AkalBOT?</label>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" id="" name="" value="ya">
-                                <label class="form-check-label" for="ya">Ya</label>
+                                <input class="form-check-input" type="radio" id="option1_yes" name="option1" value="ya">
+                                <label class="form-check-label" for="option1_yes">Ya</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" id="" name="" value="tidak">
-                                <label class="form-check-label" for="tidak">Tidak</label>
+                                <input class="form-check-input" type="radio" id="option1_no" name="option1" value="tidak">
+                                <label class="form-check-label" for="option1_no">Tidak</label>
                             </div>
                         </div>
 
                         <div class="form-group mb-4">
                             <label for="email">2. Jika YA, tuliskan atur cara tersebut di bawah:</label>
-                            <input type="text" class="form-control" id="" name="">
+                            <input type="text" class="form-control" id="option2_text" name="option2">
                         </div>
 
                         <div class="form-group mb-4">
                             <label for="age">3. Jika TIDAK, adakah anda berminat untuk mengetahui atur cara untuk mengerakkan AkalBOT?</label><br>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" id="" name="" value="ya">
-                                <label class="form-check-label" for="ya">Ya</label>
+                                <input class="form-check-input" type="radio" id="option3_yes" name="option3" value="ya">
+                                <label class="form-check-label" for="option3_yes">Ya</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" id="" name="" value="tidak">
-                                <label class="form-check-label" for="tidak">Tidak</label>
+                                <input class="form-check-input" type="radio" id="option3_no" name="option3" value="tidak">
+                                <label class="form-check-label" for="option3_no">Tidak</label>
                             </div>
                         </div>
 
-                        <!-- <div class="form-group mb-4">
-                            <label for="gender">Your Gender:</label><br>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" id="male" name="gender" value="male">
-                                <label class="form-check-label" for="male">Male</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" id="female" name="gender" value="female">
-                                <label class="form-check-label" for="female">Female</label>
-                            </div>
-                        </div> -->
-                        <h7>Jika berminat, ayuh teruskan langkah ke Aktiviti 2 untuk mengetahui cara mengerakkan AkalBOT menggunakan atur cara.
-                            Jika anda tidak berminat, ayuh teruskan juga langkah anda ke Aktiviti 2 , supaya anda tahu yang mengerakkan robot menggunakan atur cara adalah perkara yang menarik untuk dilakukan!
-                        </h7> <br>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <!-- Add other form elements as needed -->
+
+                        <h7>Jika berminat, ayuh teruskan langkah ke Aktiviti 2 untuk mengetahui cara mengerakkan AkalBOT menggunakan atur cara. Jika anda tidak berminat, ayuh teruskan juga langkah anda ke Aktiviti 2 , supaya anda tahu yang mengerakkan robot menggunakan atur cara adalah perkara yang menarik untuk dilakukan!</h7> <br>
+                        <button type="button" onclick="saveToLocalStorage()" class="btn btn-primary">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    function saveToLocalStorage() {
+        var formData = {
+            'option1': $('input[name=option1]:checked').val(),
+            'option2': $('#option2_text').val(),
+            'option3': $('input[name=option3]:checked').val()
+            // Add other form fields as needed
+        };
+
+        // Convert form data to JSON string
+        var formDataJSON = JSON.stringify(formData);
+
+        // Save form data to local storage
+        localStorage.setItem('formData', formDataJSON);
+
+        // Optionally, you can redirect the user or perform other actions here
+        // window.location.href = 'next_page.html';
+    }
+</script>
 
 @endsection

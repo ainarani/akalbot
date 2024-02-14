@@ -1,6 +1,5 @@
 {
   "menu": [
-  
     {
       "url": "/",
       "name": "Dashboards",
@@ -22,14 +21,14 @@
           "slug": "aktiviti_1-kenalAkalBot"
         },
         {
-          "url": "/aktiviti_1/caraAkalBotGerak",
+          "url": "aktiviti_1/caraAkalBotGerak",
           "name": "1.2 Cara AkalBOT Bergerak",
           "slug": "aktiviti_1-caraAkalBotGerak"
         },
         {
-          "url": "/aktiviti_1/ujiMinda",
+          "url": "aktiviti_1/ujiMinda",
           "name": "1.3 Uji Minda",
-          "slug": "aktiviti_1-uji-Minda"
+          "slug": "aktiviti_1-ujiminda"
         }
       ]
     },
@@ -156,14 +155,14 @@
       "menuHeader": "Documentation"
     },
     {
-      "url": "https://github.com/themeselection/sneat-bootstrap-html-laravel-admin-template-free/issues",
+      "url": "https://github.com/ainarani/akalbot.git",
       "icon": "menu-icon tf-icons bx bx-support",
       "name": "About Us",
       "slug": "support",
       "target": "_blank"
     },
     {
-      "url": "https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/laravel-introduction.html",
+      "url": "https://github.com/ainarani/akalbot.git",
       "icon": "menu-icon tf-icons bx bx-file",
       "name": "Documentation",
       "slug": "documentation",

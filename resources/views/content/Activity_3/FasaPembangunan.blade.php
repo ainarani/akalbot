@@ -1,5 +1,6 @@
 @php
-$isNavbar = false;
+$container = 'container-xxl';
+$containerNav = 'container-xxl';
 @endphp
 
 @extends('layouts/contentNavbarLayout')

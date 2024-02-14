@@ -1,5 +1,6 @@
 @php
-$isNavbar = false;
+$container = 'container-xxl';
+$containerNav = 'container-xxl';
 @endphp
 
 @extends('layouts/contentNavbarLayout')
@@ -8,20 +9,29 @@ $isNavbar = false;
 
 @section('content')
 
+<style>
+  .bold-text {
+    font-weight: bold;
+  }
+</style>
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-lg-12">
             <div class="card mb-4">
                 <div class="card-header">
-                    <h1 class="m-0">2.2 Pengekodan</h1>
-                    <small class="text-muted">Apakah atur cara yang perlu dimuat naik dan diproses oleh AkalBOT untuk menjatuhkan selipar?
+                    <h2 class="m-0 bold-text">2.2 Pengekodan</h2>
+                    <p class="text-muted">Apakah atur cara yang perlu dimuat naik dan diproses oleh AkalBOT untuk menjatuhkan selipar?
                         Mari kita lakukan pengekodan iaitu membangunkan kod atur cara. Untuk permulaan ini, kita menggunakan editor berasaskan blok yang dipanggil AkalBLOK.
                         AkalBLOK adalah satu editor yang anda boleh gunakan untuk membangunkan atur cara secara visual iaitu dengan menggunakan blok tanpa perlu menaip satu persatu teks arahan.
-                    </small>
+                    </p>
                 </div>
             </div>
             <div class="card">
                 <div class="card-body">
+                    <div style="text-align: center;">
+                        <a href="{{ url('/index') }}" target="_blank" class="btn btn-sm btn-primary">AkalBLOK</a>
+                    </div>
                     <div class="layout-demo-info">
                         <img src="{{asset('assets/img/aktiviti_2/pengekodan_1.png')}}" class="img-fluid" alt="AkalBOT">
                     </div>
