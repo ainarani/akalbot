@@ -158,25 +158,10 @@ yang sama dengan membandingkan lukisan anda pada Lukisan A dan Lukisan B.
 
 <input type="text" id="tugasan11" name="tugasan11" style="width: 500px;"> <br><br>
 
-<button type="submit" class="btn btn-primary">Submit</button>
+<button type="submit" onclick="checkAnswers()" class="btn btn-primary">Submit</button>
   </form>
+ 
 
-
-    <script type="text/javascript">
-        function myfunc(event){
-          event.preventDefault();
-
-          var tugasan10a = document.getElementById("tugasan10a".value);
-          var tugasan10a = document.getElementById("tugasan10b".value);
-          var tugasan10a = document.getElementById("tugasan10c".value);
-          var tugasan11 = document.getElementById("tugasan11".value);
-
-          localStorage.setItem("is_tugasan10a", tugasan10a);
-          localStorage.setItem("is_tugasan10b", tugasan10b);
-          localStorage.setItem("is_tugasan10c", tugasan10c);
-          localStorage.setItem("is_tugasan11", tugasan11);
-        }
-    </script>
 </body>
 </html>
 
@@ -184,4 +169,62 @@ yang sama dengan membandingkan lukisan anda pada Lukisan A dan Lukisan B.
       </div>
     </div>
   </div>
+
+    <!-- local storage stored for tugasan 10_11 -->
+
+    <script>
+    // Define correct answers
+    var tugasan10_11Answers = {
+      tugasan10a: "abc",
+      tugasan10b: "def",
+      tugasan10c: "def",
+      tugasan11: "def",
+        
+        // Add other correct answers as needed
+    };
+
+    // Save correct answers to local storage
+    localStorage.setItem('tugasan10_11Answers', JSON.stringify(tugasan10_11Answers));
+
+    // Function to save user input to local storage
+    function saveTugasan10_11Input() {
+        var tugasan10_11Input = { 
+            tugasan10a: $('#tugasan10a').val(),
+            tugasan10b: $('#tugasan10b').val(),
+            tugasan10c: $('#tugasan10c').val(),
+            tugasan11: $('#tugasan11').val(),
+
+            // Add other form fields as needed
+        };
+
+        localStorage.setItem('tugasan10_11Input', JSON.stringify(tugasan10_11Input));
+    }
+
+    // Function to compare user input with correct answers
+    function checkAnswers() {
+        saveTugasan10_11Input(); // Save user input before comparing
+
+        var storedTugasan10_11Answers = JSON.parse(localStorage.getItem('tugasan10_11Answers'));
+        var storedTugasan10_11Input = JSON.parse(localStorage.getItem('tugasan10_11Input'));
+
+        var isCorrect = true;
+        for (var key in storedTugasan10_11Input) {
+            if (storedTugasan10_11Input.hasOwnProperty(key)) {
+                if (storedTugasan10_11Input[key] !== storedTugasan10_11Answers[key]) {
+                    isCorrect = false;
+                    break;
+                }
+            }
+        }
+
+        if (isCorrect) {
+            alert("Congratulations! Your answers are correct.");
+            // You can perform additional actions here, such as redirecting the user to a success page.
+        } else {
+            alert("Sorry, some of your answers are incorrect. Please try again.");
+            // You can perform additional actions here, such as highlighting the incorrect answers or providing feedback to the user.
+        }
+    }
+</script>
+
 @endsection

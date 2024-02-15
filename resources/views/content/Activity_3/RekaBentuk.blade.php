@@ -74,15 +74,68 @@ Aktiviti 2. </p>
   <br>
   Sila nyatakan jawapan di ruang yang disediakan. <br>
 </p>
-<input type="text" id="tugasan12a" name="tugasan9_3" placeholder="(a)" style="width: 500px;"><br><br>
-<input type="text" id="tugasan12b" name="tugasan9_4" placeholder="(b)" style="width: 500px;"><br><br>
-<input type="text" id="tugasan12c" name="tugasan9_4" placeholder="(c)" style="width: 500px;"><br><br>
+<input type="text" id="tugasan12a" name="tugasan12a" placeholder="(a)" style="width: 500px;"><br><br>
+<input type="text" id="tugasan12b" name="tugasan12b" placeholder="(b)" style="width: 500px;"><br><br>
+<input type="text" id="tugasan12c" name="tugasan12c" placeholder="(c)" style="width: 500px;"><br><br>
 
-<button type="submit" class="btn btn-primary">Submit</button>
+<button type="submit" onclick="checkAnswers()" class="btn btn-primary">Submit</button>
 
 
         <!-- <a href="javascript:void(0)" class="btn btn-outline-primary">Go somewhere</a> -->
       </div>
     </div>
   </div>
+
+  <!-- local storage stored for tugasan 12 -->
+
+  <script>
+    // Define correct answers
+    var tugasan12Answers = {
+      tugasan12a: "abc",
+      tugasan12b: "def",
+      tugasan12c: "def",        
+        // Add other correct answers as needed
+    };
+
+    // Save correct answers to local storage
+    localStorage.setItem('tugasan12Answers', JSON.stringify(tugasan12Answers));
+
+    // Function to save user input to local storage
+    function saveTugasan12Input() {
+        var tugasan12Input = { 
+            tugasan12a: $('#tugasan12a').val(),
+            tugasan12b: $('#tugasan12b').val(),
+            tugasan12c: $('#tugasan12c').val(),
+            // Add other form fields as needed
+        };
+
+        localStorage.setItem('tugasan12Input', JSON.stringify(tugasan12Input));
+    }
+
+    // Function to compare user input with correct answers
+    function checkAnswers() {
+        saveTugasan12Input(); // Save user input before comparing
+
+        var storedTugasan12Answers = JSON.parse(localStorage.getItem('tugasan12Answers'));
+        var storedTugasan12Input = JSON.parse(localStorage.getItem('tugasan12Input'));
+
+        var isCorrect = true;
+        for (var key in storedTugasan12Input) {
+            if (storedTugasan12Input.hasOwnProperty(key)) {
+                if (storedTugasan12Input[key] !== storedTugasan12Answers[key]) {
+                    isCorrect = false;
+                    break;
+                }
+            }
+        }
+
+        if (isCorrect) {
+            alert("Congratulations! Your answers are correct.");
+            // You can perform additional actions here, such as redirecting the user to a success page.
+        } else {
+            alert("Sorry, some of your answers are incorrect. Please try again.");
+            // You can perform additional actions here, such as highlighting the incorrect answers or providing feedback to the user.
+        }
+    }
+</script>
 @endsection

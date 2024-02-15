@@ -57,6 +57,7 @@ use App\Http\Controllers\aktiviti_1\ujiMinda;
 use App\Http\Controllers\aktiviti_2\Pengekodan;
 use App\Http\Controllers\aktiviti_2\Pengujian;
 use App\Http\Controllers\aktiviti_2\Permasalahan;
+use App\Http\Controllers\Kuiz\SoalanKuiz;
 use App\Http\Controllers\aktiviti_2\ujiMinda as Aktiviti_2UjiMinda;
 
 // Main Page Route
@@ -149,6 +150,9 @@ Route::get('/aktiviti_2/permasalahan', [Permasalahan::class, 'index'])->name('ak
 Route::get('/aktiviti_2/pengekodan', [Pengekodan::class, 'index'])->name('aktiviti_2-pengekodan');
 Route::get('/aktiviti_2/pengujian', [Pengujian::class, 'index'])->name('aktiviti_2-pengujian');
 Route::get('/aktiviti_2/ujiminda', [Aktiviti_2UjiMinda::class, 'index'])->name('aktiviti_2-ujiminda');
+
+//Kuiz
+Route::get('/Kuiz/SoalanKuiz', [SoalanKuiz::class, 'index'])->name('Kuiz-SoalanKuiz');
 
 //Akalblok
 Route::get('/index', function () {

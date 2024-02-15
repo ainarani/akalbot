@@ -205,15 +205,20 @@ sehingga 4.1.4 dibawah.
 
 
     </p>
-
- 
- 
         <h5 class="card-title bold-text"><br>4.1.2 Reka bentuk Atur cara </h5>
         <p class="card-text">
         Lukis carta alir untuk penyelesaian masalah. Rujuk lampiran D <br> <br>
 
       
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+       <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whiteboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
 
 <canvas id="whiteboard2" width="500" height="400" style="border: 1px solid #000;"></canvas>
 <br>
@@ -224,19 +229,53 @@ sehingga 4.1.4 dibawah.
     <i class="fas fa-eraser"></i>
 </button>
 <button id="clearButton2" onclick="clearCanvas2()">
-    <i class="fas fa-trash-alt"></i> 
+    <i class="fas fa-trash-alt"></i>
 </button>
-
+<input type="text" id="textInput" placeholder="Type text here">
 <script>
     const canvas2 = document.getElementById('whiteboard2');
     const context2 = canvas2.getContext('2d');
+    const textInput = document.getElementById('textInput');
     let drawing2 = false;
     let erasing2 = false;
+    let isTyping = false;
+    let textObjects = [];
 
-    canvas2.addEventListener('mousedown', startDrawing2);
-    canvas2.addEventListener('mousemove', draw2);
-    canvas2.addEventListener('mouseup', stopDrawing2);
-    canvas2.addEventListener('mouseout', stopDrawing2);
+    canvas2.addEventListener('mousedown', startAction);
+    canvas2.addEventListener('mousemove', performAction);
+    canvas2.addEventListener('mouseup', stopAction);
+    canvas2.addEventListener('mouseout', stopAction);
+
+    function startAction(e) {
+        if (isTyping) return;
+        if (drawing2) {
+            startDrawing2(e);
+        } else {
+            isTyping = true;
+            const rect = canvas2.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            const text = textInput.value;
+            textObjects.push({ x, y, text });
+            drawTextObjects();
+        }
+    }
+
+    function performAction(e) {
+        if (isTyping) return;
+        if (drawing2) {
+            draw2(e);
+        }
+    }
+
+    function stopAction(e) {
+        if (isTyping) return;
+        if (drawing2) {
+            stopDrawing2();
+        } else {
+            isTyping = false;
+        }
+    }
 
     function startDrawing2(e) {
         if (erasing2) {
@@ -298,12 +337,51 @@ sehingga 4.1.4 dibawah.
 
     function clearCanvas2() {
         context2.clearRect(0, 0, canvas2.width, canvas2.height);
+        textObjects = [];
+        drawTextObjects();
     }
+
+    function drawTextObjects() {
+        context2.clearRect(0, 0, canvas2.width, canvas2.height);
+        textObjects.forEach(textObj => {
+            context2.font = '14px Arial';
+            context2.fillText(textObj.text, textObj.x, textObj.y);
+        });
+    }
+
+    canvas2.addEventListener('click', function(e) {
+        const rect = canvas2.getBoundingClientRect();
+        const mouseX = e.clientX - rect.left;
+        const mouseY = e.clientY - rect.top;
+
+        textObjects.forEach(textObj => {
+            const textWidth = context2.measureText(textObj.text).width;
+            const textHeight = 14; // Approximate height of the text
+
+            if (
+                mouseX >= textObj.x &&
+                mouseX <= textObj.x + textWidth &&
+                mouseY >= textObj.y - textHeight &&
+                mouseY <= textObj.y
+            ) {
+                textInput.value = textObj.text;
+                textInput.focus();
+
+                textInput.oninput = function() {
+                    textObj.text = this.value;
+                    drawTextObjects();
+                };
+            }
+        });
+    });
+
 </script>
 
+</body>
+</html>
+
+
 </p>
-
-
 
         </p>
         <h5 class="card-title bold-text">4.1.3 Pengekodan</h5>

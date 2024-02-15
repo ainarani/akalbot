@@ -81,11 +81,63 @@ pembangunan atur cara seperti pada Rajah 3.1.
 <input type="text" id="tugasan9_3" name="tugasan9_3" placeholder="(3)" style="width: 500px;"><br><br>
 <input type="text" id="tugasan9_4" name="tugasan9_4" placeholder="(4)" style="width: 500px;"><br><br>
 
-<button type="submit" class="btn btn-primary">Submit</button>
+<button type="submit" onclick="checkAnswers()" class="btn btn-primary">Submit</button>
 
 
         <!-- <a href="javascript:void(0)" class="btn btn-outline-primary">Go somewhere</a> -->
       </div>
     </div>
   </div>
+
+  <!-- local storage stored for tugasan 9 -->
+
+  <script>
+    // Define correct answers
+    var tugasan9Answers = {
+      tugasan9_3: "abc",
+      tugasan9_4: "def",
+        
+        // Add other correct answers as needed
+    };
+
+    // Save correct answers to local storage
+    localStorage.setItem('tugasan9Answers', JSON.stringify(tugasan9Answers));
+
+    // Function to save user input to local storage
+    function saveTugasan9Input() {
+        var tugasan9Input = { 
+            tugasan9_3: $('#tugasan9_3').val(),
+            tugasan9_4: $('#tugasan9_4').val(),
+            // Add other form fields as needed
+        };
+
+        localStorage.setItem('tugasan9Input', JSON.stringify(tugasan9Input));
+    }
+
+    // Function to compare user input with correct answers
+    function checkAnswers() {
+        saveTugasan9Input(); // Save user input before comparing
+
+        var storedTugasan9Answers = JSON.parse(localStorage.getItem('tugasan9Answers'));
+        var storedTugasan9Input = JSON.parse(localStorage.getItem('tugasan9Input'));
+
+        var isCorrect = true;
+        for (var key in storedTugasan9Input) {
+            if (storedTugasan9Input.hasOwnProperty(key)) {
+                if (storedTugasan9Input[key] !== storedTugasan9Answers[key]) {
+                    isCorrect = false;
+                    break;
+                }
+            }
+        }
+
+        if (isCorrect) {
+            alert("Congratulations! Your answers are correct.");
+            // You can perform additional actions here, such as redirecting the user to a success page.
+        } else {
+            alert("Sorry, some of your answers are incorrect. Please try again.");
+            // You can perform additional actions here, such as highlighting the incorrect answers or providing feedback to the user.
+        }
+    }
+</script>
 @endsection

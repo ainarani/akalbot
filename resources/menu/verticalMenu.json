@@ -143,6 +143,19 @@
       ]
     },
     {
+      "name": "Kuiz",
+      "icon": "menu-icon tf-icons bx bx-collection",
+      "slug": "laravel-example",
+      "submenu": [
+        {
+          "url": "Kuiz/SoalanKuiz",
+          "name": "Soalan Kuiz",
+          "slug": "Kuiz-SoalanKuiz"
+        }
+       
+      ]
+    },
+    {
       "menuHeader": "Account"
     },
     {

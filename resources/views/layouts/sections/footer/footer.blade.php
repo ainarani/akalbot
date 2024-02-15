@@ -11,7 +11,7 @@
     <!-- contact 1 -->
     <div style="display: inline-block; margin-right: 60px;">
         <strong>Dr. Nazatul Aini Abd Majid</strong> <br>
-        Head of Information Technology Programme <br>
+        Project Researcher <br>
         <span class="contact-email">E-mel: <a href="mailto:nazatulaini@ukm.edu.my">nazatulaini@ukm.edu.my</a></span><br>
 
     </div>
