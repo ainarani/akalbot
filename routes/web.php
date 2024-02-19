@@ -59,6 +59,7 @@ use App\Http\Controllers\aktiviti_2\Pengujian;
 use App\Http\Controllers\aktiviti_2\Permasalahan;
 use App\Http\Controllers\Kuiz\SoalanKuiz;
 use App\Http\Controllers\aktiviti_2\ujiMinda as Aktiviti_2UjiMinda;
+use App\Http\Controllers\Error\ErrorController;
 
 // Main Page Route
 Route::get('/', [Analytics::class, 'index'])->name('dashboard-analytics');
@@ -158,3 +159,8 @@ Route::get('/Kuiz/SoalanKuiz', [SoalanKuiz::class, 'index'])->name('Kuiz-SoalanK
 Route::get('/index', function () {
     return response()->file(public_path('index.html'));
 });
+
+
+//KUIZ SCREEN
+Route::get('/Error/ErrorController', [ErrorController::class, 'showErrorScreen'])->name('Kuiz-Error');
+// Route::get('/Error/ErrorController', 'ErrorController@showErrorScreen')->name('error');

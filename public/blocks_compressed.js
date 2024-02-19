@@ -180,8 +180,8 @@ Blockly.Blocks.arduino_servo = {
     init: function () {
         this.appendDummyInput()
             .appendField("Motor")
-            .appendField(new Blockly.FieldImage("picture/rc servo.jpg", 50, 40, ""))
-            .appendField(new Blockly.FieldImage("picture/rc servo.jpg", 50, 40, ""))
+            .appendField(new Blockly.FieldImage("picture/motor kiri.jpeg", 50, 40, ""))
+            .appendField(new Blockly.FieldImage("picture/motor kanan.jpeg", 50, 40, ""))
         this.appendDummyInput()
             .setAlign(Blockly.ALIGN_RIGHT)
             .appendField("PERGERAKAN")
@@ -330,7 +330,7 @@ Blockly.Blocks.led_block = {
     init: function () {
         this.appendDummyInput()
             .appendField("LED")
-            .appendField(new Blockly.FieldImage("picture/LED.jpg", 50, 40, "*"))
+            .appendField(new Blockly.FieldImage("picture/led.jpeg", 50, 40, "*"))
             .appendField("PIN#")
             .appendField(new Blockly.FieldDropdown(profile["default"].digital), "PIN")
             .appendField("STATE")
@@ -340,7 +340,7 @@ Blockly.Blocks.led_block = {
             ]), "STATE");
         this.setPreviousStatement(true, null);
         this.setNextStatement(true, null);
-        this.setColour(240);
+        this.setColour(360);
         this.setTooltip("");
         this.setHelpUrl("");
     }
@@ -434,7 +434,7 @@ Blockly.Blocks.ir_sensor = {
     init: function () {
         this.appendDummyInput()
             .appendField("IR Sensor")
-            .appendField(new Blockly.FieldImage("picture/irsensor.jpg", 50, 50, "*"))
+            .appendField(new Blockly.FieldImage("picture/ir sensor.jpeg", 50, 50, "*"))
             .appendField("Sensor No")
             .appendField(new Blockly.FieldDropdown([["Left", "Left"], ["Right", "Right"]]), "pin_no")
             .appendField("PIN")
@@ -492,7 +492,7 @@ Blockly.Blocks.buzzer = {
     init: function () {
         this.setColour(20);
         this.appendDummyInput().appendField("Piezo Buzzer")
-            .appendField(new Blockly.FieldImage("picture/buzzer1.jpg", 64, 64))
+            .appendField(new Blockly.FieldImage("picture/buzzer.jpeg", 64, 64))
             .appendField("PIN#")
             .appendField(new Blockly.FieldDropdown(profile["default"].digital), "PIN")
         this.setPreviousStatement(!0, null);
@@ -504,7 +504,7 @@ Blockly.Blocks.OLED_display = {
     init: function () {
         this.setColour(60);
         this.appendDummyInput().appendField("OLED")
-            .appendField(new Blockly.FieldImage("picture/oled.jpg", 64, 64))
+            .appendField(new Blockly.FieldImage("picture/oled.jpeg", 64, 64))
             //.appendField(new Blockly.FieldDropdown(profile["default"].digital), "4")
             .appendField("resetpin#").appendField(new Blockly.FieldDropdown([
                 ["-1", "-1"],
@@ -560,7 +560,7 @@ Blockly.Blocks['input_switch'] = {
         this.setPreviousStatement(true, null);
         this.setNextStatement(true, null);
         this.setTooltip('');
-        this.setColour(120);
+        this.setColour(80);
     }
 };
 Blockly.Blocks['input_case'] = {
@@ -571,12 +571,12 @@ Blockly.Blocks['input_case'] = {
         this.setPreviousStatement(true, null);
         this.setNextStatement(true, null);
         this.setTooltip('');
-        this.setColour(120);
+        this.setColour(80);
     }
 };
 Blockly.Blocks['input_array'] = {
     init: function () {
-        this.setColour(270);
+        this.setColour(80);
         this.appendDummyInput().appendField(Blockly.Msg.INPUT_ARRAY_INPUT_WITH)//appendField(new Blockly.FieldTextInput("senjata"),"text");
         this.appendValueInput("text")
             .setCheck(!0, null)
@@ -1443,7 +1443,7 @@ Blockly.Blocks.lists_split = {
     }
 };
 Blockly.Blocks.logic = {};
-Blockly.Blocks.logic.HUE = 210;
+Blockly.Blocks.logic.HUE = 40;
 Blockly.Blocks.controls_if = {
     init: function () {
         this.setHelpUrl(Blockly.Msg.CONTROLS_IF_HELPURL);
@@ -1708,7 +1708,7 @@ Blockly.Blocks.logic_ternary = {
     }
 };
 Blockly.Blocks.loops = {};
-Blockly.Blocks.loops.HUE = 120;
+Blockly.Blocks.loops.HUE = 80;
 Blockly.Blocks.controls_repeat = {
     init: function () {
         this.jsonInit({
@@ -1892,7 +1892,7 @@ Blockly.Blocks.controls_flow_statements = {
     }
 };
 Blockly.Blocks.math = {};
-Blockly.Blocks.math.HUE = 230;
+Blockly.Blocks.math.HUE = 120;
 Blockly.Blocks.math_number = {
     init: function () {
         this.setHelpUrl(Blockly.Msg.MATH_NUMBER_HELPURL);

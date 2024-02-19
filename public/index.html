@@ -126,32 +126,6 @@
 
 
   <xml id="toolbox" style="display: none">
-    <category name="Logic" colour="40">
-      <block type="controls_if"></block>
-      <block type="logic_compare"></block>
-      <block type="logic_operation"></block>
-      <block type="logic_negate"></block>
-      <block type="logic_null"></block>
-    </category>
-    <category name="Loops" colour="80">
-      <block type="controls_repeat_ext"></block>
-      <block type="controls_whileUntil"></block>
-      <block type="input_switch"></block>
-      <block type="input_case"></block>
-      <block type="input_array"></block>
-    </category>
-    <category name="Math" colour="120">
-      <block type="math_number"></block>
-      <block type="math_arithmetic"></block>
-    </category>
-    <category name="Text" colour="160">
-      <block type="text"></block>
-      <block type="new_text"></block>
-      <block type="variable"></block>
-      <block type="input_variable"></block>
-      <block type="var_stesen"></block>
-    </category>
-    <sep></sep>
     <category name="Input/Output" colour="200">
       <block type="input"></block>
       <block type="break"></block>
@@ -180,34 +154,56 @@
         </value>
       </block>
     </category>
-    <category name="Arduino Parts" colour="20">
-      <block type="led_block"></block>
-      <block type="buzzer"></block>
+    <category name="Selection" colour="40">
+      <block type="controls_if"></block>
+      <block type="logic_compare"></block>
+      <block type="logic_operation"></block>
+      <block type="logic_negate"></block>
+      <block type="logic_null"></block>
     </category>
-    <category name="Arduino Sensor" colour="240">
+    <category name="Loops" colour="80">
+      <block type="controls_repeat_ext"></block>
+      <block type="controls_whileUntil"></block>
+      <block type="input_switch"></block>
+      <block type="input_case"></block>
+      <block type="input_array"></block>
+    </category>
+    <category name="String" colour="160">
+      <block type="text"></block>
+      <!-- <block type="new_text"></block> -->
+      <block type="variable"></block>
+      <block type="input_variable"></block>
+      <!-- <block type="var_stesen"></block> -->
+    </category>
+    <category name="Operator" colour="120">
+      <block type="math_number"></block>
+      <block type="math_arithmetic"></block>
+    </category>
+    <sep></sep>
+    <category name="Motor" colour="280">
+      <block type="servo_motor"></block>
+      <block type="arduino_servo"></block>
+      <block type="arduino_servo_def"></block>
+      <!-- <block type="arduino_motor"></block>
+      <block type="arduino_motorA"></block>
+      <block type="arduino_motorB"></block> -->
+    </category>
+    <category name="Sensor" colour="240">
       <block type="ultrasonic_sensor"></block>
       <block type="ir_sensor"></block>
       <block type="color_sensor"></block>
-      <block type="color_sensor_def"></block>
-      <block type="laser_sensor"></block>
-      <block type="laser_detector"></block>
+      <!-- <block type="color_sensor_def"></block> -->
+      <!-- <block type="laser_sensor"></block>
+      <block type="laser_detector"></block> -->
       <block type="laser_pointer"></block>
     </category>
-    <category name="Pergerakan" colour="280">
-      <block type="servo_motor"></block>
-      <block type="arduino_servo"></block>
-      <block type="arduino_servo_def"></block>
-      <block type="arduino_motor"></block>
-      <block type="arduino_motorA"></block>
-      <block type="arduino_motorB"></block>
+    <category name="LED" colour="360">
+      <block type="led_block"></block>
+      <!-- <block type="buzzer"></block> -->
     </category>
-    <category name="Omni Motor" colour="280">
-      <block type="servo_motor"></block>
-      <block type="arduino_servo"></block>
-      <block type="arduino_servo_def"></block>
-      <block type="arduino_motor"></block>
-      <block type="arduino_motorA"></block>
-      <block type="arduino_motorB"></block>
+    <category name="Buzzer" colour="20">
+      <!-- <block type="led_block"></block> -->
+      <block type="buzzer"></block>
     </category>
     <category name="OLED" colour="60">
       <block type="OLED_display"></block>
@@ -245,7 +241,7 @@
     swal({
       title: 'Selamat Datang!',
       text: 'Mari mula membina robot.',
-      imageUrl: 'picture/robots.jpg',
+      imageUrl: 'picture/akalbot.png',
       imageWidth: 400,
       imageHeight: 200,
       imageAlt: 'Custom image',

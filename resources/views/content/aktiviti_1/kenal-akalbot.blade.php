@@ -15,12 +15,12 @@ $containerNav = 'container-xxl';
   }
 
   /* Add shadow to all cards */
-  .card {
+  /* .card {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-  }
+  } */
 </style>
 
-<body style="background-color: white;">
+<body>
 
 <div class="container">
     <div class="row justify-content-center">

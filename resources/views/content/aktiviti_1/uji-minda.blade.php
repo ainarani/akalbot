@@ -66,7 +66,7 @@ $containerNav = 'container-xxl';
 
 <script>
     // Define correct answers
-    var correctAnswers = {
+    var correctAnswers1_3 = {
         option1: "ya",
         option2: "cara cara",
         option3: "ya"
@@ -74,26 +74,26 @@ $containerNav = 'container-xxl';
     };
 
     // Save correct answers to local storage
-    localStorage.setItem('correctAnswers', JSON.stringify(correctAnswers));
+    localStorage.setItem('correctAnswers1_3', JSON.stringify(correctAnswers1_3));
 
     // Function to save user input to local storage
     function saveUserInput() {
-        var userInput = {
+        var userInput1_3 = {
             option1: $('input[name=option1]:checked').val(),
             option2: $('#option2_text').val(),
             option3: $('input[name=option3]:checked').val()
             // Add other form fields as needed
         };
 
-        localStorage.setItem('userInput', JSON.stringify(userInput));
+        localStorage.setItem('userInput1_3', JSON.stringify(userInput1_3));
     }
 
     // Function to compare user input with correct answers
     function checkAnswers() {
         saveUserInput(); // Save user input before comparing
 
-        var storedCorrectAnswers = JSON.parse(localStorage.getItem('correctAnswers'));
-        var storedUserInput = JSON.parse(localStorage.getItem('userInput'));
+        var storedCorrectAnswers = JSON.parse(localStorage.getItem('correctAnswers1_3'));
+        var storedUserInput = JSON.parse(localStorage.getItem('userInput1_3'));
 
         var isCorrect = true;
         for (var key in storedUserInput) {

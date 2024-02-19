@@ -21,7 +21,6 @@ $containerNav = 'container-xxl';
             <div class="card mb-4">
                 <div class="card-header">
                     <h1 class="m-0 bold-text">2.4 Uji Minda</h1>
-                    <!-- <small class="text-muted">AkalBOT merupakan robot bertayar dua yang bersedia menerima arahan anda untuk bergerak. Otak yang mengawal pergerakan AkalBOT ialah Arduino Nano</small> -->
                 </div>
             </div>
             <div class="card">
@@ -56,10 +55,8 @@ $containerNav = 'container-xxl';
                             </div>
                         </div>
 
-                        <!-- Add other form elements as needed -->
-
                         <h7>Jika berminat, ayuh teruskan langkah ke Aktiviti 2 untuk mengetahui cara mengerakkan AkalBOT menggunakan atur cara. Jika anda tidak berminat, ayuh teruskan juga langkah anda ke Aktiviti 2 , supaya anda tahu yang mengerakkan robot menggunakan atur cara adalah perkara yang menarik untuk dilakukan!</h7> <br>
-                        <button type="button" onclick="saveToLocalStorage()" class="btn btn-primary">Submit</button>
+                        <button type="button" onclick="checkAnswers()" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
             </div>
@@ -68,22 +65,53 @@ $containerNav = 'container-xxl';
 </div>
 
 <script>
-    function saveToLocalStorage() {
-        var formData = {
-            'option1': $('input[name=option1]:checked').val(),
-            'option2': $('#option2_text').val(),
-            'option3': $('input[name=option3]:checked').val()
+    // Define correct answers
+    var correctAnswers2_4 = {
+        option1: "tidak",
+        option2: "cara",
+        option3: "ya"
+        // Add other correct answers as needed
+    };
+
+    // Save correct answers to local storage
+    localStorage.setItem('correctAnswers2_4', JSON.stringify(correctAnswers2_4));
+
+    // Function to save user input to local storage
+    function saveUserInput() {
+        var userInput2_4 = {
+            option1: $('input[name=option1]:checked').val(),
+            option2: $('#option2_text').val(),
+            option3: $('input[name=option3]:checked').val()
             // Add other form fields as needed
         };
 
-        // Convert form data to JSON string
-        var formDataJSON = JSON.stringify(formData);
+        localStorage.setItem('userInput2_4', JSON.stringify(userInput2_4));
+    }
 
-        // Save form data to local storage
-        localStorage.setItem('formData', formDataJSON);
+    // Function to compare user input with correct answers
+    function checkAnswers() {
+        saveUserInput(); // Save user input before comparing
 
-        // Optionally, you can redirect the user or perform other actions here
-        // window.location.href = 'next_page.html';
+        var storedCorrectAnswers = JSON.parse(localStorage.getItem('correctAnswers2_4'));
+        var storedUserInput = JSON.parse(localStorage.getItem('userInput2_4'));
+
+        var isCorrect = true;
+        for (var key in storedUserInput) {
+            if (storedUserInput.hasOwnProperty(key)) {
+                if (storedUserInput[key] !== storedCorrectAnswers[key]) {
+                    isCorrect = false;
+                    break;
+                }
+            }
+        }
+
+        if (isCorrect) {
+            alert("Congratulations! Your answers are correct.");
+            // You can perform additional actions here, such as redirecting the user to a success page.
+        } else {
+            alert("Sorry, some of your answers are incorrect. Please try again.");
+            // You can perform additional actions here, such as highlighting the incorrect answers or providing feedback to the user.
+        }
     }
 </script>
 

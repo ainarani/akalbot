@@ -1,6 +1,7 @@
 <!-- This is to enable/disable navbar -->
 @php
-$isNavbar = false;
+$container = 'container-xxl';
+$containerNav = 'container-xxl';
 @endphp
 
 @extends('layouts/contentNavbarLayout')
@@ -33,7 +34,7 @@ $isNavbar = false;
             </div>
             <div class="col-sm-5 text-center text-sm-right">
                 <div class="card-body pb-0 px-0 px-md-4">
-                    <img src="{{asset('assets/img/illustrations/mbot.png')}}" height="200" alt="View Badge User" data-app-dark-img="illustrations/mbot-dark.png" data-app-light-img="illustrations/mbot.png">
+                    <img src="{{asset('assets/img/logo/smile.png')}}" height="200" alt="View Badge User" data-app-dark-img="logo/smile-dark.png" data-app-light-img="logo/smile.png">
                 </div>
             </div>
         </div>
