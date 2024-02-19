@@ -83,24 +83,107 @@ Lengkapkan <strong>Nama Fungsi</strong> dan <strong>Definisi Fungsi</strong> di 
 </head>
 <body>
 
-<img src="{{asset('assets/img/activity_3/tugasan14.JPG')}}" class="img-fluid" alt="Responsive image">
+<img src="{{asset('assets/img/activity_3/tugasan14a.JPG')}}" class="img-fluid" alt="Responsive image">
+<img src="{{asset('assets/img/activity_3/tugasan14b.JPG')}}" class="img-fluid" alt="Responsive image">
+
 </body>
 </html>
 <p>
   <br>
   Sila nyatakan jawapan di ruang yang disediakan. <br>
 </p>
-<input type="text" id="tugasan14a" name="tugasan14_a" placeholder="(a)" style="width: 500px;"><br><br>
-<input type="text" id="tugasan14b" name="tugasan14_b" placeholder="(b)" style="width: 500px;"><br><br>
-<input type="text" id="tugasan14c" name="tugasan14_c" placeholder="(c)" style="width: 500px;"><br><br>
-<input type="text" id="tugasan14d" name="tugasan14_d" placeholder="(d)" style="width: 500px;"><br><br>
-<input type="text" id="tugasan14e" name="tugasan14_e" placeholder="(e)" style="width: 500px;"><br><br>
-<input type="text" id="tugasan14f" name="tugasan14_f" placeholder="(f)" style="width: 500px;"><br><br>
-<button type="submit" class="btn btn-primary">Submit</button>
+<input type="text" id="tugasan14a" name="tugasan14a" placeholder="(a)" style="width: 500px;"><br><br>
+<input type="text" id="tugasan14b" name="tugasan14b" placeholder="(b)" style="width: 500px;"><br><br>
+<input type="text" id="tugasan14c" name="tugasan14c" placeholder="(c)" style="width: 500px;"><br><br>
+<input type="text" id="tugasan14d" name="tugasan14d" placeholder="(d)" style="width: 500px;"><br><br>
+<input type="text" id="tugasan14e" name="tugasan14e" placeholder="(e)" style="width: 500px;"><br><br>
+<input type="text" id="tugasan14f" name="tugasan14f" placeholder="(f)" style="width: 500px;"><br><br>
+<input type="text" id="tugasan14g" name="tugasan14g" placeholder="(g)" style="width: 500px;"><br><br>
+<input type="text" id="tugasan14h" name="tugasan14h" placeholder="(h)" style="width: 500px;"><br><br>
+<input type="text" id="tugasan14i" name="tugasan14i" placeholder="(i)" style="width: 500px;"><br><br>
+<input type="text" id="tugasan14j" name="tugasan14j" placeholder="(j)" style="width: 500px;"><br><br>
+<input type="text" id="tugasan14k" name="tugasan14k" placeholder="(k)" style="width: 500px;"><br><br>
+<input type="text" id="tugasan14l" name="tugasan14l" placeholder="(l)" style="width: 500px;"><br><br>
+<input type="text" id="tugasan14m" name="tugasan14m" placeholder="(m)" style="width: 500px;"><br><br>
+
+<button type="submit" onclick="checkAnswers()" class="btn btn-primary">Submit</button>
 
 
         <!-- <a href="javascript:void(0)" class="btn btn-outline-primary">Go somewhere</a> -->
       </div>
     </div>
   </div>
+
+
+  <script>
+    // Define correct answers
+    var tugasan14Answers = {
+      tugasan14a: "abc",
+      tugasan14b: "def",
+      tugasan14c: "def", 
+      tugasan14d: "abc",
+      tugasan14e: "def",
+      tugasan14f: "def",        
+      tugasan14g: "abc",
+      tugasan14h: "def",
+      tugasan14i: "def",        
+      tugasan14j: "abc",
+      tugasan14k: "def",
+      tugasan14l: "def",        
+      tugasan14m: "abc",
+                     
+        // Add other correct answers as needed
+    };
+
+    // Save correct answers to local storage
+    localStorage.setItem('tugasan14Answers', JSON.stringify(tugasan14Answers));
+
+    // Function to save user input to local storage
+    function saveTugasan14Input() {
+        var tugasan14Input = { 
+          tugasan14a: $('#tugasan14a').val(),
+          tugasan14b: $('#tugasan14b').val(),
+          tugasan14c: $('#tugasan14c').val(),
+          tugasan14d: $('#tugasan14d').val(),
+          tugasan14e: $('#tugasan14e').val(),
+          tugasan14f: $('#tugasan14f').val(),
+          tugasan14g: $('#tugasan14g').val(),
+          tugasan14h: $('#tugasan14h').val(),
+          tugasan14i: $('#tugasan14i').val(),
+          tugasan14j: $('#tugasan14j').val(),
+          tugasan14k: $('#tugasan14k').val(),
+          tugasan14l: $('#tugasan14l').val(),
+          tugasan14m: $('#tugasan14m').val(),
+          
+        };
+
+        localStorage.setItem('tugasan14Input', JSON.stringify(tugasan14Input));
+    }
+
+    // Function to compare user input with correct answers
+    function checkAnswers() {
+        saveTugasan14Input(); // Save user input before comparing
+
+        var storedTugasan14Answers = JSON.parse(localStorage.getItem('tugasan14Answers'));
+        var storedTugasan14Input = JSON.parse(localStorage.getItem('tugasan14Input'));
+
+        var isCorrect = true;
+        for (var key in storedTugasan14Input) {
+            if (storedTugasan14Input.hasOwnProperty(key)) {
+                if (storedTugasan14Input[key] !== storedTugasan14Answers[key]) {
+                    isCorrect = false;
+                    break;
+                }
+            }
+        }
+
+        if (isCorrect) {
+            alert("Congratulations! Your answers are correct.");
+            // You can perform additional actions here, such as redirecting the user to a success page.
+        } else {
+            alert("Sorry, some of your answers are incorrect. Please try again.");
+            // You can perform additional actions here, such as highlighting the incorrect answers or providing feedback to the user.
+        }
+    }
+</script>
 @endsection
