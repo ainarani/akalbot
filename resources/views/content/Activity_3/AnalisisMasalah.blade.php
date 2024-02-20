@@ -13,11 +13,13 @@ $containerNav = 'container-xxl';
 <h3 class="p-4 bold-text">
 3.2  Analisis Masalah</h3>
 </div>
+
 <div class="row mb-5">
   <div class="col-md-6 col-lg-12 mb-3">
     <div class="card h-100">
       <!-- <img class="card-img-top" src="{{asset('assets/img/elements/2.jpg')}}" alt="Card image cap" /> -->
       <div class="card-body">
+
 <style>
   .center-text {
     text-align: center;
@@ -33,11 +35,12 @@ $containerNav = 'container-xxl';
 
 <h5 class="card-title bold-text">3.2.1  Penguraian </h5>
         <p class="card-text">
-        Masalah utama dalam misi tuju selipar ialah bagaimana untuk menyusun pergerakan AkalBOT 
-supaya berjaya meruntuhkan selipar dengan jarak 60 cm daripada ianya bermula dan terhad 
-kepada tiga jenis pergerakan sahaja. Oleh itu, masalah ini boleh dihuraikan mengikut urutan 
-pergerakan.
+                    Masalah utama dalam misi tuju selipar ialah bagaimana untuk menyusun pergerakan AkalBOT 
+            supaya berjaya meruntuhkan selipar dengan jarak 60 cm daripada ianya bermula dan terhad 
+            kepada tiga jenis pergerakan sahaja. Oleh itu, masalah ini boleh dihuraikan mengikut urutan 
+            pergerakan.
         </p>
+
 
      
 
@@ -45,7 +48,7 @@ pergerakan.
 <p class="card-text bold-text">
   Tugasan 10: <br>
   Buat 3 lorekan pada Rajah 3.2. Berdasarkan lorekan ini, leraikan kod program dalam Rajah 3.3
-kepada 3 leraian dan beri label yang sesuai.</p>
+  kepada 3 leraian dan beri label yang sesuai.</p>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -170,6 +173,7 @@ yang sama dengan membandingkan lukisan anda pada Lukisan A dan Lukisan B.
     </div>
   </div>
 
+
     <!-- local storage stored for tugasan 10_11 -->
 
     <script>
@@ -226,5 +230,6 @@ yang sama dengan membandingkan lukisan anda pada Lukisan A dan Lukisan B.
         }
     }
 </script>
+
 
 @endsection

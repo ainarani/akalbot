@@ -62,7 +62,7 @@
     {
       "name": "Aktiviti 3: Jom kenal pasti reka bentuk yang menggerakkan AkalBOT!",
       "icon": "menu-icon tf-icons bx bx-cube-alt",
-      "slug": "laravel-example",
+      "slug": "Activity_3",
       "submenu": [
         {
           "url": "Activity_3/FasaPembangunan",
@@ -89,7 +89,7 @@
     {
       "name": "Aktiviti 4: Jom gerakkan AkalBOT untuk menang!",
       "icon": "menu-icon tf-icons bx bx bx-dock-top",
-      "slug": "laravel-example",
+      "slug": "Activity_4",
       "submenu": [
         {
           "url": "Activity_4/PerjalananBerbeza",
@@ -106,7 +106,7 @@
     {
       "name": "Aktiviti 5: Anda dah tahu bagaimana AkalBOT boleh bergerak?",
       "icon": "menu-icon tf-icons bx bx-collection",
-      "slug": "laravel-example",
+      "slug": "Activity_5",
       "submenu": [
         {
           "url": "Activity_5/Aturcara",
@@ -118,7 +118,7 @@
     {
       "name": "Lampiran",
       "icon": "menu-icon tf-icons bx bx-collection",
-      "slug": "laravel-example",
+      "slug": "Lampiran",
       "submenu": [
         {
           "url": "Lampiran/Lampiran",
