@@ -58,6 +58,9 @@ use App\Http\Controllers\aktiviti_2\Pengekodan;
 use App\Http\Controllers\aktiviti_2\Pengujian;
 use App\Http\Controllers\aktiviti_2\Permasalahan;
 use App\Http\Controllers\Kuiz\SoalanKuiz;
+use App\Http\Controllers\Form\permainan_form;
+use App\Http\Controllers\Form\pendaftaran_form;
+use App\Http\Controllers\Form\login_form;
 use App\Http\Controllers\aktiviti_2\ujiMinda as Aktiviti_2UjiMinda;
 use App\Http\Controllers\Error\ErrorController;
 
@@ -159,6 +162,11 @@ Route::get('/Kuiz/SoalanKuiz', [SoalanKuiz::class, 'index'])->name('Kuiz-SoalanK
 Route::get('/index', function () {
     return response()->file(public_path('index.html'));
 });
+
+//Form
+Route::get('/Form/permainan_form', [permainan_form::class, 'index'])->name('Form-permainan_form');
+Route::get('/Form/pendaftaran_form', [pendaftaran_form::class, 'index'])->name('Form-pendaftaran_form');
+Route::get('/Form/login_form', [login_form::class, 'index'])->name('Form-login_form');
 
 
 //KUIZ SCREEN

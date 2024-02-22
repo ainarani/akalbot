@@ -1,13 +1,13 @@
-@php
-$container = 'container-xxl';
-$containerNav = 'container-xxl';
-@endphp
-
 @extends('layouts/contentNavbarLayout')
 
 @section('title', 'Without navbar - Layouts')
 
 @section('content')
+@php
+$container = 'container-xxl';
+$containerNav = 'container-xxl';
+@endphp
+
 <style>
   .center-text {
     text-align: center;
@@ -87,6 +87,7 @@ pembangunan atur cara seperti pada Rajah 3.1.
         <!-- <a href="javascript:void(0)" class="btn btn-outline-primary">Go somewhere</a> -->
       </div>
     </div>
+  </div>
   </div>
 
   <!-- local storage stored for tugasan 9 -->

@@ -172,6 +172,8 @@ yang sama dengan membandingkan lukisan anda pada Lukisan A dan Lukisan B.
       </div>
     </div>
   </div>
+  </div>
+ 
 
 
     <!-- local storage stored for tugasan 10_11 -->

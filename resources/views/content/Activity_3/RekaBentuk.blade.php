@@ -85,6 +85,7 @@ Aktiviti 2. </p>
       </div>
     </div>
   </div>
+  </div>
 
   <!-- local storage stored for tugasan 12 -->
 

@@ -156,6 +156,29 @@
       ]
     },
     {
+      "name": "Permainan",
+      "icon": "menu-icon tf-icons bx bx-collection",
+      "slug": "Form",
+      "submenu": [
+        {
+          "url": "Form/permainan_form",
+          "name": "Permainan Form",
+          "slug": "Form-permainan_form"
+        },
+        {
+          "url": "Form/pendaftaran_form",
+          "name": "Pendaftaran Form",
+          "slug": "Form-pendaftaran_form"
+        },
+         {
+          "url": "Form/login_form",
+          "name": "Login Form",
+          "slug": "Form-login_form"
+        }
+       
+      ]
+    },
+    {
       "menuHeader": "Account"
     },
     {

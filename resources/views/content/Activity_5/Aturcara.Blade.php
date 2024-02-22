@@ -146,4 +146,5 @@ untuk AkalBOT?
       </div>
     </div>
   </div>
+  </div>
 @endsection
