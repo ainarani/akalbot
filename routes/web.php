@@ -165,6 +165,7 @@ Route::get('/index', function () {
 
 //Form
 Route::get('/Form/permainan_form', [permainan_form::class, 'index'])->name('Form-permainan_form');
+Route::post('creategame', [permainan_form::class, 'creategame'])->name('creategame');
 Route::get('/Form/pendaftaran_form', [pendaftaran_form::class, 'index'])->name('Form-pendaftaran_form');
 Route::get('/Form/login_form', [login_form::class, 'index'])->name('Form-login_form');
 
@@ -172,3 +173,7 @@ Route::get('/Form/login_form', [login_form::class, 'index'])->name('Form-login_f
 //KUIZ SCREEN
 Route::get('/Error/ErrorController', [ErrorController::class, 'showErrorScreen'])->name('Kuiz-Error');
 // Route::get('/Error/ErrorController', 'ErrorController@showErrorScreen')->name('error');
+
+Route::get('/dbconn', function(){
+    return view('dbconn');
+});

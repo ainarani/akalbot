@@ -145,7 +145,7 @@
     {
       "name": "Kuiz",
       "icon": "menu-icon tf-icons bx bx-collection",
-      "slug": "laravel-example",
+      "slug": "Kuiz",
       "submenu": [
         {
           "url": "Kuiz/SoalanKuiz",
@@ -158,7 +158,7 @@
     {
       "name": "Permainan",
       "icon": "menu-icon tf-icons bx bx-collection",
-      "slug": "Form",
+      "slug": "Permainan",
       "submenu": [
         {
           "url": "Form/permainan_form",
@@ -166,14 +166,52 @@
           "slug": "Form-permainan_form"
         },
         {
-          "url": "Form/pendaftaran_form",
-          "name": "Pendaftaran Form",
-          "slug": "Form-pendaftaran_form"
+          "url": "cards/basic",
+          "name": "Card",
+          "slug": "cards-basic"
         },
          {
-          "url": "Form/login_form",
+          "url": "form/layouts-vertical",
+          "name": "Vertical Form",
+          "slug": "form-layouts-vertical"
+        },
+        {
+          "url": "form/layouts-horizontal",
+          "name": "Horizontal Form",
+          "slug": "form/layouts-horizontal"
+        },
+       {
+          "url": "forms/basic-inputs",
+          "name": "Basic Form",
+          "slug": "forms-basic-inputs"
+        },
+        {
+          "url": "tables/basic",
+          "name": "tables",
+          "slug": "tables-basic"
+        }
+        
+      ]
+    },
+    {
+      "name": "Authentication",
+      "icon": "menu-icon tf-icons bx bx-collection",
+      "slug": "Authentication",
+      "submenu": [
+        {
+          "url": "auth/login-basic",
           "name": "Login Form",
-          "slug": "Form-login_form"
+          "slug": "auth-login-basic"
+        },
+        {
+          "url": "auth/register-basic",
+          "name": "Register Form",
+          "slug": "auth/register-basic"
+        },
+         {
+          "url": "auth/forgot-password-basic",
+          "name": "Forgot Password Form",
+          "slug": "auth-forgot-password-basic"
         }
        
       ]
