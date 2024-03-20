@@ -16,6 +16,7 @@ use App\Http\Controllers\authentications\LoginBasic;
 use App\Http\Controllers\authentications\RegisterBasic;
 use App\Http\Controllers\authentications\ForgotPasswordBasic;
 use App\Http\Controllers\cards\CardBasic;
+use App\Http\Controllers\splashscreen\Splashscreen;
 use App\Http\Controllers\user_interface\Accordion;
 use App\Http\Controllers\user_interface\Alerts;
 use App\Http\Controllers\user_interface\Badges;
@@ -88,6 +89,9 @@ Route::get('/auth/forgot-password-basic', [ForgotPasswordBasic::class, 'index'])
 
 // cards
 Route::get('/cards/basic', [CardBasic::class, 'index'])->name('cards-basic');
+
+//splashscreen
+Route::get('/splash/screen', [Splashscreen::class, 'index'])->name('splash-screen');
 
 // User Interface
 Route::get('/ui/accordion', [Accordion::class, 'index'])->name('ui-accordion');

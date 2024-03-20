@@ -11,6 +11,9 @@
       ]
     },
     {
+      "menuHeader": "Pengenalan"
+    },
+    {
       "name": "Aktiviti 1: Tahu tak bagaimana AkalBOT boleh bergerak?",
       "icon": "menu-icon tf-icons bx bx-layout",
       "slug": "aktiviti_1",
@@ -31,6 +34,9 @@
           "slug": "aktiviti_1-ujiminda"
         }
       ]
+    },
+    {
+      "menuHeader": "Permainan"
     },
     {
       "name": "Aktiviti 2: Jom gerakkan AkalBOT untuk menjatuhkan selipar",
@@ -152,7 +158,6 @@
           "name": "Soalan Kuiz",
           "slug": "Kuiz-SoalanKuiz"
         }
-       
       ]
     },
     {
@@ -213,7 +218,6 @@
           "name": "Forgot Password Form",
           "slug": "auth-forgot-password-basic"
         }
-       
       ]
     },
     {
