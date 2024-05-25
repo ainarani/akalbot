@@ -5,149 +5,104 @@
       "name": "Dashboards",
       "icon": "menu-icon tf-icons bx bx-home-circle",
       "slug": "dashboard-analytics",
-      "badge": [
-        "danger",
-        "Hello!"
-      ]
+      "badge": ["danger", "Hello!"]
     },
     {
       "menuHeader": "Pengenalan"
     },
+   
     {
-      "name": "Aktiviti 1: Tahu tak bagaimana AkalBOT boleh bergerak?",
-      "icon": "menu-icon tf-icons bx bx-layout",
-      "slug": "aktiviti_1",
-      "submenu": [
-        {
-          "url": "aktiviti_1/kenalAkalBot",
-          "name": "1.1 Mengenali AkalBot",
-          "slug": "aktiviti_1-kenalAkalBot"
-        },
-        {
-          "url": "aktiviti_1/caraAkalBotGerak",
-          "name": "1.2 Cara AkalBOT Bergerak",
-          "slug": "aktiviti_1-caraAkalBotGerak"
-        },
-        {
-          "url": "aktiviti_1/ujiMinda",
-          "name": "1.3 Uji Minda",
-          "slug": "aktiviti_1-ujiminda"
-        }
-      ]
+      "url": "aktiviti_1/kenalAkalBot",
+      "icon": "menu-icon tf-icons bx bx-file",
+      "name": "AkalBOT",
+      "slug": "aktiviti_1-kenalAkalBot"
     },
+        {
+      "url": "aktiviti_1/kenalAkalBLOK",
+      "icon": "menu-icon tf-icons bx bx-file",
+      "name": "AkalBLOK",
+      "slug": "aktiviti_1-kenalAkalBLOK"
+    },
+        {
+      "url": "aktiviti_1/kenalEditorArduino",
+      "icon": "menu-icon tf-icons bx bx-file",
+      "name": "Editor Arduino",
+      "slug": "aktiviti_1-kenalEditorArduino"
+
+    },
+        {
+      "url": "aktiviti_1/kenalCartaAlir",
+      "icon": "menu-icon tf-icons bx bx-file",
+      "name": "Carta Alir",
+      "slug": "aktiviti_1-kenalCartaAlir"
+
+    },
+    {
+      "url": "aktiviti_1/kenalEditorArduino",
+      "icon": "menu-icon tf-icons bx bx-file",
+      "name": "Kitaran Permainan",
+      "slug": "aktiviti_1-kenalEditorArduino"
+
+    },
+    
     {
       "menuHeader": "Permainan"
     },
     {
-      "name": "Aktiviti 2: Jom gerakkan AkalBOT untuk menjatuhkan selipar",
-      "icon": "menu-icon tf-icons bx bx-copy",
-      "slug": "aktiviti_2",
+      "name": "Kitar 1: Jom jatuhkan selipar",
+      "icon": "menu-icon tf-icons bx bx-layout",
+      "slug": "Kitar_1",
       "submenu": [
-        {
-          "url": "aktiviti_2/permasalahan",
-          "name": "2.1 Permasalahan",
-          "slug": "aktiviti_2-permasalahan"
-        },
-        {
-          "url": "aktiviti_2/pengekodan",
-          "name": "2.2 Pengekodan",
-          "slug": "aktiviti_2-pengekodan"
-        },
-        {
-          "url": "aktiviti_2/pengujian",
-          "name": "2.3 Pengujian",
-          "slug": "aktiviti_2-pengujian"
-        },
-        {
-          "url": "aktiviti_2/ujiminda",
-          "name": "2.3 Uji Minda",
-          "slug": "aktiviti_2-ujiminda"
+       {
+          "url": "Kitar_1/kitar1_konten",
+          "name": "Jom jatuhkan selipar",
+          "slug": "Kitar_1-kitar1_konten"
         }
+        
       ]
     },
-    {
-      "name": "Aktiviti 3: Jom kenal pasti reka bentuk yang menggerakkan AkalBOT!",
-      "icon": "menu-icon tf-icons bx bx-cube-alt",
-      "slug": "Activity_3",
+     {
+      "name": "Kitar 2: Jom tuju lebih banyak selipar",
+      "icon": "menu-icon tf-icons bx bx-layout",
+      "slug": "Kitar_2",
       "submenu": [
-        {
-          "url": "Activity_3/FasaPembangunan",
-          "name": "3.1 Fasa Pembangunan Aturcara",
-          "slug": "Activity_3-FasaPembangunan"
-        },
-        {
-          "url": "Activity_3/AnalisisMasalah",
-          "name": "3.2  Analisis Masalah",
-          "slug": "Activity_3-AnalisisMasalah"
-        },
-        {
-          "url": "Activity_3/RekaBentuk",
-          "name": "3.3  Reka Bentuk AkalBot Menggunakan Carta Alir",
-          "slug": "Activity_3-RekaBentuk"
-        },
-        {
-          "url": "Activity_3/ImplementasiAlgoritma",
-          "name": "3.4  Implementasi Algortima Kepada Aturcara",
-          "slug": "Activity_3-ImplementasiAlgoritma"
+       {
+          "url": "Kitar_2/kitar2_konten",
+          "name": "Jom tuju lebih banyak selipar",
+          "slug": "Kitar_2-kitar2_konten"
         }
+        
       ]
     },
-    {
-      "name": "Aktiviti 4: Jom gerakkan AkalBOT untuk menang!",
-      "icon": "menu-icon tf-icons bx bx bx-dock-top",
-      "slug": "Activity_4",
+         {
+      "name": "Kitar 3: Jom elak selipar",
+      "icon": "menu-icon tf-icons bx bx-layout",
+      "slug": "Kitar_2",
       "submenu": [
-        {
-          "url": "Activity_4/PerjalananBerbeza",
-          "name": "4.1  Terokai Perjalanan Berbeza",
-          "slug": "Activity_4-PerjalananBerbeza"
-        },
-        {
-          "url": "Activity_4/PerjalananBerhalangan",
-          "name": "4.2  Terokai Perjalanan Berhalangan",
-          "slug": "Activity_4-PerjalananBerhalangan"
+       {
+          "url": "Kitar_2/kitar2_konten",
+          "name": "Jom tuju lebih banyak selipar",
+          "slug": "Kitar_2-kitar2_konten"
         }
+        
       ]
     },
-    {
-      "name": "Aktiviti 5: Anda dah tahu bagaimana AkalBOT boleh bergerak?",
-      "icon": "menu-icon tf-icons bx bx-collection",
-      "slug": "Activity_5",
+         {
+      "name": "Kitar 4: Jom tuju lebih banyak selipar",
+      "icon": "menu-icon tf-icons bx bx-layout",
+      "slug": "Kitar_2",
       "submenu": [
-        {
-          "url": "Activity_5/Aturcara",
-          "name": "5.1  Aturcara",
-          "slug": "Activity_5-Aturcara"
+       {
+          "url": "Kitar_2/kitar2_konten",
+          "name": "Jom tuju lebih banyak selipar",
+          "slug": "Kitar_2-kitar2_konten"
         }
+        
       ]
     },
-    {
-      "name": "Lampiran",
-      "icon": "menu-icon tf-icons bx bx-collection",
-      "slug": "Lampiran",
-      "submenu": [
-        {
-          "url": "Lampiran/Lampiran",
-          "name": "Lampiran A",
-          "slug": "Lampiran-Lampiran"
-        },
-        {
-          "url": "Lampiran/Lampiran",
-          "name": "Lampiran B",
-          "slug": "Lampiran-Lampiran"
-        },
-        {
-          "url": "Lampiran/Lampiran",
-          "name": "Lampiran C",
-          "slug": "Lampiran-Lampiran"
-        },
-        {
-          "url": "Lampiran/Lampiran",
-          "name": "Lampiran D",
-          "slug": "Lampiran-Lampiran"
-        }
-      ]
-    },
+
+
+
     {
       "name": "Kuiz",
       "icon": "menu-icon tf-icons bx bx-collection",
@@ -160,71 +115,18 @@
         }
       ]
     },
+
     {
-      "name": "Permainan",
-      "icon": "menu-icon tf-icons bx bx-collection",
-      "slug": "Permainan",
-      "submenu": [
-        {
-          "url": "Form/permainan_form",
-          "name": "Permainan Form",
-          "slug": "Form-permainan_form"
-        },
-        {
-          "url": "cards/basic",
-          "name": "Card",
-          "slug": "cards-basic"
-        },
-         {
-          "url": "form/layouts-vertical",
-          "name": "Vertical Form",
-          "slug": "form-layouts-vertical"
-        },
-        {
-          "url": "form/layouts-horizontal",
-          "name": "Horizontal Form",
-          "slug": "form/layouts-horizontal"
-        },
-       {
-          "url": "forms/basic-inputs",
-          "name": "Basic Form",
-          "slug": "forms-basic-inputs"
-        },
-        {
-          "url": "tables/basic",
-          "name": "tables",
-          "slug": "tables-basic"
-        }
-        
-      ]
+      "menuHeader": "Sumbangan Idea"
     },
     {
-      "name": "Authentication",
-      "icon": "menu-icon tf-icons bx bx-collection",
-      "slug": "Authentication",
-      "submenu": [
-        {
-          "url": "auth/login-basic",
-          "name": "Login Form",
-          "slug": "auth-login-basic"
-        },
-        {
-          "url": "auth/register-basic",
-          "name": "Register Form",
-          "slug": "auth/register-basic"
-        },
-         {
-          "url": "auth/forgot-password-basic",
-          "name": "Forgot Password Form",
-          "slug": "auth-forgot-password-basic"
-        }
-      ]
+      "name": "Cipta Idea",
+      "icon": "menu-icon tf-icons bx bx bx-dock-top",
+      "url": "pages/account-settings-account",
+      "slug": "pages-account-settings-account"
     },
     {
-      "menuHeader": "Account"
-    },
-    {
-      "name": "Profile",
+      "name": "Semua Idea",
       "icon": "menu-icon tf-icons bx bx bx-dock-top",
       "url": "pages/account-settings-account",
       "slug": "pages-account-settings-account"
@@ -233,18 +135,17 @@
       "menuHeader": "Documentation"
     },
     {
-      "url": "https://github.com/ainarani/akalbot.git",
+      "url": "splash/screen",
       "icon": "menu-icon tf-icons bx bx-support",
-      "name": "About Us",
-      "slug": "support",
-      "target": "_blank"
+      "name": "Splash Screen",
+      "slug": "splash-screen"
+  
     },
-    {
-      "url": "https://github.com/ainarani/akalbot.git",
-      "icon": "menu-icon tf-icons bx bx-file",
-      "name": "Documentation",
-      "slug": "documentation",
-      "target": "_blank"
+ {
+      "name": "Profile",
+      "icon": "menu-icon tf-icons bx bx bx-dock-top",
+      "url": "pages/account-settings-account",
+      "slug": "pages-account-settings-account"
     }
   ]
 }

@@ -27,7 +27,7 @@ $containerNav = 'container-xxl';
         <div class="d-flex align-items-center row">
             <div class="col-sm-7">
                 <div class="card-body">
-                    <h1 class="card-title text-primary">Hello, Welcome to AkalBOT!</h1>
+                    <h1 class="card-title text-primary">Selamat Datang ke AkalBOT !</h1>
                     <p class="mb-4">AkalBOT merupakan robot bertayar dua yang bersedia menerima arahan anda untuk bergerak. Otak yang mengawal pergerakan AkalBOT ialah Arduino Nano.</p>
                     <a href="{{ url('/index') }}" target="_blank" class="btn btn-sm btn-outline-primary">Lanjut</a>
                 </div>
@@ -218,6 +218,7 @@ $containerNav = 'container-xxl';
     <div class="card h-100">
       <div class="card-header d-flex align-items-center justify-content-between pb-0">
         <div class="card-title mb-0">
+
           <h5 class="m-0 me-2">Order Statistics</h5>
           <small class="text-muted">42.82k Total Sales</small>
         </div>
@@ -231,6 +232,10 @@ $containerNav = 'container-xxl';
             <a class="dropdown-item" href="javascript:void(0);">Share</a>
           </div>
         </div>
+        <!-- <div class="card-body pb-0 px-0 px-md-4">
+            <img src="{{asset('assets/img/logo/smile.png')}}" height="200" alt="View Badge User" data-app-dark-img="logo/smile-dark.png" data-app-light-img="logo/smile.png">
+        </div> -->
+
       </div>
       <div class="card-body">
         <div class="d-flex justify-content-between align-items-center mb-3">
@@ -754,7 +759,7 @@ $containerNav = 'container-xxl';
     </table>
   </div>
 </div>
-<!--/ Contextual Classes -->
+ <!-- Contextual Classes -->
 
 <script>
     // Function to increment visitor count and store in local storage

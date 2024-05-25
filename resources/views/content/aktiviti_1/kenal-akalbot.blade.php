@@ -13,6 +13,13 @@ $containerNav = 'container-xxl';
   .bold-text {
     font-weight: bold;
   }
+  .image-container {
+    position: relative;
+}
+
+.image {
+    position: absolute;
+}
 
   /* Add shadow to all cards */
   /* .card {
@@ -25,13 +32,31 @@ $containerNav = 'container-xxl';
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-lg-12">
-            <div class="card mb-4">
+            <!-- <div class="card mb-4">
                 <div class="card-header">
                     <h2 class="m-0 bold-text">1.1 Mengenali AkalBOT</h2>
                 </div>
-            </div>
-            <div class="card">
+            </div> -->
+
+            <!-- <div class = "card">
                 <div class="card-body">
+                <h3>Kitar 1</h3>
+                    <div class="image-container">
+                        <img src="{{asset('assets/img/kenal-akalbot/akalbot-4.png')}}" class="img-fluid" alt="AkalBOT" style="width: 150px; height: auto;">
+                        <img src="{{asset('assets/img/kenal-akalbot/akalbot-4.png')}}" class="img-fluid" alt="AkalBOT" style="width: 150px; height: auto;">                            
+                        <img src="{{asset('assets/img/kenal-akalbot/akalbot-4.png')}}" class="img-fluid" alt="AkalBOT" style="width: 150px; height: auto;">
+                        <img src="{{asset('assets/img/kenal-akalbot/akalbot-4.png')}}" class="img-fluid" alt="AkalBOT" style="width: 150px; height: auto;">                      
+                    </div>
+                </div>
+            </div> -->
+
+            <br>
+            <div class="card">
+
+            
+                <div class="card-body">
+                  <h2 class="m-0 bold-text">Apa itu AkalBOT?</h2>
+                  <br>
                   <p class="text-muted">AkalBOT merupakan robot bertayar dua yang bersedia menerima arahan anda untuk bergerak. Otak yang mengawal pergerakan AkalBOT ialah Arduino Nano</p>
                   <img src="{{asset('assets/img/kenal-akalbot/akalbot-1.png')}}" class="img-fluid" alt="AkalBOT">
                   <div class="layout-demo-info">

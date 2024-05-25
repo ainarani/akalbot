@@ -54,6 +54,10 @@ use App\Http\Controllers\Activity_5\Aturcara;
 use App\Http\Controllers\Lampiran\Lampiran;
 use App\Http\Controllers\aktiviti_1\caraAkalBotGerak;
 use App\Http\Controllers\aktiviti_1\kenalAkalBot;
+use App\Http\Controllers\aktiviti_1\kenalAkalBLOK;
+use App\Http\Controllers\aktiviti_1\kenalEditorArduino;
+use App\Http\Controllers\aktiviti_1\kenalCartaAlir;
+use App\Http\Controllers\aktiviti_1\kitaranPermainan;
 use App\Http\Controllers\aktiviti_1\ujiMinda;
 use App\Http\Controllers\aktiviti_2\Pengekodan;
 use App\Http\Controllers\aktiviti_2\Pengujian;
@@ -64,6 +68,7 @@ use App\Http\Controllers\Form\pendaftaran_form;
 use App\Http\Controllers\Form\login_form;
 use App\Http\Controllers\aktiviti_2\ujiMinda as Aktiviti_2UjiMinda;
 use App\Http\Controllers\Error\ErrorController;
+use App\Http\Controllers\Kitar_1\kitar1_konten;
 
 // Main Page Route
 Route::get('/', [Analytics::class, 'index'])->name('dashboard-analytics');
@@ -150,6 +155,10 @@ Route::get('/Lampiran/Lampiran', [Lampiran::class, 'index'])->name('Lampiran-Lam
 
 // Aktiviti 1
 Route::get('/aktiviti_1/kenalAkalBot', [kenalAkalBot::class, 'index'])->name('aktiviti_1-kenalAkalBot');
+Route::get('/aktiviti_1/kenalAkalBLOK', [kenalAkalBLOK::class, 'index'])->name('aktiviti_1-kenalAkalBLOK');
+Route::get('/aktiviti_1/kenalEditorArduino', [kenalEditorArduino::class, 'index'])->name('aktiviti_1-kenalEditorArduino');
+Route::get('/aktiviti_1/kenalCartaAlir', [kenalCartaAlir::class, 'index'])->name('aktiviti_1-kenalCartaAlir');
+Route::get('/aktiviti_1/kitaranPermainan', [kitaranPermainan::class, 'index'])->name('aktiviti_1-kitaranPermainan');
 Route::get('/aktiviti_1/caraAkalBotGerak', [caraAkalBotGerak::class, 'index'])->name('aktiviti_1-caraAkalBotGerak');
 Route::get('/aktiviti_1/ujiMinda', [ujiMinda::class, 'index'])->name('aktiviti_1-ujiminda');
 
@@ -177,6 +186,12 @@ Route::get('/Form/login_form', [login_form::class, 'index'])->name('Form-login_f
 //KUIZ SCREEN
 Route::get('/Error/ErrorController', [ErrorController::class, 'showErrorScreen'])->name('Kuiz-Error');
 // Route::get('/Error/ErrorController', 'ErrorController@showErrorScreen')->name('error');
+
+//Kitar 1
+Route::get('/Kitar_1/kitar1_konten', [kitar1_konten::class, 'index'])->name('Kitar_1-kitar1_konten');
+
+//Kitar 2
+Route::get('/Kitar_2/kitar2_konten', [kitar2_konten::class, 'index'])->name('Kitar_2-kitar2_konten');
 
 Route::get('/dbconn', function(){
     return view('dbconn');
