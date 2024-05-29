@@ -1,5 +1,33 @@
 <!-- This is to enable/disable navbar -->
 @php
+$videos = [
+    [
+        "id" => "9ycY8jLrL4s",
+        "title" => "How to *actually* apply blush #makeup #makeuptips #makeuphacks",
+        "thumbnail" => "https://i.ytimg.com/vi/9ycY8jLrL4s/oardefault.jpg?sqp=-oaymwEdCJUDENAFSFWQAgHyq4qpAwwIARUAAIhCcAHAAQY=&amp;rs=AOn4CLD6Gq5DTn36OdPrfEcHsF9XHe9VMA",
+        "views" => "2M"
+    ],
+    [
+        "id" => "xZk9nXuPgjo",
+        "title" => "Amazing Nature #wildlife #nature",
+        "thumbnail" => "https://i.ytimg.com/vi/xZk9nXuPgjo/oardefault.jpg?sqp=-oaymwEdCJUDENAFSFWQAgHyq4qpAwwIARUAAIhCcAHAAQY=&amp;rs=AOn4CLD6Gq5DTn36OdPrfEcHsF9XHe9VMA",
+        "views" => "10M"
+    ],
+    [
+        "id" => "9ycY8jLrL4s",
+        "title" => "Amazing Nature #wildlife #nature",
+        "thumbnail" => "https://i.ytimg.com/vi/9ycY8jLrL4s/oardefault.jpg?sqp=-oaymwEdCJUDENAFSFWQAgHyq4qpAwwIARUAAIhCcAHAAQY=&amp;rs=AOn4CLD6Gq5DTn36OdPrfEcHsF9XHe9VMA",
+        "views" => "1.5M"
+    ],
+    [
+        "id" => "xZk9nXuPgjo",
+        "title" => "Amazing Nature #wildlife #nature",
+        "thumbnail" => "https://i.ytimg.com/vi/xZk9nXuPgjo/oardefault.jpg?sqp=-oaymwEdCJUDENAFSFWQAgHyq4qpAwwIARUAAIhCcAHAAQY=&amp;rs=AOn4CLD6Gq5DTn36OdPrfEcHsF9XHe9VMA",
+        "views" => "1.5M"
+    ],
+
+];
+
 $container = 'container-xxl';
 $containerNav = 'container-xxl';
 @endphp
@@ -213,8 +241,29 @@ $containerNav = 'container-xxl';
   </div> -->
 </div>
 <div class="row">
-  <!-- Order Statistics -->
-  <div class="col-md-6 col-lg-4 col-xl-4 order-0 mb-4">
+  <!-- Compilation Video -->
+
+  <div class="col-md-6 col-lg-4 col-xl-8 order-0 mb-4">
+    <div class="card h-100">
+        <div class="card-header d-flex align-items-center justify-content-between pb-0">
+            <div class="card-title mb-0">
+                <h5 class="m-0 me-2">Compilation Video</h5>
+                <br>
+            </div>
+        </div>
+        <div class="card-body">
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+                <iframe src="https://www.youtube.com/embed/L8S89BCjQvo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+  <!-- Compilation Video -->
+
+
+
+<!-- order statistic -->
+  <!-- <div class="col-md-6 col-lg-4 col-xl-8 order-0 mb-4">
     <div class="card h-100">
       <div class="card-header d-flex align-items-center justify-content-between pb-0">
         <div class="card-title mb-0">
@@ -232,15 +281,10 @@ $containerNav = 'container-xxl';
             <a class="dropdown-item" href="javascript:void(0);">Share</a>
           </div>
         </div>
-        <!-- <div class="card-body pb-0 px-0 px-md-4">
-            <img src="{{asset('assets/img/logo/smile.png')}}" height="200" alt="View Badge User" data-app-dark-img="logo/smile-dark.png" data-app-light-img="logo/smile.png">
-        </div> -->
-
       </div>
       <div class="card-body">
         <div class="d-flex justify-content-between align-items-center mb-3">
           <div class="d-flex flex-column align-items-center gap-1">
-            <!-- <h2 class="mb-2">8,258</h2> -->
             <h2 class="mb-2" id="visitorCount">8,258</h2>
             <span>Total Visitors</span>
           </div>
@@ -306,11 +350,12 @@ $containerNav = 'container-xxl';
         </ul>
       </div>
     </div>
-  </div>
-  <!--/ Order Statistics -->
+  </div> -->
+  <!-- order statistic -->
+
 
   <!-- Expense Overview -->
-  <div class="col-md-6 col-lg-4 order-1 mb-4">
+  <!-- <div class="col-md-6 col-lg-4 order-1 mb-4">
     <div class="card h-100">
       <div class="card-header">
         <ul class="nav nav-pills" role="tablist">
@@ -357,14 +402,14 @@ $containerNav = 'container-xxl';
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!--/ Expense Overview -->
 
   <!-- Transactions -->
-  <div class="col-md-6 col-lg-4 order-2 mb-4">
+  <!-- <div class="col-md-6 col-lg-4 order-2 mb-4">
     <div class="card h-100">
       <div class="card-header d-flex align-items-center justify-content-between">
-        <h5 class="card-title m-0 me-2">Transactions</h5>
+        <h5 class="card-title m-0 me-2">Game Statistics</h5>
         <div class="dropdown">
           <button class="btn p-0" type="button" id="transactionID" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="bx bx-dots-vertical-rounded"></i>
@@ -465,13 +510,68 @@ $containerNav = 'container-xxl';
         </ul>
       </div>
     </div>
-  </div>
+  </div> -->
   <!--/ Transactions -->
+
+<!-- game statistics -->
+  <div class="col-md-6 col-lg-4 col-xl-4 order-0 mb-4">
+    <div class="card h-100">
+        <div class="card-header d-flex align-items-center justify-content-between pb-0">
+            <div class="card-title mb-0">
+                <h5 class="m-0 me-2">Game Statistics</h5>
+            </div>
+            <div class="dropdown">
+                <button class="btn p-0" type="button" id="orderStatistics" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="bx bx-dots-vertical-rounded"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="orderStatistics">
+                    <a class="dropdown-item" href="javascript:void(0);">Select All</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Refresh</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Share</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+            <div class="mb-3" id="orderStatisticsChart"></div>
+            <ul class="p-0 m-0">
+                <li class="d-flex mb-4 pb-1">
+                    <div class="avatar flex-shrink-0 me-3">
+                        <span class="avatar-initial rounded bg-label-primary"><i class='bx bx-mobile-alt'></i></span>
+                    </div>
+                    <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                        <div class="me-2">
+                            <h6 class="mb-0">Game Approved</h6>
+                            <small class="text-muted">Baling Selipar, TengTeng, etc</small>
+                        </div>
+                        <div class="user-progress">
+                            <small class="fw-medium">25</small>
+                        </div>
+                    </div>
+                </li>
+                <li class="d-flex">
+                    <div class="avatar flex-shrink-0 me-3">
+                        <span class="avatar-initial rounded bg-label-secondary"><i class='bx bx-football'></i></span>
+                    </div>
+                    <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                        <div class="me-2">
+                            <h6 class="mb-0">Game Submitted</h6>
+                            <small class="text-muted">Baling Selipar, TengTeng, etc</small>
+                        </div>
+                        <div class="user-progress">
+                            <small class="fw-medium">14</small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+  <!-- game statistics -->
 </div>
 
 <!-- table -->
 
-<div class="card">
+<!-- <div class="card">
   <h5 class="card-header">Contextual Classes</h5>
   <div class="table-responsive text-nowrap">
     <table class="table">
@@ -758,7 +858,21 @@ $containerNav = 'container-xxl';
       </tbody>
     </table>
   </div>
+</div> -->
+
+<div class="card">
+  <h5 class="card-header">Community Akalbot</h5>
+  <div class="container my-4">
+    <div class="row">
+      <?php foreach ($videos as $video): ?>
+        <div class="col-md-6 col-lg-3">
+              <iframe width="300" height="594" src="https://www.youtube.com/embed/<?php echo htmlspecialchars($video['id']); ?>" title="<?php echo htmlspecialchars($video['title']); ?>" frameborder="0" allowfullscreen></iframe>
+        </div>
+      <?php endforeach; ?>
+    </div>
+  </div>
 </div>
+
  <!-- Contextual Classes -->
 
 <script>
