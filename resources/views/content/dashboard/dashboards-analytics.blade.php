@@ -25,7 +25,19 @@ $videos = [
         "thumbnail" => "https://i.ytimg.com/vi/xZk9nXuPgjo/oardefault.jpg?sqp=-oaymwEdCJUDENAFSFWQAgHyq4qpAwwIARUAAIhCcAHAAQY=&amp;rs=AOn4CLD6Gq5DTn36OdPrfEcHsF9XHe9VMA",
         "views" => "1.5M"
     ],
-
+    [
+        "id" => "9ycY8jLrL4s",
+        "title" => "Amazing Nature #wildlife #nature",
+        "thumbnail" => "https://i.ytimg.com/vi/9ycY8jLrL4s/oardefault.jpg?sqp=-oaymwEdCJUDENAFSFWQAgHyq4qpAwwIARUAAIhCcAHAAQY=&amp;rs=AOn4CLD6Gq5DTn36OdPrfEcHsF9XHe9VMA",
+        "views" => "1.5M"
+    ],
+    [
+        "id" => "xZk9nXuPgjo",
+        "title" => "Amazing Nature #wildlife #nature",
+        "thumbnail" => "https://i.ytimg.com/vi/xZk9nXuPgjo/oardefault.jpg?sqp=-oaymwEdCJUDENAFSFWQAgHyq4qpAwwIARUAAIhCcAHAAQY=&amp;rs=AOn4CLD6Gq5DTn36OdPrfEcHsF9XHe9VMA",
+        "views" => "1.5M"
+    ],
+    
 ];
 
 $container = 'container-xxl';
@@ -240,25 +252,32 @@ $containerNav = 'container-xxl';
     </div>
   </div> -->
 </div>
+
 <div class="row">
   <!-- Compilation Video -->
-
   <div class="col-md-6 col-lg-4 col-xl-8 order-0 mb-4">
     <div class="card h-100">
-        <div class="card-header d-flex align-items-center justify-content-between pb-0">
-            <div class="card-title mb-0">
-                <h5 class="m-0 me-2">Compilation Video</h5>
-                <br>
-            </div>
+      <div class="card-header d-flex align-items-center justify-content-between pb-0">
+        <div class="card-title mb-0">
+          <h5 class="m-0 me-2">Compilation Video</h5>
+          <br>
         </div>
-        <div class="card-body">
-            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
-                <iframe src="https://www.youtube.com/embed/L8S89BCjQvo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+      </div>
+      <div class="card-body">
+        <div id="video-container" class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+          <iframe 
+            class="video-iframe"  
+            src="https://www.youtube.com/embed/L8S89BCjQvo" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+            frameborder="0" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
         </div>
+      </div>
     </div>
-</div>
-  <!-- Compilation Video -->
+  </div>
+<!-- Compilation Video -->
 
 
 
@@ -860,15 +879,30 @@ $containerNav = 'container-xxl';
   </div>
 </div> -->
 
-<div class="card">
-  <h5 class="card-header">Community Akalbot</h5>
-  <div class="container my-4">
-    <div class="row">
-      <?php foreach ($videos as $video): ?>
-        <div class="col-md-6 col-lg-3">
-              <iframe width="300" height="594" src="https://www.youtube.com/embed/<?php echo htmlspecialchars($video['id']); ?>" title="<?php echo htmlspecialchars($video['title']); ?>" frameborder="0" allowfullscreen></iframe>
+<div class="row">
+  <div class="col-md-6 col-lg-4 col-xl-12 order-0 mb-4">
+    <div class="card h-120">
+      <h5 class="card-header">Community Akalbot</h5>
+      <div class="container my-4">
+        <div class="row g-2">
+          <?php foreach ($videos as $video): ?>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="ratio ratio-9x16">
+                <iframe 
+                  id="video-<?php echo htmlspecialchars($video['id']); ?>" 
+                  class="video-iframe" 
+                  style="border-radius: 20px" 
+                  src="https://www.youtube.com/embed/<?php echo htmlspecialchars($video['id']); ?>" 
+                  title="<?php echo htmlspecialchars($video['title']); ?>" 
+                  allowfullscreen
+                  autoplay="0"
+                  muted="1"
+                ></iframe>
+              </div>
+            </div>
+          <?php endforeach; ?>
         </div>
-      <?php endforeach; ?>
+      </div>
     </div>
   </div>
 </div>
@@ -876,6 +910,29 @@ $containerNav = 'container-xxl';
  <!-- Contextual Classes -->
 
 <script>
+
+//function to autoplay hover on shorts video
+  document.addEventListener('DOMContentLoaded', function() {
+      const videoIframes = document.querySelectorAll('.video-iframe');
+
+      videoIframes.forEach(function(iframe) {
+        iframe.addEventListener('mouseenter', function() {
+          const src = iframe.getAttribute('src');
+          if (src.indexOf('?') > -1) {
+            iframe.setAttribute('src', src + '&autoplay=1');
+          } else {
+            iframe.setAttribute('src', src + '?autoplay=1');
+          }
+        });
+
+        iframe.addEventListener('mouseleave', function() {
+          const src = iframe.getAttribute('src');
+          iframe.setAttribute('src', src.replace('&autoplay=1', '').replace('?autoplay=1', ''));
+        });
+      });
+    });
+
+
     // Function to increment visitor count and store in local storage
     function incrementVisitorCount() {
         if (localStorage.getItem('visitorCount')) {
