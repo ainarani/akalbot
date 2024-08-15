@@ -19,6 +19,8 @@ return new class extends Migration
             $table->string('gambar_hasilkod');
             $table->string('uji_minda');
             $table->string('pautan_video');
+                        $table->string('hello_test');
+
             $table->timestamps();
         });
     }
