@@ -193,6 +193,10 @@ Route::get('/Kitar_1/kitar1_konten', [kitar1_konten::class, 'index'])->name('Kit
 //Kitar 2
 Route::get('/Kitar_2/kitar2_konten', [kitar2_konten::class, 'index'])->name('Kitar_2-kitar2_konten');
 
+//Kitar 3
+Route::get('/Kitar_3/kitar3_konten', [kitar2_konten::class, 'index'])->name('Kitar_3-kitar3_konten');
+
+
 Route::get('/dbconn', function(){
     return view('dbconn');
 });

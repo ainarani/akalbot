@@ -10,41 +10,38 @@
     {
       "menuHeader": "Pengenalan"
     },
-   
+
     {
       "url": "aktiviti_1/kenalAkalBot",
       "icon": "menu-icon tf-icons bx bx-file",
       "name": "AkalBOT",
       "slug": "aktiviti_1-kenalAkalBot"
     },
-        {
+    {
       "url": "aktiviti_1/kenalAkalBLOK",
       "icon": "menu-icon tf-icons bx bx-file",
       "name": "AkalBLOK",
       "slug": "aktiviti_1-kenalAkalBLOK"
     },
-        {
+    {
       "url": "aktiviti_1/kenalEditorArduino",
       "icon": "menu-icon tf-icons bx bx-file",
       "name": "Editor Arduino",
       "slug": "aktiviti_1-kenalEditorArduino"
-
     },
-        {
+    {
       "url": "aktiviti_1/kenalCartaAlir",
       "icon": "menu-icon tf-icons bx bx-file",
       "name": "Carta Alir",
       "slug": "aktiviti_1-kenalCartaAlir"
-
     },
     {
       "url": "aktiviti_1/kenalEditorArduino",
       "icon": "menu-icon tf-icons bx bx-file",
       "name": "Kitaran Permainan",
       "slug": "aktiviti_1-kenalEditorArduino"
-
     },
-    
+
     {
       "menuHeader": "Permainan"
     },
@@ -53,55 +50,49 @@
       "icon": "menu-icon tf-icons bx bx-layout",
       "slug": "Kitar_1",
       "submenu": [
-       {
+        {
           "url": "Kitar_1/kitar1_konten",
           "name": "Jom jatuhkan selipar",
           "slug": "Kitar_1-kitar1_konten"
         }
-        
       ]
     },
-     {
+    {
       "name": "Kitar 2: Jom tuju lebih banyak selipar",
       "icon": "menu-icon tf-icons bx bx-layout",
       "slug": "Kitar_2",
       "submenu": [
-       {
+        {
           "url": "Kitar_2/kitar2_konten",
           "name": "Jom tuju lebih banyak selipar",
           "slug": "Kitar_2-kitar2_konten"
         }
-        
       ]
     },
-         {
+    {
       "name": "Kitar 3: Jom elak selipar",
       "icon": "menu-icon tf-icons bx bx-layout",
-      "slug": "Kitar_2",
+      "slug": "Kitar_3",
       "submenu": [
-       {
-          "url": "Kitar_2/kitar2_konten",
+        {
+          "url": "Kitar_3/kitar3_konten",
           "name": "Jom tuju lebih banyak selipar",
-          "slug": "Kitar_2-kitar2_konten"
+          "slug": "Kitar_3-kitar3_konten"
         }
-        
       ]
     },
-         {
+    {
       "name": "Kitar 4: Jom tuju lebih banyak selipar",
       "icon": "menu-icon tf-icons bx bx-layout",
       "slug": "Kitar_2",
       "submenu": [
-       {
+        {
           "url": "Kitar_2/kitar2_konten",
           "name": "Jom tuju lebih banyak selipar",
           "slug": "Kitar_2-kitar2_konten"
         }
-        
       ]
     },
-
-
 
     {
       "name": "Kuiz",
@@ -139,9 +130,8 @@
       "icon": "menu-icon tf-icons bx bx-support",
       "name": "Splash Screen",
       "slug": "splash-screen"
-  
     },
- {
+    {
       "name": "Profile",
       "icon": "menu-icon tf-icons bx bx bx-dock-top",
       "url": "pages/account-settings-account",
