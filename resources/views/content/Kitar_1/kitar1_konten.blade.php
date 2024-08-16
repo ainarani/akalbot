@@ -65,8 +65,75 @@ $containerNav = 'container-xxl';
 .arrow {
     margin-left: 5px;
 }
+.timeline {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .step {
+            text-align: center;
+            position: relative;
+        }
+        .step::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #ccc;
+            top: 25px;
+            left: 50%;
+            z-index: -1;
+        }
+        .step:last-child::after {
+            display: none;
+        }
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 10px;
+        }
+        .step-text {
+            font-weight: bold;
+        }
 
 </style>
+
+<script>
+function showExplanation(image) {
+    // Hide all explanation cards
+    var explanationCards = document.getElementsByClassName('explanation-card');
+    for (var i = 0; i < explanationCards.length; i++) {
+        explanationCards[i].style.display = 'none';
+    }
+
+    // Show the explanation card corresponding to the clicked image or timeline step
+    var explanationCard = document.getElementById('explanation-' + image);
+    if (explanationCard) {
+        explanationCard.style.display = 'block';
+        // Scroll to the explanation card
+        explanationCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+}
+
+// Add click event listeners to timeline steps
+document.addEventListener('DOMContentLoaded', function() {
+    var timelineSteps = document.querySelectorAll('.timeline .step');
+    timelineSteps.forEach(function(step) {
+        step.addEventListener('click', function() {
+            var stepId = this.id.split('-')[1];
+            showExplanation(stepId);
+        });
+    });
+});</script>
 
 <body>
 
@@ -74,23 +141,35 @@ $containerNav = 'container-xxl';
     <div class="row justify-content-center">
         <div class="col-lg-12">
 
-            <div class="card">
+            <div class="timeline">
+                <?php
+                $steps = ["Berfikir", "Lakukan", "Uji", "Renung"];
+                foreach ($steps as $index => $step) {
+                echo "<div class='step' id='step-" .
+                    strtolower($step) .
+                    "'>
+                    <div class='step-number'>" .
+                    ($index + 1) .
+                    "</div>
+                    <div class='step-text'>$step</div>
+                </div>";
+                }
+                ?>
+            </div>
+            <!-- <div class="card">
                 <div class="card-body">
                     <h2>Jom Jatuhkan Selipar !!!</h2>
                    <div class="card mb-3">
                         <div class="card-body">
                             <div class="image-container">
-                                <!-- Image at the top -->
                                 <div class="image-wrapper" onclick="showExplanation('berfikir')">
                                     <img src="{{ asset('assets/img/kitar_1/berfikir.JPG') }}" class="img-fluid" alt="AkalBOT">
                                     <h5>Berfikir</h5>
                                 </div>                 
-                                <!-- Images in the center -->
                                 <div class="d-flex justify-content-between w-100">
                                     <div class="image-wrapper" onclick="showExplanation('merenung')">
                                         <img src="{{ asset('assets/img/kitar_1/merenung.JPG') }}" class="img-fluid" alt="AkalBOT">
                                         <h5>Merenung</h5>
-                                        <!-- <h5><i>(Observation)</i></h5> -->
 
 
                                     </div>
@@ -100,30 +179,20 @@ $containerNav = 'container-xxl';
                                         <h5>Lakukan</h5>
                                     </div>
                                 </div>
-                                <!-- Image at the bottom -->
                                 <div class="image-wrapper" onclick="showExplanation('uji')">
                                     <img src="{{ asset('assets/img/kitar_1/uji.JPG') }}" class="img-fluid" alt="AkalBOT">
-                                    <!-- GIF -->
                                     <h5>Menguji</h5>
                                     <img src="{{ asset('assets/img/kitar_1/left_arrow.gif') }}" class="gif" alt="GIF">
                                     
                                 </div>
 
-                                <!-- <div class="image-wrapper" onclick="showExplanation('uji')">
-                                    <div class="image-content">
-                                        <img src="{{ asset('assets/img/kitar_1/uji.JPG') }}" class="img-fluid" alt="AkalBOT" style="width: 200px; height: auto;">        
-                                        <h5>Uji</h5> 
-                                     
-                                        <img src="{{ asset('assets/img/kitar_1/left_arrow.gif') }}" class="gif" alt="GIF">
-                                    </div>
-                                </div>
-                                 -->
+                                
 
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <br>
 
             <!-- Explanation cards -->
@@ -319,7 +388,7 @@ $containerNav = 'container-xxl';
 
             <!-- MERENUNG -->
 
-            <div class="explanation-card" id="explanation-merenung">
+            <div class="explanation-card" id="explanation-renung">
                 <div class="card">
                     <div class="card-body">
                         <h4>4. Merenung</h4>
