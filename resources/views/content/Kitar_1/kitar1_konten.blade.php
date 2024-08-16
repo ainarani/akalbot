@@ -61,6 +61,9 @@ $containerNav = 'container-xxl';
     text-decoration: underline;
     cursor: pointer;
 }
+.step.active .step-number {
+    background-color: #00008B; /* Dark blue color */
+}
 
 .arrow {
     margin-left: 5px;
@@ -108,6 +111,25 @@ $containerNav = 'container-xxl';
 </style>
 
 <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    var timelineSteps = document.querySelectorAll('.timeline .step');
+    timelineSteps.forEach(function(step) {
+        step.addEventListener('click', function() {
+            // Remove active class from all steps
+            timelineSteps.forEach(function(s) {
+                s.classList.remove('active');
+            });
+            
+            // Add active class to clicked step
+            this.classList.add('active');
+            
+            var stepId = this.id.split('-')[1];
+            showExplanation(stepId);
+        });
+    });
+});
+
 function showExplanation(image) {
     // Hide all explanation cards
     var explanationCards = document.getElementsByClassName('explanation-card');
@@ -123,17 +145,7 @@ function showExplanation(image) {
         explanationCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 }
-
-// Add click event listeners to timeline steps
-document.addEventListener('DOMContentLoaded', function() {
-    var timelineSteps = document.querySelectorAll('.timeline .step');
-    timelineSteps.forEach(function(step) {
-        step.addEventListener('click', function() {
-            var stepId = this.id.split('-')[1];
-            showExplanation(stepId);
-        });
-    });
-});</script>
+</script>
 
 <body>
 
@@ -145,7 +157,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <?php
                 $steps = ["Berfikir", "Lakukan", "Uji", "Renung"];
                 foreach ($steps as $index => $step) {
-                echo "<div class='step' id='step-" .
+                  echo "<div class='step' id='step-" .
                     strtolower($step) .
                     "'>
                     <div class='step-number'>" .
@@ -197,9 +209,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
             <!-- Explanation cards -->
             <div class="explanation-card" id="explanation-berfikir">
-                <div class="card">
-                    <div class="card-body">
-                    <h4 class="card-title">1. Berfikir</h4>
+                <div class="">
+                    <div class="">
+                    <h4 class="">1. Berfikir</h4>
         
                         <div class="card mb-3">
                             <div class="card-body">
@@ -309,11 +321,11 @@ document.addEventListener('DOMContentLoaded', function() {
             <!-- LAKUKAN -->
 
             <div class="explanation-card" id="explanation-lakukan">
-                <div class="card">
-                    <div class="card-body">
+                <div class="">
+                    <div class="">
                         <h4>2. Lakukan</h4>
-                        <h5 class="card-subtitle mb-2">Pengekodan</h5>
-                        <p class="card-text text-muted">Algoritma dalam bentuk carta alir yang dibangunkan dalam fasa reka bentuk merupakan asas untuk fasa pengekodan dengan menggunakan bahasa pengaturcaraan yang sesuai. Bahasa yang digunakan untuk implementasi algoritma ialah  C++. Bahasa ini digunakan untuk memberi arahan kepada AkalBOT untuk bergerak bagi menjatuhkan selipar. Arahan ini dipanggil atur cara. AkalBOT tidak boleh berfikir sendiri, kita yang mengatur pergerakan AkalBOT menggunakan atur cara. Mari kita lakukan pengekodan iaitu membangunkan kod atur cara menggunakan AkalBLOK.</p>
+                        <h5 class="mb-2">Pengekodan</h5>
+                        <p class="text-muted">Algoritma dalam bentuk carta alir yang dibangunkan dalam fasa reka bentuk merupakan asas untuk fasa pengekodan dengan menggunakan bahasa pengaturcaraan yang sesuai. Bahasa yang digunakan untuk implementasi algoritma ialah  C++. Bahasa ini digunakan untuk memberi arahan kepada AkalBOT untuk bergerak bagi menjatuhkan selipar. Arahan ini dipanggil atur cara. AkalBOT tidak boleh berfikir sendiri, kita yang mengatur pergerakan AkalBOT menggunakan atur cara. Mari kita lakukan pengekodan iaitu membangunkan kod atur cara menggunakan AkalBLOK.</p>
                         
                         <div class="card cardLakukan">
                             <div class="card-body">
@@ -389,10 +401,10 @@ document.addEventListener('DOMContentLoaded', function() {
             <!-- MERENUNG -->
 
             <div class="explanation-card" id="explanation-renung">
-                <div class="card">
-                    <div class="card-body">
+                <div class="">
+                    <div class="">
                         <h4>4. Merenung</h4>
-                        <h5 class="card-subtitle mb-2"></h5>
+                        <h5 class="mb-2"></h5>
                         <!-- <p class="card-text text-muted">Mari uji bagaimana atur cara yang dibangunkan dapat mengerakkan AkalBOT untuk menjatuhkan selipar. </p> -->
                         <div class="card mb-3">
                             <div class="card-body">
