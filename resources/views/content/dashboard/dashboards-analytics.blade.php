@@ -1,6 +1,6 @@
 <!-- This is to enable/disable navbar 
-CHECKING CODE FUNSTIONAL 
--->
+CHECKING CODE FUNSTIONAL  -->
+
 @php
 $videos = [
     [
