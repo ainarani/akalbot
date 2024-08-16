@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Kitar_2;
+namespace App\Http\Controllers\Kitar_3;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class kitar2_konten extends Controller
+class kitar3_konten extends Controller
 {
   public function index()
   {

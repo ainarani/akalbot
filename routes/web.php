@@ -67,8 +67,12 @@ use App\Http\Controllers\Form\permainan_form;
 use App\Http\Controllers\Form\pendaftaran_form;
 use App\Http\Controllers\Form\login_form;
 use App\Http\Controllers\aktiviti_2\ujiMinda as Aktiviti_2UjiMinda;
+use App\Http\Controllers\community\communityPage;
 use App\Http\Controllers\Error\ErrorController;
 use App\Http\Controllers\Kitar_1\kitar1_konten;
+use App\Http\Controllers\Kitar_2\kitar2_konten;
+use App\Http\Controllers\Kitar_3\kitar2_konten as Kitar_3Kitar2_konten;
+use App\Http\Controllers\Kitar_3\kitar3_konten;
 
 // Main Page Route
 Route::get('/', [Analytics::class, 'index'])->name('dashboard-analytics');
@@ -195,6 +199,9 @@ Route::get('/Kitar_2/kitar2_konten', [kitar2_konten::class, 'index'])->name('Kit
 
 //Kitar 3
 Route::get('/Kitar_3/kitar3_konten', [kitar3_konten::class, 'index'])->name('Kitar_3-kitar3_konten');
+
+//community
+Route::get('/community/communityPage', [communityPage::class, 'index'])->name('community-communityPage');
 
 
 Route::get('/dbconn', function(){

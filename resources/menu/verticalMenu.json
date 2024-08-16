@@ -5,12 +5,14 @@
       "name": "Dashboards",
       "icon": "menu-icon tf-icons bx bx-home-circle",
       "slug": "dashboard-analytics",
-      "badge": ["danger", "Hello!"]
+      "badge": [
+        "danger",
+        "Hello!"
+      ]
     },
     {
       "menuHeader": "Pengenalan"
     },
-
     {
       "url": "aktiviti_1/kenalAkalBot",
       "icon": "menu-icon tf-icons bx bx-file",
@@ -41,7 +43,6 @@
       "name": "Kitaran Permainan",
       "slug": "aktiviti_1-kenalEditorArduino"
     },
-
     {
       "menuHeader": "Permainan"
     },
@@ -93,7 +94,6 @@
         }
       ]
     },
-
     {
       "name": "Kuiz",
       "icon": "menu-icon tf-icons bx bx-collection",
@@ -106,7 +106,6 @@
         }
       ]
     },
-
     {
       "menuHeader": "Sumbangan Idea"
     },
@@ -136,6 +135,12 @@
       "icon": "menu-icon tf-icons bx bx bx-dock-top",
       "url": "pages/account-settings-account",
       "slug": "pages-account-settings-account"
+    },
+    {
+      "name": "Community",
+      "icon": "menu-icon tf-icons bx bx bx-dock-top",
+      "url": "community/communityPage",
+      "slug": "community-communityPage"
     }
   ]
 }
