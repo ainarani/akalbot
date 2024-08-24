@@ -88,9 +88,33 @@
       "slug": "Kitar_2",
       "submenu": [
         {
-          "url": "Kitar_2/kitar2_konten",
+          "url": "cards/basic",
           "name": "Jom tuju lebih banyak selipar",
-          "slug": "Kitar_2-kitar2_konten"
+          "slug": "cards-basic"
+        }
+      ]
+    },
+    {
+      "name": "Kitar 4: Jom tuju lebih banyak selipar",
+      "icon": "menu-icon tf-icons bx bx-layout",
+      "slug": "Kitar_2",
+      "submenu": [
+        {
+          "url": "tables/basic",
+          "name": "Jom tuju lebih banyak selipar",
+          "slug": "tables-basic"
+        }
+      ]
+    },
+    {
+      "name": "Kitar 4: Jom tuju lebih banyak selipar",
+      "icon": "menu-icon tf-icons bx bx-layout",
+      "slug": "Kitar_2",
+      "submenu": [
+        {
+          "url": "ui/collapse",
+          "name": "Jom tuju lebih banyak selipar",
+          "slug": "ui-collapse"
         }
       ]
     },
