@@ -275,7 +275,7 @@ function showExplanation(image) {
                                 </p>
 
                                 <div class="d-grid d-sm-flex p-3 border">
-                                    <img src="{{asset('assets/img/kitar_3/keadaan1.jpg')}}" alt="collapse-image" height="125" class="me-4 mb-sm-0 mb-2">
+                                    <img src="{{asset('assets/img/kitar_3/keadaan1.jpg')}}" alt="collapse-image" height="250" class="me-4 mb-sm-0 mb-2">
                                     <span>
                                     <p>Keadaan Pertama:</p>
                                     <ul>
@@ -298,7 +298,7 @@ function showExplanation(image) {
                                 <br>
 
                                 <div class="d-grid d-sm-flex p-3 border">
-                                    <img src="{{asset('assets/img/kitar_3/pengesanan1.jpg')}}" alt="collapse-image" height="125" class="me-4 mb-sm-0 mb-2">
+                                    <img src="{{asset('assets/img/kitar_3/pengesanan1.jpg')}}" alt="collapse-image" height="250" class="me-4 mb-sm-0 mb-2">
                                     <span>
                                        Pengesanan selipar kali pertama iaitu pada lokasi pertama, perlu memaparkan mesej amaran pada OLED dan bunyikan buzzer tapi tidak perlu menjatuhkan selipar. Hanya perlu elak.
                                     </span>
@@ -308,7 +308,7 @@ function showExplanation(image) {
                                     <span>
                                     Pengesanan selipar kali kedua iaitu pada lokasi kedua, perlu melanggar selipar dan berhenti selepas berjaya menjatuhkannya. Buzzer turut dibunyikan bersama paparan mesej berjaya pada OLED.
                                     </span>
-                                    <img src="{{asset('assets/img/kitar_3/pengesanan2.jpg')}}" alt="collapse-image" height="125" class="me-4 mb-sm-0 mb-2">
+                                    <img src="{{asset('assets/img/kitar_3/pengesanan2.jpg')}}" alt="collapse-image" height="250" class="me-4 mb-sm-0 mb-2">
                                 </div>
 
                             </div>     
@@ -317,7 +317,7 @@ function showExplanation(image) {
                         <!-- end analisis masalah -->
 
                         <!-- reka bentuk -->
-                        <br>
+                        <!-- <br>
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">Reka bentuk atur cara</h5>
@@ -334,7 +334,7 @@ function showExplanation(image) {
                                 </div>
                               
                             </div>
-                        </div>
+                        </div> -->
                         <!-- end reka bentuk -->
                     
                     </div>
@@ -362,7 +362,7 @@ function showExplanation(image) {
                         </ul>
                         
                         <p>Misi kali ini memerlukan anda menghasilkan satu aturcara baharu atau mengedit aturcara yang dihasilkan melalui akalBLOK. Atur cara yang dihasilkan menggunakan akalblok ini adalah untuk carta alir pada seksyen sebelum ini.  Aturcara ini perlu ditambah baik supaya misi ketiga dicapai.</p>
-                        <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_3/lakukan.jpg') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
+                        <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_3/lakukan.jpg') }}" alt="Masalah 2" style="width: 350px; height: auto; display: none;">
 
                     </div>
                     <p>
@@ -372,22 +372,24 @@ function showExplanation(image) {
                     <p>Sebagai pelajar: “Saya pelajar sekolah menengah, bantu saya untuk memahami kod ini:”
                        Anda perlu salin dan tampal (copy & paste) kod yang terhasil dalam akalBLOK dalam chatGPT
                     </p>
-                    <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_3/chatGPT1.jpg') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
+                    <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_3/chatGPT1.jpg') }}" alt="Masalah 2" style="width: 350px; height: auto; display: none;"> <br>
                     <p>Sebagai guru: “Sebagai seorang guru di Malaysia, terangkan kod ini supaya pelajar faham konsep if yang digunakan”
 
                     Anda perlu salin dan tampal (copy & paste) kod yang terhasil dalam akalBLOK dalam chatGPT
                     </p>
-                    <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_3/chatGPT2.jpg') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
+                    <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_3/chatGPT2.jpg') }}" alt="Masalah 2" style="width: 350px; height: auto; display: none;">
+                     <br>
                      <p>Jom tonton video menggunakan chatGPT</p>   
-                     <div id="video-container" class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
-                        <iframe 
-                            class="video-iframe"  
-                            src="https://www.youtube.com/embed/L8S89BCjQvo" 
-                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
-                            frameborder="0" 
-                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
+                     <div class="video-container" style="width: 100%; height: 100%;">
+                    <iframe 
+                        class="video-iframe" 
+                        width="100%" 
+                        height="100%" 
+                        src="" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
                     </div>
                     <br>             
                 </div>
@@ -451,16 +453,17 @@ function showExplanation(image) {
                         Saya pelajar sekolah menengah dan sedang memperbaiki kod untuk robot yang menggunakan arduino. [nyatakan masalah kod anda di sini. Contohnya: Robot ini tidak berjaya mengelak selipar pada lokasi pertama]. Tunjuk pada bahagian mana yang perlu ditambah baik dan nyatakan sebabnya.
                         </p>
                         <p>Mari tonton video robot yang berjaya mengelak selipar pada lokasi pertama dan menjatuhkan selipar pada lokasi kedua.</p>
-                        <div id="video-container" class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
-                            <iframe 
-                                class="video-iframe"  
-                                src="https://www.youtube.com/embed/L8S89BCjQvo" 
-                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
-                                frameborder="0" 
-                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen>
-                            </iframe>
-                        </div>                       
+                        <div class="video-container" style="width: 100%; height: 100%;">
+                        <iframe 
+                            class="video-iframe" 
+                            width="100%" 
+                            height="100%" 
+                            src="" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                        </div>                     
                          <br>
                         <p>⭐ Jika anda telah berjaya menjatuhkan selipar, tahniah diucapkan !!!!!</p>
                     </div>

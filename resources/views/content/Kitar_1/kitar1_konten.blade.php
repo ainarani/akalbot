@@ -339,13 +339,14 @@ function showExplanation(image) {
                                 <img class="card-img-top mx-auto d-block img-fluid" src="{{ asset('assets/img/kitar_1/lakukan_pengekodan.JPG') }}" alt="Masalah 1">
                                 <br>
                                 <h5 class="card-title">Mari lihat video dibawah </h5>
-                                <div id="video-container" class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+                                <div class="video-container" style="width: 100%; height: 100%;">
                                     <iframe 
-                                        class="video-iframe"  
-                                        src="{ asset('assets/img/kitar_1/lakukan_pengekodan2.JPG') }}" 
-                                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                                        class="video-iframe" 
+                                        width="100%" 
+                                        height="100%" 
+                                        src="https://www.youtube.com/watch?v=OR2j0kqYUK0" 
                                         frameborder="0" 
-                                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                                         allowfullscreen>
                                     </iframe>
                                 </div>
@@ -545,6 +546,26 @@ document.addEventListener("DOMContentLoaded", function() {
                 jawapanImage.style.display = 'none';
             }
         });
+    });
+
+      document.addEventListener('DOMContentLoaded', function() {
+      const videoIframes = document.querySelectorAll('.video-iframe');
+
+      videoIframes.forEach(function(iframe) {
+        iframe.addEventListener('mouseenter', function() {
+          const src = iframe.getAttribute('src');
+          if (src.indexOf('?') > -1) {
+            iframe.setAttribute('src', src + '&autoplay=1');
+          } else {
+            iframe.setAttribute('src', src + '?autoplay=1');
+          }
+        });
+
+        iframe.addEventListener('mouseleave', function() {
+          const src = iframe.getAttribute('src');
+          iframe.setAttribute('src', src.replace('&autoplay=1', '').replace('?autoplay=1', ''));
+        });
+      });
     });
 
 </script>

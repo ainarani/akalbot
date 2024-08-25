@@ -372,33 +372,39 @@ function showExplanation(image) {
                             <span style="font-size: 24px;">📋</span>
                             <strong>Uji:</strong> Susun padang permainan supaya sesuai dengan laluan AkalBOT. Kemudian, susun selipar secara menegak pada dua lokasi yang telah anda rancang. 
                          </p>
-                         <img src="{{ asset('assets/img/kitar_2/uji1.jpg') }}" class="img-fluid" alt="AkalBOT">
+                         <img class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_2/uji1.jpg') }}" style="width: 250px; height: auto; display: none;"> <br>
+
                          <p>
                             <span style="font-size: 24px;">📋</span>
                             <strong>Uji:</strong> Dengan menggunakan Editor Arduino, kompil atur cara yang dibangunkan. Rujuk bahagian Kompil Aturcara untuk langkah menguji atur cara.  
                          </p>
                          <p>Letak AkalBot pada padang permainan. Larikan AkalBOT dengan menekan butang ON. Pastikan bateri AkalBOT mencukupi.</p>
-                         <img src="{{ asset('assets/img/kitar_2/uji2.jpg') }}" class="img-fluid" alt="AkalBOT">
+                         <img class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_2/uji2.jpg') }}" style="width: 250px; height: auto; display: none;"> <br>
+
                         <p>Pengujian tidak berjaya? Teruskan usaha 💪</p>
-                        <img src="{{ asset('assets/img/kitar_2/uji3.jpg') }}" class="img-fluid" alt="AkalBOT">
+                         <img class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_2/uji3.jpg') }}" style="width: 300px; height: auto; display: none;"> <br>
+
                         <p>
                             <span style="font-size: 24px;">📋</span>
                             <strong>Uji:</strong> Jika anda tidak berjaya menjatuhkan selipar menggunakan AkalBOT, ubahsuai urutan pergerakan dan nilai pada blok delay. Uji semula sehingga berjaya. 
                          </p>
-                        <img src="{{ asset('assets/img/kitar_2/uji4.jpg') }}" class="img-fluid" alt="AkalBOT">
+                         <img class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_2/uji4.jpg') }}" style="width: 250px; height: auto; display: none;"> <br>
+
 
 
                          <p>Mari tonton video rakan yang telah berjaya selepas mengubahsuai atur cara berkali-kali:</p>
-                         <div id="video-container" class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+                        <div class="video-container" style="width: 100%; height: 100%;">
                             <iframe 
-                                class="video-iframe"  
-                                src="https://www.youtube.com/embed/L8S89BCjQvo" 
-                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                                class="video-iframe" 
+                                width="100%" 
+                                height="100%" 
+                                src="https://www.youtube.com/watch?v=fa5KzJCz7Ow" 
                                 frameborder="0" 
-                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                                 allowfullscreen>
                             </iframe>
                         </div>
+                        
                         <br>
                         <p>
                             <span style="font-size: 24px;">📋</span>
@@ -430,11 +436,14 @@ function showExplanation(image) {
                                 <div style="display: flex; justify-content: center; align-items: center; text-align: center;">
                                     <div style="flex: 1; margin-right: 10px;">
                                         <p>Contoh 1: Susunan Lokasi</p>
-                                        <img src="{{ asset('assets/img/kitar_2/contoh1.jpg') }}" class="img-fluid" alt="AkalBOT">
+                                       <img class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_2/contoh1.jpg') }}" style="width: 250px; height: auto; display: none;"> <br>
+
+                                        
                                     </div>
                                     <div style="flex: 1; margin-left: 10px;">
                                         <p>Contoh 2: Susunan Lokasi</p>
-                                        <img src="{{ asset('assets/img/kitar_2/contoh2.jpg') }}" class="img-fluid" alt="AkalBOT">
+                                        <img class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_2/contoh2.jpg') }}" style="width: 350px; height: auto; display: none;"> <br>
+
                                     </div>
                                 </div>
 
@@ -485,12 +494,15 @@ function showExplanation(image) {
                                         <strong>Tenung:</strong>Cuba renungkan bagaimana AkalBOT boleh memaparkan mesej. Anda boleh mengubah mesej pada arahan berikut di editor Arduino:
                                     </p>
                                     <p><code>display.println("TUJU SELIPAR!");</code></p>
-                                    <img src="{{ asset('assets/img/kitar_2/tujuSelipar.jpg') }}" class="img-fluid" alt="AkalBOT">
+                                    <img class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_2/tujuSelipar.jpg') }}" style="width: 350px; height: auto; display: none;"> <br>
+
                                     <p>
                                         <span style="font-size: 24px;">&#128064;</span>
                                         <strong>Tenung:</strong>Bagaimana jika ada tiga lokasi selipar, apa perubahan yang perlu dilakukan? 
                                     </p>
                                     <p>Contoh corak pengerakan untuk tiga lokasi selipar.</p>
+                                    <img class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_2/corak.jpg') }}" style="width: 250px; height: auto; display: none;"> <br>
+
                                     <p>
                                         <span style="font-size: 24px;">&#128064;</span>
                                         <strong>Tenung:</strong>Bagaimana pula jika AkalBOT perlu mengelak objek ketika sedang bergerak untuk menuju selipar? Adakah komponen sensor seperti mata AkalBOT ini boleh digunakan? 

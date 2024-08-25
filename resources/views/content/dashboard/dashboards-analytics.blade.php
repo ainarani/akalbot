@@ -266,14 +266,15 @@ $containerNav = 'container-xxl';
         </div>
       </div>
       <div class="card-body">
-        <div id="video-container" class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+        <div class="video-container" style="width: 100%; height: 100%;">
           <iframe 
-            class="video-iframe"  
-            src="https://www.youtube.com/embed/L8S89BCjQvo" 
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
-            frameborder="0" 
-            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
+              class="video-iframe" 
+              width="100%" 
+              height="100%" 
+              src="https://www.youtube.com/embed/wMZ3r_KXRco" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
           </iframe>
         </div>
       </div>
@@ -947,20 +948,20 @@ $containerNav = 'container-xxl';
     }
 
     // Function to retrieve and display visitor count from local storage
-    function displayVisitorCount() {
-        var count = localStorage.getItem('visitorCount');
-        if (count) {
-            document.getElementById('visitorCount').innerText = count;
-        } else {
-            document.getElementById('visitorCount').innerText = '0';
-        }
-    }
+    // function displayVisitorCount() {
+    //     var count = localStorage.getItem('visitorCount');
+    //     if (count) {
+    //         document.getElementById('visitorCount').innerText = count;
+    //     } else {
+    //         document.getElementById('visitorCount').innerText = '0';
+    //     }
+    // }
 
     // Call the function to increment visitor count when the page loads
-    incrementVisitorCount();
+    // incrementVisitorCount();
 
     // Call the function to display visitor count when the page loads
-    displayVisitorCount();
+    // displayVisitorCount();
 </script>
 
 @endsection
