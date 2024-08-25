@@ -248,9 +248,9 @@ function showExplanation(image) {
 
                                 <p>Tambah nyalaan LED apabila sampai ke selipar pertama (bonus 5 markah)</p>
                                 <p>Penambahan Nyalaan LED</p>
-                                <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_3/bonus.jpg') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
+                                <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_3/bonus.jpg') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;"> <br>
                                  <p>Blok LED dalam AkalBLOK</p>
-                                 <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_3/bonus_LED.jpg') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
+                                 <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_3/bonus_LED.jpg') }}" alt="Masalah 2" style="width: 50%; height: auto; display: none;">
                                 
 
                             </div>
