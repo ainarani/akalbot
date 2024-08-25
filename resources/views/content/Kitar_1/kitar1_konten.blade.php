@@ -261,8 +261,8 @@ function showExplanation(image) {
                                 <h6 class="card-subtitle mb-2 text-muted"><strong>Penguraian</strong></h6>
                                 <p class="card-text text-muted"><strong>Masalah utama</strong> dalam misi tuju selipar ialah bagaimana untuk menyusun pergerakan AkalBOT supaya berjaya meruntuhkan selipar dengan jarak 60 cm daripada ianya bermula dan terhad kepada tiga jenis pergerakan sahaja. Oleh itu, masalah ini boleh dihuraikan mengikut urutan pergerakan.</p>
                                 <br>
-                               <p class="card-text text-muted">Berapakah huraian pergerakan yang terhasil?</p>
-<p class="card-text text-muted jawapan">Jawapan <span class="arrow">&#9660;</span></p>
+                                <p class="card-text text-muted">Berapakah huraian pergerakan yang terhasil?</p>
+                                <p class="card-text text-muted jawapan">Jawapan <span class="arrow">&#9660;</span></p>
                                 <div id="tableContainer" style="display: none;">
                                     <table class="table">
                                         <tbody>
@@ -307,8 +307,8 @@ function showExplanation(image) {
                                 <p class="card-text text-muted">Berdasarkan huraian pergerakan, langkah demi langkah untuk menyelesaikan masalah iaitu <strong>algoritma</strong> perlu dikenal pasti. Untuk menggambarkan algoritma menggunakan bentuk tertentu, carta alir boleh digunakan. Carta alir terdiri daripada bentuk tertentu untuk mengambarkan fungsinya. Rujuk CARTA ALIR  untuk belajar mengenai bentuk dalam carta alir. Contohnya bentuk segi empat tepat adalah menunjukkan aksi.</p>  
                                 <p class="card-text text-muted">Apakah langkah yang perlu untuk melengkapkan carta alir ini?</p>
                                     <img class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_1/rekabentuksoalan.JPG') }}" alt="Masalah 2" style="width: 250px; height: auto;">
-<p class="card-text text-muted jawapan">Jawapan <span class="arrow">&#9660;</span></p>
-<img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_1/rekabentukjawapan.JPG') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
+                                    <p class="card-text text-muted jawapan">Jawapan <span class="arrow">&#9660;</span></p>
+                                    <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_1/rekabentukjawapan.JPG') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
 
                             </div>
                         </div>
@@ -339,11 +339,22 @@ function showExplanation(image) {
                                 <img class="card-img-top mx-auto d-block img-fluid" src="{{ asset('assets/img/kitar_1/lakukan_pengekodan.JPG') }}" alt="Masalah 1">
                                 <br>
                                 <h5 class="card-title">Mari lihat video dibawah </h5>
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <video autoplay loop muted playsinline class="embed-responsive-item">
+                                <div id="video-container" class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+                                    <iframe 
+                                        class="video-iframe"  
+                                        src="{ asset('assets/img/kitar_1/lakukan_pengekodan2.JPG') }}" 
+                                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                                        frameborder="0" 
+                                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                                <br>
+                                <!-- <div class="embed-responsive embed-responsive-16by9"> -->
+                                    <!-- <video autoplay loop muted playsinline class="embed-responsive-item">
                                         <source src="{{asset('assets/img/kitar_1/video1_akalBLOK.mp4')}}" type="video/mp4">
                                     </video>
-                                </div>
+                                </div> -->
                                 <p class="card-text text-muted">Selepas mengabungkan semua blok, perhatikan kod yang membentuk atur cara lengkap di sebelah kanan editor.</p>
                                 <img class="card-img-top mx-auto d-block img-fluid" src="{{ asset('assets/img/kitar_1/lakukan_pengekodan2.JPG') }}" alt="Masalah 1">
                             </div>

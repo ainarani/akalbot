@@ -487,19 +487,82 @@ function showExplanation(image) {
                                         JIKA jarak antara objek dan robot kurang daripada 30 cm, maka robot akan berhenti. 
                                         </p>                                    
                                     </span>
-                                    <img src="{{asset('assets/img/kitar_3/renung.jpg')}}" alt="collapse-image" height="125" class="me-4 mb-sm-0 mb-2">
+                                    <img src="{{asset('assets/img/kitar_3/renung.jpg')}}" alt="collapse-image" height=300 class="me-4 mb-sm-0 mb-2">
                                 </div>
                                 <br>
                                 <p>
                                 <span style="font-size: 24px;">&#128064;</span>
-                                <strong>Tenung : </strong>Cuba renungkan bagaimana AkalBOT boleh mengesan dan mengelak objek menggunakan sensor ultrasonik? <br>
-                                Sebenarnya anda boleh menukar jarak antara objek dengan pengesan dengan menukar nilai dalam pernyataan if ini: <br>
-                                if (DM < 60 && DM > 30) <br>
-                                Lihat bagaimana nilai DM ini perolehi daripada fungsi berikut: <br>
-                                DM = checkdistance(); <br>
+                                <strong>Tenung : </strong>Cuba renungkan bagaimana AkalBOT boleh mengesan dan mengelak objek menggunakan sensor ultrasonik? 
+                                Sebenarnya anda boleh menukar jarak antara objek dengan pengesan dengan menukar nilai dalam pernyataan if ini: <br> <br>
+                                if (DM < 60 && DM > 30) <br> <br>
+                                Lihat bagaimana nilai DM ini perolehi daripada fungsi berikut: <br> <br>
+                                DM = checkdistance(); <br> <br>
 
                                 </p>
                                
+                                <table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 80%; text-align: left;">
+                                    <thead style="background-color: #f2f2f2;">
+                                        <tr>
+                                            <th style="padding: 10px;">Library</th>
+                                            <th style="padding: 10px;">Code</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr style="border: 1px solid black;">
+                                            <td style="padding: 10px;">Pemboleh Ubah</td>
+                                            <td style="padding: 10px;">
+                                                <span><code>
+                                                    const int TriggerPin = 2;<br>
+                                                    const int EchoPin = 4;<br>
+                                                    long DM = 0;<br>
+                                                </code></span>
+                                            </td>
+                                        </tr>
+                                        <tr style="border: 1px solid black;">
+                                            <td style="padding: 10px;">void setup ()</td>
+                                            <td style="padding: 10px;">
+                                                <span><code>
+                                                    //setup untuk Ultrasonik<br>
+                                                    pinMode(TriggerPin, OUTPUT);<br>
+                                                    pinMode(EchoPin, INPUT);
+                                                </code></span>
+                                            </td>
+                                        </tr>
+                                        <tr style="border: 1px solid black;">
+                                            <td style="padding: 10px;">void loop ()</td>
+                                            <td style="padding: 10px;">
+                                                <span><code>
+                                                    DM = checkdistance();<br>
+                                                    if (DM < 60 && DM > 30) {<br>
+                                                        Serial.println("JAGA!");<br>
+                                                        Serial.println(DM);<br>
+                                                    } else {<br>
+                                                        Serial.println("Misi mencari lokasi diteruskan");<br>
+                                                        Serial.println(DM);<br>
+                                                    }
+                                                </code></span>
+                                            </td>
+                                        </tr>
+                                        <tr style="border: 1px solid black;">
+                                            <td style="padding: 10px;">Fungsi</td>
+                                            <td style="padding: 10px;">
+                                                <span><code>
+                                                    float checkdistance() {<br>
+                                                    digitalWrite(2, LOW);<br>
+                                                    delayMicroseconds(2);<br>
+                                                    digitalWrite(2, HIGH);<br>
+                                                    delayMicroseconds(10);<br>
+                                                    digitalWrite(2, LOW);<br>
+                                                    float distance = pulseIn(4, HIGH) / 58.00;<br>
+                                                    delay(10);<br>
+                                                    return distance;<br>
+                                                    }
+                                                </code></span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br>
 
 
 
@@ -508,7 +571,7 @@ function showExplanation(image) {
                                 <strong>Tenung : </strong>Bagaimana pula jika AkalBOT perlu mengelak objek ketika sedang bergerak untuk menuju selipar menggunakan sensor lain iaitu infrared sensor (IR)? Apakah perbezaan IR sensor ini dengan ulrasonik sensor?
                                 </p>
                           
-                                <img src="{{asset('assets/img/kitar_3/sensor.jpg')}}" alt="collapse-image" height="125" class="me-4 mb-sm-0 mb-2">
+                                <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_3/sensor.jpg') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
                                 
                             </div>
                         </div>
