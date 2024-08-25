@@ -218,7 +218,11 @@ function showExplanation(image) {
                                 <h5 class="card-subtitle mb-2">Masalah</h5>
 
                                 <p>Jom sahut cabaran untuk mengarahkan AkalBOT dalam misi untuk mengesan selipar musuh pada lokasi yang pertama untuk mengeluarkan amaran dan kemudian bergerak menuju ke lokasi kedua untuk mengesan dan menjatuhkan selipar.  </p>
+                                <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_3/masalah1.jpg') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
+                                
                                 <p>Anda perlu menggunakan sensor ultrasonik untuk mengesan kedudukan selipar. Anda akan menentukan sendiri corak perjalanan AkalBOT bagi mengesan dan menjatuhkan selipar dengan menyusun papan padang permainan berdasarkan nilai setiap papan. </p>
+                                <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_3/masalah2.jpg') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
+                                
                                 <p>
                                     Gunakan kreativiti anda untuk menyusun papan tersebut supaya hasil tambah nilai papan yang dilalui AkalBOT mesti melebihi 75 markah. Peraturan permainan ialah:
                                 </p>
@@ -237,16 +241,16 @@ function showExplanation(image) {
                                     Jika anda bertanding dengan rakan anda, pemenang adalah yang mendapat markah yang tertinggi iaitu hasil tambah papan yang dilalui AkalBOT dengan tambahan LED (markah bonus) dalam tempoh yang paling singkat. Semoga berjaya!
                                 </p>
                                 <p>Contoh pergerakan yang tersasar! Sepatutnya akalBot tidak melanggar selipar musuh pada lokasi pertama, hanya memberi amaran sahaja dan kemudian mengundur untuk menuju ke lokasi kedua.</p>
-                                <img src="{{ asset('assets/img/kitar_1/left_arrow.gif') }}" class="gif" alt="GIF">
+                                <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_3/masalah3.jpg') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
                                 <p>
                                     &#9734; BONUS 
                                 </p>
 
                                 <p>Tambah nyalaan LED apabila sampai ke selipar pertama (bonus 5 markah)</p>
                                 <p>Penambahan Nyalaan LED</p>
-                                <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_1/rekabentukjawapan.JPG') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
+                                <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_3/bonus.jpg') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
                                  <p>Blok LED dalam AkalBLOK</p>
-                                 <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_1/rekabentukjawapan.JPG') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
+                                 <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_3/bonus_LED.jpg') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
                                 
 
                             </div>
@@ -271,7 +275,7 @@ function showExplanation(image) {
                                 </p>
 
                                 <div class="d-grid d-sm-flex p-3 border">
-                                    <img src="{{asset('assets/img/elements/2.jpg')}}" alt="collapse-image" height="125" class="me-4 mb-sm-0 mb-2">
+                                    <img src="{{asset('assets/img/kitar_3/keadaan1.jpg')}}" alt="collapse-image" height="125" class="me-4 mb-sm-0 mb-2">
                                     <span>
                                     <p>Keadaan Pertama:</p>
                                     <ul>
@@ -294,7 +298,7 @@ function showExplanation(image) {
                                 <br>
 
                                 <div class="d-grid d-sm-flex p-3 border">
-                                    <img src="{{asset('assets/img/elements/2.jpg')}}" alt="collapse-image" height="125" class="me-4 mb-sm-0 mb-2">
+                                    <img src="{{asset('assets/img/kitar_3/pengesanan1.jpg')}}" alt="collapse-image" height="125" class="me-4 mb-sm-0 mb-2">
                                     <span>
                                        Pengesanan selipar kali pertama iaitu pada lokasi pertama, perlu memaparkan mesej amaran pada OLED dan bunyikan buzzer tapi tidak perlu menjatuhkan selipar. Hanya perlu elak.
                                     </span>
@@ -304,7 +308,7 @@ function showExplanation(image) {
                                     <span>
                                     Pengesanan selipar kali kedua iaitu pada lokasi kedua, perlu melanggar selipar dan berhenti selepas berjaya menjatuhkannya. Buzzer turut dibunyikan bersama paparan mesej berjaya pada OLED.
                                     </span>
-                                    <img src="{{asset('assets/img/elements/2.jpg')}}" alt="collapse-image" height="125" class="me-4 mb-sm-0 mb-2">
+                                    <img src="{{asset('assets/img/kitar_3/pengesanan2.jpg')}}" alt="collapse-image" height="125" class="me-4 mb-sm-0 mb-2">
                                 </div>
 
                             </div>     
@@ -358,7 +362,7 @@ function showExplanation(image) {
                         </ul>
                         
                         <p>Misi kali ini memerlukan anda menghasilkan satu aturcara baharu atau mengedit aturcara yang dihasilkan melalui akalBLOK. Atur cara yang dihasilkan menggunakan akalblok ini adalah untuk carta alir pada seksyen sebelum ini.  Aturcara ini perlu ditambah baik supaya misi ketiga dicapai.</p>
-                        <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_1/rekabentukjawapan.JPG') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
+                        <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_3/lakukan.jpg') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
 
                     </div>
                     <p>
@@ -368,12 +372,12 @@ function showExplanation(image) {
                     <p>Sebagai pelajar: “Saya pelajar sekolah menengah, bantu saya untuk memahami kod ini:”
                        Anda perlu salin dan tampal (copy & paste) kod yang terhasil dalam akalBLOK dalam chatGPT
                     </p>
-                    <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_1/rekabentukjawapan.JPG') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
+                    <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_3/chatGPT1.jpg') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
                     <p>Sebagai guru: “Sebagai seorang guru di Malaysia, terangkan kod ini supaya pelajar faham konsep if yang digunakan”
 
                     Anda perlu salin dan tampal (copy & paste) kod yang terhasil dalam akalBLOK dalam chatGPT
                     </p>
-                    <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_1/rekabentukjawapan.JPG') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
+                    <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_3/chatGPT2.jpg') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
                      <p>Jom tonton video menggunakan chatGPT</p>   
                      <div id="video-container" class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
                         <iframe 
@@ -405,9 +409,9 @@ function showExplanation(image) {
                          </p>
 
                          <p>Contoh susunan pertama iaitu selipar boleh berada diluar padang permainan kerana Akalbot hanya perlu mengelak untuk lokasi pertama</p>
-                         <img src="{{ asset('assets/img/kitar_1/merenung.JPG') }}" class="img-fluid" alt="AkalBOT">
+                         <img src="{{ asset('assets/img/kitar_3/uji1.jpg') }}" class="img-fluid" alt="AkalBOT">
                         <p>Contoh susunan kedua iaitu kedua-dua lokasi selipar di atas padang permainan. </p>
-                        <img src="{{ asset('assets/img/kitar_1/merenung.JPG') }}" class="img-fluid" alt="AkalBOT">
+                        <img src="{{ asset('assets/img/kitar_3/uji2.jpg') }}" class="img-fluid" alt="AkalBOT">
                         
                         <p>
                             <span style="font-size: 24px;">📋</span>
@@ -415,7 +419,7 @@ function showExplanation(image) {
                          </p>
 
                          <p>Letak AkalBot pada padang permainan. Larikan AkalBOT dengan menekan butang ON. Pastikan bateri AkalBOT mencukupi</p>
-                        <img src="{{ asset('assets/img/kitar_1/merenung.JPG') }}" class="img-fluid" alt="AkalBOT">
+                        <img src="{{ asset('assets/img/kitar_3/uji3.jpg') }}" class="img-fluid" alt="AkalBOT">
                          
                         <p>
                             <span style="font-size: 24px;">📋</span>
@@ -439,7 +443,7 @@ function showExplanation(image) {
                                 Akalbot boleh mengelak dan menjatuhkan selipar pada lokasi yang sama? Perlu tambah baik arahan kod selepas pengesanan selipar pertama !                                
                                 </p>                                  
                             </span>
-                            <img src="{{asset('assets/img/elements/2.jpg')}}" alt="collapse-image" height="125" class="me-4 mb-sm-0 mb-2">
+                            <img src="{{asset('assets/img/kitar_3/uji4.jpg')}}" alt="collapse-image" height="125" class="me-4 mb-sm-0 mb-2">
                         </div>
                         <br>
                         <p>Anda boleh menggunakan chatbot AI untuk mendapatkan pandangan bagi memperbaiki kod. Anda boleh bagi arahan seperti berikut untuk berkomunikasi dengan AI:
@@ -447,8 +451,17 @@ function showExplanation(image) {
                         Saya pelajar sekolah menengah dan sedang memperbaiki kod untuk robot yang menggunakan arduino. [nyatakan masalah kod anda di sini. Contohnya: Robot ini tidak berjaya mengelak selipar pada lokasi pertama]. Tunjuk pada bahagian mana yang perlu ditambah baik dan nyatakan sebabnya.
                         </p>
                         <p>Mari tonton video robot yang berjaya mengelak selipar pada lokasi pertama dan menjatuhkan selipar pada lokasi kedua.</p>
-                        <img src="{{asset('assets/img/elements/2.jpg')}}" alt="collapse-image" height="125" class="me-4 mb-sm-0 mb-2">
-                        <br>
+                        <div id="video-container" class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+                            <iframe 
+                                class="video-iframe"  
+                                src="https://www.youtube.com/embed/L8S89BCjQvo" 
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                                frameborder="0" 
+                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>                       
+                         <br>
                         <p>⭐ Jika anda telah berjaya menjatuhkan selipar, tahniah diucapkan !!!!!</p>
                     </div>
                 </div>
@@ -466,82 +479,37 @@ function showExplanation(image) {
                         <!-- <p class="card-text text-muted">Mari uji bagaimana atur cara yang dibangunkan dapat mengerakkan AkalBOT untuk menjatuhkan selipar. </p> -->
                         <div class="card mb-3">
                             <div class="card-body">
+                                <div class="d-grid d-sm-flex p-3 border">
+                                    <span>
+                                        <p>
+                                        <span style="font-size: 24px;">&#128064;</span>
+                                        <strong>Tenung : </strong>Cuba renungkan bagaimana Akalbot boleh membuat keputusan sama ada untuk mengelak atau melanggar selipar apabila ada objek dikesan oleh sensor ultrasonik.  Keputusan dapat dibuat apabila kita mengarahkan Akalbot untuk bertindak berdasarkan peraturan iaitu:
+                                        JIKA jarak antara objek dan robot kurang daripada 30 cm, maka robot akan berhenti. 
+                                        </p>                                    
+                                    </span>
+                                    <img src="{{asset('assets/img/kitar_3/renung.jpg')}}" alt="collapse-image" height="125" class="me-4 mb-sm-0 mb-2">
+                                </div>
+                                <br>
                                 <p>
-                                    <span style="font-size: 24px;">&#128064;</span>
-                                    <strong>Tenung:</strong> Cuba renungkan bagaimana kita boleh tambah arahan kepada AkalBOT untuk bergerak mengikut corak yang kita setkan.
+                                <span style="font-size: 24px;">&#128064;</span>
+                                <strong>Tenung : </strong>Cuba renungkan bagaimana AkalBOT boleh mengesan dan mengelak objek menggunakan sensor ultrasonik? <br>
+                                Sebenarnya anda boleh menukar jarak antara objek dengan pengesan dengan menukar nilai dalam pernyataan if ini: <br>
+                                if (DM < 60 && DM > 30) <br>
+                                Lihat bagaimana nilai DM ini perolehi daripada fungsi berikut: <br>
+                                DM = checkdistance(); <br>
+
                                 </p>
-                                <p>Malah kita boleh cuba pelbagai corak pergerakan yang berbeza atau menyalakan LED pada waktu yang lain atau mengubah mesej dalam OLED.</p>
+                               
 
-                                <div style="display: flex; justify-content: center; align-items: center; text-align: center;">
-                                    <div style="flex: 1; margin-right: 10px;">
-                                        <p>Contoh 1: Susunan Lokasi</p>
-                                        <img src="{{ asset('assets/img/kitar_1/merenung.JPG') }}" class="img-fluid" alt="AkalBOT">
-                                    </div>
-                                    <div style="flex: 1; margin-left: 10px;">
-                                        <p>Contoh 2: Susunan Lokasi</p>
-                                        <img src="{{ asset('assets/img/kitar_1/merenung.JPG') }}" class="img-fluid" alt="AkalBOT">
-                                    </div>
-                                </div>
 
-                                <div>
-                                    <br>
-                                    <p>
-                                        <span style="font-size: 24px;">&#128064;</span>
-                                        <strong>Tenung:</strong> Cuba renungkan bagaimana AkalBOT boleh mengeluarkan bunyi.
-                                    </p>
-                                    <p>Sebenarnya anda boleh menukar bunyi dengan menukar nilai dalam fungsi ini di editor Arduino:</p>
-                                    <p><code>tone(buzzer, 5000, 500);</code></p>
 
-                                    <table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 80%; text-align: left;">
-                                        <thead style="background-color: #f2f2f2;">
-                                            <tr>
-                                                <th style="padding: 10px;">Library</th>
-                                                <th style="padding: 10px;">Code</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding: 10px;">Pembolehubah</td>
-                                                <td style="padding: 10px;">
-                                                    <span style="color: green;"><code>#define buzzer 9</code></span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding: 10px;">void setup ()</td>
-                                                <td style="padding: 10px;">
-                                                    <span style="color: blue;"><code>pinMode</span>(buzzer,<br>OUTPUT);</code>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding: 10px;">void loop ()</td>
-                                                <td style="padding: 10px;">
-                                                    <span style="color: orange;"><code>tone</span>(buzzer,<br>5000, 500);</code>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <p>
-                                        <span style="font-size: 24px;">&#128064;</span>
-                                        <strong>Tenung:</strong> Cuba renungkan bagaimana AkalBOT boleh menyalakan dan menutup LED dengan mengubah nilai HIGH dan LOW untuk fungsi berikut:
-                                    </p>
-                                    <p><code>digitalWrite(led1, HIGH);</code></p>
-                                    <p>
-                                        <span style="font-size: 24px;">&#128064;</span>
-                                        <strong>Tenung:</strong>Cuba renungkan bagaimana AkalBOT boleh memaparkan mesej. Anda boleh mengubah mesej pada arahan berikut di editor Arduino:
-                                    </p>
-                                    <p><code>display.println("TUJU SELIPAR!");</code></p>
-                                    <img src="{{ asset('assets/img/kitar_1/merenung.JPG') }}" class="img-fluid" alt="AkalBOT">
-                                    <p>
-                                        <span style="font-size: 24px;">&#128064;</span>
-                                        <strong>Tenung:</strong>Bagaimana jika ada tiga lokasi selipar, apa perubahan yang perlu dilakukan? 
-                                    </p>
-                                    <p>Contoh corak pengerakan untuk tiga lokasi selipar.</p>
-                                    <p>
-                                        <span style="font-size: 24px;">&#128064;</span>
-                                        <strong>Tenung:</strong>Bagaimana pula jika AkalBOT perlu mengelak objek ketika sedang bergerak untuk menuju selipar? Adakah komponen sensor seperti mata AkalBOT ini boleh digunakan? 
-                                    </p>
-
-                                </div>
+                                <p>
+                                <span style="font-size: 24px;">&#128064;</span>
+                                <strong>Tenung : </strong>Bagaimana pula jika AkalBOT perlu mengelak objek ketika sedang bergerak untuk menuju selipar menggunakan sensor lain iaitu infrared sensor (IR)? Apakah perbezaan IR sensor ini dengan ulrasonik sensor?
+                                </p>
+                          
+                                <img src="{{asset('assets/img/kitar_3/sensor.jpg')}}" alt="collapse-image" height="125" class="me-4 mb-sm-0 mb-2">
+                                
                             </div>
                         </div>
                     </div>

@@ -221,7 +221,7 @@ function showExplanation(image) {
                                <p>Jom sahut cabaran untuk mengarahkan AkalBOT untuk lebih banyak bergerak dalam misi menjatuhkan 2 set selipar pada 2 lokasi berbeza.  <br>
                                   Anda akan menentukan sendiri corak perjalanan AkalBOT bagi menjatuhkan selipar dengan menyusun papan padang permainan berdasarkan nilai setiap papan. 
                                </p>
-                                <img class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_1/rekabentukjawapan.JPG') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
+                                <img class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_2/masalah.jpg') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
 
                                <p>Gunakan kreativiti anda untuk menyusun papan tersebut supaya hasil tambah nilai papan yang dilalui AkalBOT mesti melebihi 75 markah. Peraturan permainan ialah:</p>
                                     <ol>
@@ -255,9 +255,9 @@ function showExplanation(image) {
 
                                 <p>Tambah bunyi dengan menggunakan buzzer apabila sampai ke selipar pertama dan kedua (bonus 5 markah)</p>
                                 <p>Penambahan Bunyi Buzzer</p>
-                                <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_1/rekabentukjawapan.JPG') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
+                                <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_2/bonus1.jpg') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
                                  <p>Blok Buzzer dalam AkalBLOK</p>
-                                 <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_1/rekabentukjawapan.JPG') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
+                                 <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_2/bonus1_buzzer.png') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
 
                                 <p>
                                     &#9734; BONUS 2
@@ -265,9 +265,9 @@ function showExplanation(image) {
 
                                 <p>Tambah nyalaan LED apabila sampai ke selipar kedua (bonus 5 markah)</p>
                                 <p>Penambahan Nyalaan LED</p>
-                                <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_1/rekabentukjawapan.JPG') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
+                                <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_2/bonus2.jpg') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
                                  <p>Blok LED dalam AkalBLOK</p>
-                                 <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_1/rekabentukjawapan.JPG') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
+                                 <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_2/bonus2_LED.jpg') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
                                 
                                 <p>
                                     &#9734; BONUS 3
@@ -275,9 +275,9 @@ function showExplanation(image) {
 
                                 <p>Tambah paparan “Berjaya” menggunakan paparan OLED apabila sampai ke selipar kedua (bonus 5 markah)</p>
                                 <p>Penambahan Paparan OLED</p>
-                                <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_1/rekabentukjawapan.JPG') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
+                                <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_2/bonus3.jpg') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
                                  <p>Blok OLED dalam AkalBLOK</p>
-                                 <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_1/rekabentukjawapan.JPG') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
+                                 <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_2/bonus3_OLED.jpg') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
 
                             </div>
                         </div>
@@ -316,7 +316,7 @@ function showExplanation(image) {
                                     <span style="font-size: 24px;">&#128161;</span>
                                     <strong>Fikir:</strong>Apakah langkah yang perlu diubahsuai atau ditambah pada carta alir supaya misi kedua ini berjaya atau anda boleh membangunkan carta alir yang baharu?
                                 </p>
-                                <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_1/rekabentukjawapan.JPG') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
+                                <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_2/rekabentukaturcara.jpg') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
 
                             </div>
                         </div>
@@ -346,7 +346,7 @@ function showExplanation(image) {
                         </ul>
                         
                         <p>Misi kali ini memerlukan anda menyusun sendiri blok dalam Akalblok. Contoh yang diberikan ini hanya untuk sebahagian atur cara iaitu apabila AkalBOT sampai ke lokasi selipar yang kedua dengan bunyian buzzer, nyalaan kedua-dua LED dan OLED memaparkan mesej.</p>
-                        <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_1/rekabentukjawapan.JPG') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
+                        <img id="jawapanImage" class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_2/lakukan.jpg') }}" alt="Masalah 2" style="width: 250px; height: auto; display: none;">
 
                     </div>
                 </div>
@@ -366,19 +366,21 @@ function showExplanation(image) {
                             <span style="font-size: 24px;">📋</span>
                             <strong>Uji:</strong> Susun padang permainan supaya sesuai dengan laluan AkalBOT. Kemudian, susun selipar secara menegak pada dua lokasi yang telah anda rancang. 
                          </p>
-                         <img src="{{ asset('assets/img/kitar_1/merenung.JPG') }}" class="img-fluid" alt="AkalBOT">
+                         <img src="{{ asset('assets/img/kitar_2/uji1.jpg') }}" class="img-fluid" alt="AkalBOT">
                          <p>
                             <span style="font-size: 24px;">📋</span>
                             <strong>Uji:</strong> Dengan menggunakan Editor Arduino, kompil atur cara yang dibangunkan. Rujuk bahagian Kompil Aturcara untuk langkah menguji atur cara.  
                          </p>
                          <p>Letak AkalBot pada padang permainan. Larikan AkalBOT dengan menekan butang ON. Pastikan bateri AkalBOT mencukupi.</p>
-                         <img src="{{ asset('assets/img/kitar_1/merenung.JPG') }}" class="img-fluid" alt="AkalBOT">
+                         <img src="{{ asset('assets/img/kitar_2/uji2.jpg') }}" class="img-fluid" alt="AkalBOT">
                         <p>Pengujian tidak berjaya? Teruskan usaha 💪</p>
-                        <img src="{{ asset('assets/img/kitar_1/merenung.JPG') }}" class="img-fluid" alt="AkalBOT">
+                        <img src="{{ asset('assets/img/kitar_2/uji3.jpg') }}" class="img-fluid" alt="AkalBOT">
                         <p>
                             <span style="font-size: 24px;">📋</span>
                             <strong>Uji:</strong> Jika anda tidak berjaya menjatuhkan selipar menggunakan AkalBOT, ubahsuai urutan pergerakan dan nilai pada blok delay. Uji semula sehingga berjaya. 
                          </p>
+                        <img src="{{ asset('assets/img/kitar_2/uji4.jpg') }}" class="img-fluid" alt="AkalBOT">
+
 
                          <p>Mari tonton video rakan yang telah berjaya selepas mengubahsuai atur cara berkali-kali:</p>
                          <div id="video-container" class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
@@ -422,11 +424,11 @@ function showExplanation(image) {
                                 <div style="display: flex; justify-content: center; align-items: center; text-align: center;">
                                     <div style="flex: 1; margin-right: 10px;">
                                         <p>Contoh 1: Susunan Lokasi</p>
-                                        <img src="{{ asset('assets/img/kitar_1/merenung.JPG') }}" class="img-fluid" alt="AkalBOT">
+                                        <img src="{{ asset('assets/img/kitar_2/contoh1.jpg') }}" class="img-fluid" alt="AkalBOT">
                                     </div>
                                     <div style="flex: 1; margin-left: 10px;">
                                         <p>Contoh 2: Susunan Lokasi</p>
-                                        <img src="{{ asset('assets/img/kitar_1/merenung.JPG') }}" class="img-fluid" alt="AkalBOT">
+                                        <img src="{{ asset('assets/img/kitar_2/contoh2.jpg') }}" class="img-fluid" alt="AkalBOT">
                                     </div>
                                 </div>
 
@@ -468,7 +470,7 @@ function showExplanation(image) {
                                         </tbody>
                                     </table>
                                     <p>
-                                        <span style="font-size: 24px;">&#128064;</span>
+                                      <span style="font-size: 24px;">&#128064;</span>
                                         <strong>Tenung:</strong> Cuba renungkan bagaimana AkalBOT boleh menyalakan dan menutup LED dengan mengubah nilai HIGH dan LOW untuk fungsi berikut:
                                     </p>
                                     <p><code>digitalWrite(led1, HIGH);</code></p>
@@ -477,7 +479,7 @@ function showExplanation(image) {
                                         <strong>Tenung:</strong>Cuba renungkan bagaimana AkalBOT boleh memaparkan mesej. Anda boleh mengubah mesej pada arahan berikut di editor Arduino:
                                     </p>
                                     <p><code>display.println("TUJU SELIPAR!");</code></p>
-                                    <img src="{{ asset('assets/img/kitar_1/merenung.JPG') }}" class="img-fluid" alt="AkalBOT">
+                                    <img src="{{ asset('assets/img/kitar_2/tujuSelipar.jpg') }}" class="img-fluid" alt="AkalBOT">
                                     <p>
                                         <span style="font-size: 24px;">&#128064;</span>
                                         <strong>Tenung:</strong>Bagaimana jika ada tiga lokasi selipar, apa perubahan yang perlu dilakukan? 

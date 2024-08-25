@@ -85,36 +85,12 @@
     {
       "name": "Kitar 4: Jom tuju lebih banyak selipar",
       "icon": "menu-icon tf-icons bx bx-layout",
-      "slug": "Kitar_2",
+      "slug": "Kitar_4",
       "submenu": [
         {
-          "url": "cards/basic",
+          "url": "pages/misc-error",
           "name": "Jom tuju lebih banyak selipar",
-          "slug": "cards-basic"
-        }
-      ]
-    },
-    {
-      "name": "Kitar 4: Jom tuju lebih banyak selipar",
-      "icon": "menu-icon tf-icons bx bx-layout",
-      "slug": "Kitar_2",
-      "submenu": [
-        {
-          "url": "tables/basic",
-          "name": "Jom tuju lebih banyak selipar",
-          "slug": "tables-basic"
-        }
-      ]
-    },
-    {
-      "name": "Kitar 4: Jom tuju lebih banyak selipar",
-      "icon": "menu-icon tf-icons bx bx-layout",
-      "slug": "Kitar_2",
-      "submenu": [
-        {
-          "url": "ui/collapse",
-          "name": "Jom tuju lebih banyak selipar",
-          "slug": "ui-collapse"
+          "slug": "pages-misc-error"
         }
       ]
     },
@@ -124,9 +100,9 @@
       "slug": "Kuiz",
       "submenu": [
         {
-          "url": "Kuiz/SoalanKuiz",
+          "url": "pages/misc-under-maintenance",
           "name": "Soalan Kuiz",
-          "slug": "Kuiz-SoalanKuiz"
+          "slug": "pages-misc-under-maintenance"
         }
       ]
     },
@@ -136,35 +112,30 @@
     {
       "name": "Cipta Idea",
       "icon": "menu-icon tf-icons bx bx bx-dock-top",
-      "url": "pages/account-settings-account",
-      "slug": "pages-account-settings-account"
+    "url": "pages/misc-under-maintenance",
+      "slug": "pages-misc-under-maintenance"
     },
     {
       "name": "Semua Idea",
       "icon": "menu-icon tf-icons bx bx bx-dock-top",
-      "url": "pages/account-settings-account",
-      "slug": "pages-account-settings-account"
+      "url": "pages/misc-under-maintenance",
+      "slug": "pages-misc-under-maintenance"
     },
     {
       "menuHeader": "Documentation"
     },
+   
     {
-      "url": "splash/screen",
-      "icon": "menu-icon tf-icons bx bx-support",
-      "name": "Splash Screen",
-      "slug": "splash-screen"
+      "name": "Profil",
+      "icon": "menu-icon tf-icons bx bx bx-dock-top",
+      "url": "pages/misc-under-maintenance",
+      "slug": "pages-misc-under-maintenance"
     },
     {
-      "name": "Profile",
+      "name": "Komuniti",
       "icon": "menu-icon tf-icons bx bx bx-dock-top",
-      "url": "pages/account-settings-account",
-      "slug": "pages-account-settings-account"
-    },
-    {
-      "name": "Community",
-      "icon": "menu-icon tf-icons bx bx bx-dock-top",
-      "url": "community/communityPage",
-      "slug": "community-communityPage"
+      "url": "pages/misc-under-maintenance",
+      "slug": "pages-misc-under-maintenance"
     }
   ]
 }
