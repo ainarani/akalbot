@@ -72,11 +72,12 @@ $containerNav = 'container-xxl';
                     <h1 class="card-title text-primary">Selamat Datang ke AkalBOT !</h1>
                     <p class="mb-4">AkalBOT merupakan robot bertayar dua yang bersedia menerima arahan anda untuk bergerak. Otak yang mengawal pergerakan AkalBOT ialah Arduino Nano.</p>
                     <a href="{{ url('/index') }}" target="_blank" class="btn btn-sm btn-outline-primary">Lanjut</a>
+                    
                 </div>
             </div>
             <div class="col-sm-5 text-center text-sm-right">
                 <div class="card-body pb-0 px-0 px-md-4">
-                    <img src="{{asset('assets/img/logo/smile.png')}}" height="200" alt="View Badge User" data-app-dark-img="logo/smile-dark.png" data-app-light-img="logo/smile.png">
+                    <img src="{{asset('assets/img/logo/smile.png')}}" height="150" alt="View Badge User" data-app-dark-img="logo/smile-dark.png" data-app-light-img="logo/smile.png">
                 </div>
             </div>
         </div>

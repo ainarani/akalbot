@@ -38,10 +38,10 @@
       "slug": "aktiviti_1-kenalCartaAlir"
     },
     {
-      "url": "aktiviti_1/kenalEditorArduino",
+      "url": "aktiviti_1/kitaranPermainan",
       "icon": "menu-icon tf-icons bx bx-file",
       "name": "Kitaran Permainan",
-      "slug": "aktiviti_1-kenalEditorArduino"
+      "slug": "aktiviti_1-kitaranPermainan"
     },
     {
       "menuHeader": "Permainan"
@@ -83,13 +83,13 @@
       ]
     },
     {
-      "name": "Kitar 4: Jom tuju lebih banyak selipar",
+      "name": "Kitar 4: Kod Rahsia Selipar",
       "icon": "menu-icon tf-icons bx bx-layout",
       "slug": "Kitar_4",
       "submenu": [
         {
           "url": "pages/misc-error",
-          "name": "Jom tuju lebih banyak selipar",
+          "name": "Kod Rahsia Selipar",
           "slug": "pages-misc-error"
         }
       ]

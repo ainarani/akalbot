@@ -9,6 +9,6 @@ class kitaranPermainan extends Controller
 {
   public function index()
   {
-    return view('content.aktiviti_1.kenal-akalbot');
+    return view('content.aktiviti_1.kitaranPermainan');
   }
 }
