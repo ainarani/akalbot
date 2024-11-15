@@ -235,7 +235,7 @@ function showExplanation(image) {
                                         <li>Melibatkan sekurang-kurangnya 3 pergerakan berbeza.</li>
                                     </ol>
                                 <p>Jika anda bertanding dengan rakan anda, pemenang adalah yang mendapat markah yang tertinggi iaitu hasil tambah papan yang dilalui AkalBOT dengan tambahan buzzer, LED dan OLED (markah bonus) dalam tempoh yang paling singkat. Semoga berjaya!</p>
-                                <p><strong>Contoh kreativiti :</strong></p>
+                                <!-- <p><strong>Contoh kreativiti :</strong></p>
 
                                 <div id="video-container" class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
                                     <iframe 
@@ -246,7 +246,7 @@ function showExplanation(image) {
                                         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                                         allowfullscreen>
                                     </iframe>
-                                </div>
+                                </div> -->
                                 <br>
 
                                 <p>
@@ -372,14 +372,14 @@ function showExplanation(image) {
                             <span style="font-size: 24px;">📋</span>
                             <strong>Uji:</strong> Susun padang permainan supaya sesuai dengan laluan AkalBOT. Kemudian, susun selipar secara menegak pada dua lokasi yang telah anda rancang. 
                          </p>
-                         <img class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_2/uji1.jpg') }}" style="width: 250px; height: auto; display: none;"> <br>
+                         <img class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_2/uji1.jpg') }}" style="width: 20%; height: auto; display: none;"> <br>
 
                          <p>
                             <span style="font-size: 24px;">📋</span>
                             <strong>Uji:</strong> Dengan menggunakan Editor Arduino, kompil atur cara yang dibangunkan. Rujuk bahagian Kompil Aturcara untuk langkah menguji atur cara.  
                          </p>
                          <p>Letak AkalBot pada padang permainan. Larikan AkalBOT dengan menekan butang ON. Pastikan bateri AkalBOT mencukupi.</p>
-                         <img class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_2/uji2.jpg') }}" style="width: 250px; height: auto; display: none;"> <br>
+                         <img class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_2/uji2.jpg') }}" style="width: 20%; height: auto; display: none;"> <br>
 
                         <p>Pengujian tidak berjaya? Teruskan usaha 💪</p>
                          <img class="card-img-top mx-auto d-block" src="{{ asset('assets/img/kitar_2/uji3.jpg') }}" style="width: 300px; height: auto; display: none;"> <br>

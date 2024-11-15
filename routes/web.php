@@ -73,6 +73,8 @@ use App\Http\Controllers\Kitar_1\kitar1_konten;
 use App\Http\Controllers\Kitar_2\kitar2_konten;
 use App\Http\Controllers\Kitar_3\kitar2_konten as Kitar_3Kitar2_konten;
 use App\Http\Controllers\Kitar_3\kitar3_konten;
+use App\Http\Controllers\Akalblok\akalblok;
+
 
 // Main Page Route
 Route::get('/', [Analytics::class, 'index'])->name('dashboard-analytics');
@@ -176,7 +178,7 @@ Route::get('/aktiviti_2/ujiminda', [Aktiviti_2UjiMinda::class, 'index'])->name('
 Route::get('/Kuiz/SoalanKuiz', [SoalanKuiz::class, 'index'])->name('Kuiz-SoalanKuiz');
 
 //Akalblok
-Route::get('/Akalblok/akalblok', [SoalanKuiz::class, 'index'])->name('Akalblok-akalblok');
+Route::get('/Akalblok/akalblok', [akalblok::class, 'index'])->name('Akalblok-akalblok');
 
 // Route::get('/index', function () {
 //     return response()->file(public_path('index.html'));

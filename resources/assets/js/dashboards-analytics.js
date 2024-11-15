@@ -505,7 +505,7 @@
         width: 165,
         type: 'donut'
       },
-      labels: ['Game'],
+      labels: ['Pengguna'],
       series: [25],
       colors: [config.colors.primary],
       stroke: {
@@ -559,7 +559,7 @@
                 show: true,
                 fontSize: '0.8125rem',
                 color: axisColor,
-                label: 'Game',
+                label: 'Pengguna',
                 formatter: function (w) {
                   return '38%';
                 }

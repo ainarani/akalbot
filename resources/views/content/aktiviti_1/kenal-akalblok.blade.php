@@ -55,33 +55,9 @@ $containerNav = 'container-xxl';
                 <div class="card-body">
                   <h2 class="m-0 bold-text">Apa itu AkalBLOK?</h2>
                   <br>
-                  <p class="text-muted">AkalBOT merupakan robot bertayar dua yang bersedia menerima arahan anda untuk bergerak. Otak yang mengawal pergerakan AkalBOT ialah Arduino Nano</p>
-                  <!-- <img src="{{asset('assets/img/kenal-akalbot/akalbot-1.png')}}" class="img-fluid" alt="AkalBOT">
-                  <div class="layout-demo-info">
-                    <h7>Rajah 1: Kedudukan Arduino Nano</h7>
-                  </div>
-                  <br>
-                  <img src="{{asset('assets/img/kenal-akalbot/akalbot-2.png')}}" class="img-fluid" alt="AkalBOT">
-                  <div class="layout-demo-info">
-                    <h7>Rajah 2: Posisi AkalBOT menghadap ke hadapan</h7>
-                  </div>
-                  <br>
-                  <img src="{{asset('assets/img/kenal-akalbot/akalbot-3.png')}}" class="img-fluid" alt="AkalBOT">
-                  <div class="layout-demo-info">
-                    <h7>Rajah 3: Bahagian atas AkalBOT</h7>
-                  </div> -->
-                  
-                  <!-- <div class="video-container" style="width: 100%; height: 100%;">
-                    <iframe 
-                        class="video-iframe" 
-                        width="100%" 
-                        height="100%" 
-                        src="https://www.youtube.com/embed/wMZ3r_KXRco" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
-                  </div> -->
+                  <p class="text-muted">AkalBlok merupakan </p>
+                  <p class="mb-4">Mari kita cuba menyusun komponen-komponen dalam akalblok. Tekan butang "Cuba Akalblok" untuk teruskan.</p>
+                  <a href="{{ url('/Akalblok/akalblok') }}" target="_blank" class="btn btn-sm btn-outline-primary">Cuba Akalblok</a>
                 </div>
             </div>
         </div>

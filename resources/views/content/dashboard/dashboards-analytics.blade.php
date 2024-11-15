@@ -1,7 +1,7 @@
 <!-- This is to enable/disable navbar 
 CHECKING CODE FUNSTIONAL  -->
 
-@php
+<?php
 $videos = [
     [
         "id" => "9ycY8jLrL4s",
@@ -44,7 +44,7 @@ $videos = [
 
 $container = 'container-xxl';
 $containerNav = 'container-xxl';
-@endphp
+?>
 
 @extends('layouts/contentNavbarLayout')
 
@@ -71,7 +71,7 @@ $containerNav = 'container-xxl';
                 <div class="card-body">
                     <h1 class="card-title text-primary">Selamat Datang ke AkalBOT !</h1>
                     <p class="mb-4">AkalBOT merupakan robot bertayar dua yang bersedia menerima arahan anda untuk bergerak. Otak yang mengawal pergerakan AkalBOT ialah Arduino Nano.</p>
-                    <a href="{{ url('/Akalbot/akalbot.html') }}" target="_blank" class="btn btn-sm btn-outline-primary">Lanjut</a>
+                    <a href="{{ url('/Akalblok/akalblok') }}" target="_blank" class="btn btn-sm btn-outline-primary">Lanjut</a>
                     
                 </div>
             </div>
@@ -262,7 +262,7 @@ $containerNav = 'container-xxl';
     <div class="card h-100">
       <div class="card-header d-flex align-items-center justify-content-between pb-0">
         <div class="card-title mb-0">
-          <h5 class="m-0 me-2">Compilation Video</h5>
+          <h5 class="m-0 me-2">Apa itu Akalbot?</h5>
           <br>
         </div>
       </div>
@@ -541,7 +541,7 @@ $containerNav = 'container-xxl';
     <div class="card h-100">
         <div class="card-header d-flex align-items-center justify-content-between pb-0">
             <div class="card-title mb-0">
-                <h5 class="m-0 me-2">Game Statistics</h5>
+                <h5 class="m-0 me-2">Statistik Pengguna</h5>
             </div>
             <div class="dropdown">
                 <button class="btn p-0" type="button" id="orderStatistics" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -563,7 +563,7 @@ $containerNav = 'container-xxl';
                     </div>
                     <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                         <div class="me-2">
-                            <h6 class="mb-0">Game Approved</h6>
+                            <h6 class="mb-0">Kitar 1</h6>
                             <small class="text-muted">Baling Selipar, TengTeng, etc</small>
                         </div>
                         <div class="user-progress">
@@ -577,7 +577,7 @@ $containerNav = 'container-xxl';
                     </div>
                     <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                         <div class="me-2">
-                            <h6 class="mb-0">Game Submitted</h6>
+                            <h6 class="mb-0">Kitar 2</h6>
                             <small class="text-muted">Baling Selipar, TengTeng, etc</small>
                         </div>
                         <div class="user-progress">
@@ -886,7 +886,7 @@ $containerNav = 'container-xxl';
 <div class="row">
   <div class="col-md-6 col-lg-4 col-xl-12 order-0 mb-4">
     <div class="card h-120">
-      <h5 class="card-header">Community Akalbot</h5>
+      <h5 class="card-header">Komuniti</h5>
       <div class="container my-4">
         <div class="row g-2">
           <?php foreach ($videos as $video): ?>

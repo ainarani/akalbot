@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blockly FTSM</title>
+    <link href="{{ asset('bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('sweetalert2.min.css') }}" rel="stylesheet">
+    <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
+
+    <script src="{{ asset('jquery.js') }}"></script>
+    <script src="{{ asset('bootstrap.min.js') }}"></script>
+
+    <script src="{{ asset('blockly_compressed.js') }}"></script>
+    <script src="{{ asset('blocks_compressed.js') }}"></script>
+    <script src="{{ asset('arduino_compressed.js') }}"></script>
+    <script src="{{ asset('msg/js/en.js') }}"></script>
+    <script src="{{ asset('blockly_helper.js') }}"></script>
+    <script src="{{ asset('spin.js') }}"></script>
+    <script src="{{ asset('sweetalert2.all.min.js') }}"></script>
+    <script src="{{ asset('core.js') }}"></script>
+    <script src="{{ asset('jquery.min.js') }}"></script>
+
+
+    <style>
+        html,
+        body {
+            background-color: powderblue;
+            font-family: sans-serif;
+            height: auto;
+            min-height: 100%;
+        }
+
+        #map {
+            width: 100%;
+            height: auto;
+            min-height: 100%;
+            display: block;
+        }
+
+        .fill {
+            min-height: 100%;
+            height: auto;
+        }
+
+        /*    #navbar{
+      height: 5%;
+      top:0;
+      left:0;
+      bottom:3.25em;
+      float:left;
+      width: 15em;
+      display:block;
+      height:100%;
+
+    }
+    #isi{
+      height: 95%;
+      overflow-y: auto;
+    }*/
+        /*    #test{
+      margin-bottom: 0px;
+      min-height: 100%;
+      height: 100%;
+    }*/
+    </style>
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default" style="margin-bottom: 0;">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">AkalBlok</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Operations <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" onclick="saveFile()">Save Files</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#" onclick="discard()">Clear Block</a></li>
+                            <li><a href="#" onclick="copy()">Copy Codes in Clipboard</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container col-md-12 fill" style="border: 1px solid red;">
+        <div class="row">
+            <div id="primaryDiv" class="col-md-6 map" style="height: 608px; width: 65%; padding: 0px;"></div>
+            <textarea id="content_arduino" class="col-md-6" style="height: 608px;  width: 35%;" readonly wrap="off"
+                placeholder="void setup()\n{\n\n}\n\n\nvoid loop()\n{\n\n}"></textarea>
+        </div>
+    </div>
+
+    <!--  <table width="100%">
+        <tr class="tabRow">
+          <td class="tabmin">&nbsp;</td>
+          <td align="right" class="tabMax">
+            <button onclick="discard()" type="button">Clear block</button>
+            <button onclick="copy()" type="button">Copy All</button>
+            <button onclick="saveFile()" type="button">Save</button>
+          </td>
+        </tr>      
+      <tr>
+        <td>
+          <div id="primaryDiv" style="height: 535px; width: 850px;"></div>
+        </td>
+        <td>
+          <textarea id="content_arduino" class="content" readonly wrap="off" style="height: 530px; width: 470px;"
+          placeholder="void setup()\n{\n\n}\n\n\nvoid loop()\n{\n\n}"></textarea>  
+        </td>
+      </tr>      
+    </table> -->
+
+
+
+    <xml id="toolbox" style="display: none">
+        <category name="Input/Output" colour="200">
+            <block type="input"></block>
+            <block type="break"></block>
+            <block type="delay">
+                <value name="DELAY_TIME">
+                    <block type="math_number">
+                        <field name="NUM">1000</field>
+                    </block>
+                </value>
+            </block>
+            <block type="input_digital"></block>
+            <block type="input_analog">
+                <value name="NUM">
+                    <block type="math_number">
+                        <field name="NUM">0</field>
+                    </block>
+                </value>
+            </block>
+            <block type="output_analog"></block>
+            <block type="output_digital"></block>
+            <block type="exit">
+                <value name="NUM">
+                    <block type="math_number">
+                        <field name="NUM">0</field>
+                    </block>
+                </value>
+            </block>
+        </category>
+        <category name="Selection" colour="40">
+            <block type="controls_if"></block>
+            <block type="logic_compare"></block>
+            <block type="logic_operation"></block>
+            <block type="logic_negate"></block>
+            <block type="logic_null"></block>
+        </category>
+        <category name="Loops" colour="80">
+            <block type="controls_repeat_ext"></block>
+            <block type="controls_whileUntil"></block>
+            <block type="input_switch"></block>
+            <block type="input_case"></block>
+            <block type="input_array"></block>
+        </category>
+        <category name="String" colour="160">
+            <block type="text"></block>
+            <!-- <block type="new_text"></block> -->
+            <block type="variable"></block>
+            <block type="input_variable"></block>
+            <!-- <block type="var_stesen"></block> -->
+        </category>
+        <category name="Operator" colour="120">
+            <block type="math_number"></block>
+            <block type="math_arithmetic"></block>
+        </category>
+        <sep></sep>
+        <category name="Motor" colour="280">
+            <block type="servo_motor"></block>
+            <block type="arduino_servo"></block>
+            <block type="arduino_servo_def"></block>
+            <!-- <block type="arduino_motor"></block>
+      <block type="arduino_motorA"></block>
+      <block type="arduino_motorB"></block> -->
+        </category>
+        <category name="Sensor" colour="240">
+            <block type="ultrasonic_sensor"></block>
+            <block type="ir_sensor"></block>
+            <block type="color_sensor"></block>
+            <!-- <block type="color_sensor_def"></block> -->
+            <!-- <block type="laser_sensor"></block>
+      <block type="laser_detector"></block> -->
+            <block type="laser_pointer"></block>
+        </category>
+        <category name="LED" colour="360">
+            <block type="led_block"></block>
+            <!-- <block type="buzzer"></block> -->
+        </category>
+        <category name="Buzzer" colour="20">
+            <!-- <block type="led_block"></block> -->
+            <block type="buzzer"></block>
+        </category>
+        <category name="OLED" colour="60">
+            <block type="OLED_display"></block>
+            <block type="OLED_text_color"></block>
+            <block type="OLED_text_size"></block>
+        </category>
+    </xml>
+
+    <script>
+        //Injecting google's blockly into workspace
+        var primaryWorkspace = document.getElementById('primaryDiv');
+        // var secondaryWorkspace = Blockly.inject('secondaryDiv',
+        //     {media: '../../media/',
+        //      readOnly: true});
+        var workspace = Blockly.inject(primaryDiv, {
+            toolbox: document.getElementById('toolbox')
+        });
+        workspace.addChangeListener(showCode);
+
+        //To use \n on placeholder
+        var textAreas = document.getElementsByTagName('textarea');
+
+        Array.prototype.forEach.call(textAreas, function(elem) {
+            elem.placeholder = elem.placeholder.replace(/\\n/g, '\n');
+        });
+
+
+        // function copy() {
+        //   document.getElementById('content_arduino').select();
+        //   document.execCommand('copy');
+        // }
+
+        swal({
+            title: 'Selamat Datang!',
+            text: 'Mari mula membina robot.',
+            imageUrl: '{{ asset("picture/Akalbot.png") }}',
+            imageWidth: 400,
+            imageHeight: 200,
+            imageAlt: 'Custom image',
+            animation: false
+        });
+
+
+        function copy() {
+            document.getElementById('content_arduino').select();
+            document.execCommand('copy');
+            renderCopy();
+        };
+
+        //Remove all block from workspace
+        function discard() {
+            renderDiscard();
+        }
+
+        function saveFile() {
+            renderSave();
+        }
+
+        function renderSave() {
+            swal({
+                title: 'Enter your filename :',
+                input: 'text',
+                type: 'question',
+                showCancelButton: true,
+                inputPlaceholder: 'Code_1',
+                confirmButtonText: 'Save',
+                showLoaderOnConfirm: true,
+                preConfirm: function(inputValue) {
+                    return new Promise(function(resolve, reject) {
+                        setTimeout(function() {
+                            if (inputValue === '') {
+                                reject('Please fill in your filename.')
+                            } else {
+                                var textToWrite = document.getElementById('content_arduino').value;
+                                var textFileAsBlob = new Blob([textToWrite], {
+                                    type: 'text/plain'
+                                });
+
+                                var downloadLink = document.createElement("a");
+                                downloadLink.download = inputValue + '.ino';
+                                downloadLink.innerHTML = "Download File";
+
+                                downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
+                                downloadLink.click();
+
+                                resolve();
+                            }
+                        }, 1000)
+                    })
+                },
+                allowOutsideClick: false
+            }).then(function(inputValue) {
+                swal({
+                    type: 'success',
+                    title: 'Your file has been saved!',
+                    html: 'Saved file: ' + inputValue + '.ino'
+                })
+            })
+        }
+
+        function renderCopy() {
+            swal(
+                'Done!',
+                'Your code has been copied.',
+                'success'
+            );
+        }
+
+        function renderDiscard() {
+            swal({
+                title: 'Are you sure want to clear the workspace?',
+                text: "You won't be able to revert this!",
+                type: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, clear it!',
+                cancelButtonText: 'No, cancel!',
+                confirmButtonClass: 'btn btn-success',
+                cancelButtonClass: 'btn btn-danger',
+                buttonsStyling: false
+            }).then(function() {
+                swal(
+                    'Cleared!',
+                    'Your workspace has been cleared.',
+                    'success'
+                )
+                Blockly.mainWorkspace.clear();
+            }, function(dismiss) {
+                // dismiss can be 'cancel', 'overlay',
+                // 'close', and 'timer'
+                if (dismiss === 'cancel') {
+                    swal(
+                        'Cancelled',
+                        'Your workspace is safe :)',
+                        'error'
+                    )
+                }
+            })
+        }
+
+        //Change block to Coding
+        function showCode() {
+            // Generate JavaScript code and display it.
+            var arduinoTextarea = document.getElementById('content_arduino');
+            arduinoTextarea.value = Blockly.Arduino.workspaceToCode();
+            arduinoTextarea.focus();
+        }
+    </script>
+
+
+
+</body>
+
+</html>
