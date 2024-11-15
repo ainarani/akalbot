@@ -1,34 +1,10 @@
-<p align="center"></p>
-
-<p align="center">
-   <a href="https://themeselection.com/item/sneat-free-bootstrap-html-laravel-admin-template/" target="_blank">
-      <img src="https://user-images.githubusercontent.com/749684/150333149-805037bc-8874-4a1f-876a-61a9683f8ef5.png" alt="sneat-logo" width="30px" height="auto">
-   </a>
-</p>
-
-<h1 align="center">
-   <a href="https://themeselection.com/item/sneat-free-bootstrap-html-laravel-admin-template/" target="_blank" align="center">
-      Sneat - Free Bootstrap 5 HTML Laravel Admin Template
-   </a>
-</h1>
-
-<p align="center">Most Powerful & Comprehensive Free Bootstrap 5 HTML Laravel Admin Dashboard Template built for developers!</p>
-
-![GitHub](https://img.shields.io/github/license/themeselection/sneat-html-laravel-admin-template-free) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/themeselection/sneat-html-laravel-admin-template-free) ![GitHub issues](https://img.shields.io/github/issues/themeselection/sneat-html-laravel-admin-template-free) ![GitHub closed issues](https://img.shields.io/github/issues-closed/themeselection/sneat-html-laravel-admin-template-free) ![Twitter Follow](https://img.shields.io/twitter/follow/Theme_Selection?style=social)
-
-<kbd>[![Sneat - Bootstrap 5 HTML Laravel Admin Template Demo Screenshot](https://cdn.jsdelivr.net/gh/themeselection/ts-assets/sneat/sneat-bootstrap-laravel-admin-template-free/marketing/sneat-bootstrap-laravel-admin-template-free-github.png)](https://themeselection.com/item/sneat-free-bootstrap-html-laravel-admin-template/)</kbd>
 
 ## Introduction 🚀
-
-If you’re a developer looking for the most Powerful & comprehensive [**Free Bootstrap 5 HTML Laravel Admin Template**](https://themeselection.com/item/sneat-free-bootstrap-html-laravel-admin-template/) built for developers, rich with features, and highly customizable look no further than Sneat. We’ve followed the highest industry standards to bring you the very best admin template that is not only fast and easy to use but highly scalable. Offering ultimate convenience and flexibility, you’ll be able to build whatever application you want with very little hassle.
-
-Build premium quality applications with ease. Use our innovative **[Laravel admin template](https://themeselection.com/item/category/laravel-admin-templates/)** to create eye-catching, high-quality WebApps. Your apps will be completely responsive, ensuring they’ll look stunning and function flawlessly on desktops, tablets, and mobile devices.
-
-[View Demo](https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template-free/demo/)
+Akalbot - UKM
 
 ## Installation ⚒️
 
-Installing and running Sneat is super easy, please Follow below steps and you will be ready to rock 🤘
+Installing and running AkalBot is super easy, please Follow below steps and you will be ready to rock 🤘
 
 1. Open the terminal in your root directory of Sneat Laravel.
 2. Use the following command to install the composer
@@ -102,35 +78,6 @@ yarn prod
   - Horizontal Form
 - Tables
 
-## What's in Premium Version 💎
-
-| Sneat Free Version                                                                              | Sneat Premium Version                                                                                                                                                                         |
-| ----------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Demo](https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template-free/demo/) | [Demo](https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo-1/)                                                                                                  |
-| [Download](https://themeselection.com/item/sneat-free-bootstrap-html-laravel-admin-template/)   | [Purchase](https://themeselection.com/item/sneat-bootstrap-laravel-admin-template/)                                                                                                           |
-| Single vertical Menu                                                                            | Vertical Menu + Horizontal Menu                                                                                                                                                               |
-| Simple Light Style                                                                              | Light, Dark & System Style                                                                                                                                                                    |
-| Default Theme                                                                                   | Default, Semi Dark & Bordered Themes                                                                                                                                                          |
-| Fixed Layout(Menu)                                                                              | Fixed & Static Layout(Menu)                                                                                                                                                                   |
-| 1 Simple Dashboard                                                                              | 5 Niche Dashboards                                                                                                                                                                            |
-| -                                                                                               | Multiple Ready to use Application like **Laravel CRUD Application**, Email, Chat, Calendar, Kanban, eCommerce, Academy, Logistics, Invoice, Users List, Users View, Roles and Permission etc. |
-| Simple From Elements                                                                            | Advance form elements, validation & form wizard                                                                                                                                               |
-| Basic Cards                                                                                     | Basic, Advance , Statistics, Analytics, Gamifications and Actions Cards                                                                                                                       |
-| Basic User Interface(Components)                                                                | Advance and Custom User Interfaces(Components)                                                                                                                                                |
-| Two Extended Components                                                                         | Twelve Ready to use Extended Components                                                                                                                                                       |
-| -                                                                                               | Quick Search - Quickly navigate between pages (w/ hotkey support)                                                                                                                             |
-| Basic Pages                                                                                     | Authentication Pages in 2 Variants + Ready to use pages like User Profile, Account Settings,FAQ, Help Center, Pricing, Misc etc.                                                              |
-| -                                                                                               | 3D Characters + Illustrations                                                                                                                                                                 |
-| Basic tables                                                                                    | Advanced & Data tables                                                                                                                                                                        |
-| -                                                                                               | Quick customization using theme config file                                                                                                                                                   |
-| -                                                                                               | Leaflet Maps                                                                                                                                                                                  |
-| 1 Chart Library                                                                                 | 2 Chart Libraries                                                                                                                                                                             |
-| -                                                                                               | Multiple Navbar & Menu Options                                                                                                                                                                |
-| -                                                                                               | Starter-kit                                                                                                                                                                                   |
-| -                                                                                               | **Localization support**                                                                                                                                                                      |
-| -                                                                                               | RTL Support                                                                                                                                                                                   |
-| Regular Support                                                                                 | Priority Support                                                                                                                                                                              |
-| Detailed Documentation                                                                          | Detailed Documentation                                                                                                                                                                        |
 
 ## Documentation 📜
 
