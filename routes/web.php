@@ -176,9 +176,12 @@ Route::get('/aktiviti_2/ujiminda', [Aktiviti_2UjiMinda::class, 'index'])->name('
 Route::get('/Kuiz/SoalanKuiz', [SoalanKuiz::class, 'index'])->name('Kuiz-SoalanKuiz');
 
 //Akalblok
-Route::get('/index', function () {
-    return response()->file(public_path('index.html'));
-});
+Route::get('/Akalblok/akalblok', [SoalanKuiz::class, 'index'])->name('Akalblok-akalblok');
+
+// Route::get('/index', function () {
+//     return response()->file(public_path('index.html'));
+// });
+
 
 //Form
 Route::get('/Form/permainan_form', [permainan_form::class, 'index'])->name('Form-permainan_form');

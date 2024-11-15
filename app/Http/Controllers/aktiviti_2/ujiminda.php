@@ -5,7 +5,7 @@ namespace App\Http\Controllers\aktiviti_2;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class ujiMinda extends Controller
+class ujiminda extends Controller
 {
   public function index()
   {
