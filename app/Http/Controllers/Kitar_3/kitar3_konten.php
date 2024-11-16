@@ -9,6 +9,6 @@ class kitar3_konten extends Controller
 {
   public function index()
   {
-    return view('content.kitar_3.kitar3_konten');
+    return view('content.Kitar_3.kitar3_konten');
   }
 }

@@ -9,6 +9,6 @@ class akalblok extends Controller
 {
   public function index()
   {
-    return view('content.akalblok.akalblok');
+    return view('content.Akalblok.akalblok');
   }
 }
